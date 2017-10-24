@@ -20,7 +20,7 @@ from WebApp import views
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
-    url(r'^WebApp/',include('WebApp.urls')),
+    url(r'^WebApp/',include('WebApp.urls')),    
 ]
 
 

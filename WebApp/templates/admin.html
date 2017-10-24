@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<title>Budgets</title>
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	</head>
+	<div class="wrapper">
+		<body>
+			
+			<div class="nav">
+				<a href={% url 'index' %}><div class="button"> Budgets </div></a>
+				<a href="proposals.html"><div class="button"> Proposals</div></a>
+				<a href="projects.html"><div class="button">Project</div></a>
+				<a href="reports.html"><div class="button">Reports</div></a>
+				<a href="admin.html"><div class="button">Admin</div></a>
+			</div>
+			
+			<div class="content">
+				
+				<div class="margin-bottom">
+					<p> Just some sort of text and information here.</p>
+				</div>
+				
+				<div class="table-wrapper">
+				  <div class="table-scroll">
+					<table>
+						<thead>
+							<tr>
+								<th><div class="text1">Budget</div></th>
+								<th><div class="text">Detail 1</div></th>
+								<th><div class="text">Detail 2</div></th>
+								<th><div class="text">Detail 3</div></th>
+								<th><div class="text">Detail 4</div></th>
+								<th><div class="text">Detail 5</div></th>
+								<th><div class="text">Detail 6</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						  <tr> <td><a href="">Thing 1 Name</a></td> <td>Thing 1</td> <td>Thing 1</td>  <td>Thing 1</td>  <td>Thing 1</td> <td>Thing 1</td> <td>Thing 1</td> </tr>
+						  <tr> <td><a href="">Thing 2 Name</a></td> <td>Thing 2</td> <td>Thing 2</td>  <td>Thing 2</td>  <td>Thing 2</td> <td>Thing 2</td> <td>Thing 2</td> </tr>
+						  <tr> <td><a href="">Thing 3 Name</a></td> <td>Thing 3</td> <td>Thing 3</td>  <td>Thing 3</td>  <td>Thing 3</td> <td>Thing 3</td> <td>Thing 3</td> </tr>
+						  <tr> <td><a href="">Thing 4 Name</a></td> <td>Thing 4</td> <td>Thing 4</td>  <td>Thing 4</td>  <td>Thing 4</td> <td>Thing 4</td> <td>Thing 4</td> </tr>
+						  <tr> <td><a href="">Thing 5 Name</a></td> <td>Thing 5</td> <td>Thing 5</td>  <td>Thing 5</td>  <td>Thing 5</td> <td>Thing 5</td> <td>Thing 5</td> </tr>
+						  <tr> <td><a href="">Thing 6 Name</a></td> <td>Thing 6</td> <td>Thing 6</td>  <td>Thing 6</td>  <td>Thing 6</td> <td>Thing 6</td> <td>Thing 6</td> </tr>
+						  <tr> <td><a href="">Thing 7 Name</a></td> <td>Thing 7</td> <td>Thing 7</td>  <td>Thing 7</td>  <td>Thing 7</td> <td>Thing 7</td> <td>Thing 7</td> </tr>
+						  <tr> <td><a href="">Thing 8 Name</a></td> <td>Thing 8</td> <td>Thing 8</td>  <td>Thing 8</td>  <td>Thing 8</td> <td>Thing 8</td> <td>Thing 8</td> </tr>
+						  <tr> <td><a href="">Thing 9 Name</a></td> <td>Thing 9</td> <td>Thing 9</td>  <td>Thing 9</td>  <td>Thing 9</td> <td>Thing 9</td> <td>Thing 9</td> </tr>
+						  <tr> <td><a href="">Thing 10 Name</a></td> <td>Thing 10</td> <td>Thing 10</td>  <td>Thing 10</td>  <td>Thing 10</td> <td>Thing 10</td> <td>Thing 10</td> </tr>
+						  <tr> <td><a href="">Thing 1 Name</a></td> <td>Thing 1</td> <td>Thing 1</td>  <td>Thing 1</td>  <td>Thing 1</td> <td>Thing 1</td> <td>Thing 1</td> </tr>
+						  <tr> <td><a href="">Thing 2 Name</a></td> <td>Thing 2</td> <td>Thing 2</td>  <td>Thing 2</td>  <td>Thing 2</td> <td>Thing 2</td> <td>Thing 2</td> </tr>
+						  <tr> <td><a href="">Thing 3 Name</a></td> <td>Thing 3</td> <td>Thing 3</td>  <td>Thing 3</td>  <td>Thing 3</td> <td>Thing 3</td> <td>Thing 3</td> </tr>
+						  <tr> <td><a href="">Thing 4 Name</a></td> <td>Thing 4</td> <td>Thing 4</td>  <td>Thing 4</td>  <td>Thing 4</td> <td>Thing 4</td> <td>Thing 4</td> </tr>
+						  <tr> <td><a href="">Thing 5 Name</a></td> <td>Thing 5</td> <td>Thing 5</td>  <td>Thing 5</td>  <td>Thing 5</td> <td>Thing 5</td> <td>Thing 5</td> </tr>
+						  <tr> <td><a href="">Thing 6 Name</a></td> <td>Thing 6</td> <td>Thing 6</td>  <td>Thing 6</td>  <td>Thing 6</td> <td>Thing 6</td> <td>Thing 6</td> </tr>
+						  <tr> <td><a href="">Thing 7 Name</a></td> <td>Thing 7</td> <td>Thing 7</td>  <td>Thing 7</td>  <td>Thing 7</td> <td>Thing 7</td> <td>Thing 7</td> </tr>
+						  <tr> <td><a href="">Thing 8 Name</a></td> <td>Thing 8</td> <td>Thing 8</td>  <td>Thing 8</td>  <td>Thing 8</td> <td>Thing 8</td> <td>Thing 8</td> </tr>
+						  <tr> <td><a href="">Thing 9 Name</a></td> <td>Thing 9</td> <td>Thing 9</td>  <td>Thing 9</td>  <td>Thing 9</td> <td>Thing 9</td> <td>Thing 9</td> </tr>
+						  <tr> <td><a href="">Thing 10 Name</a></td> <td>Thing 10</td> <td>Thing 10</td>  <td>Thing 10</td>  <td>Thing 10</td> <td>Thing 10</td> <td>Thing 10</td> </tr>
+						  <tr> <td><a href="">Thing 1 Name</a></td> <td>Thing 1</td> <td>Thing 1</td>  <td>Thing 1</td>  <td>Thing 1</td> <td>Thing 1</td> <td>Thing 1</td> </tr>
+						  <tr> <td><a href="">Thing 2 Name</a></td> <td>Thing 2</td> <td>Thing 2</td>  <td>Thing 2</td>  <td>Thing 2</td> <td>Thing 2</td> <td>Thing 2</td> </tr>
+						  <tr> <td><a href="">Thing 3 Name</a></td> <td>Thing 3</td> <td>Thing 3</td>  <td>Thing 3</td>  <td>Thing 3</td> <td>Thing 3</td> <td>Thing 3</td> </tr>
+						  <tr> <td><a href="">Thing 4 Name</a></td> <td>Thing 4</td> <td>Thing 4</td>  <td>Thing 4</td>  <td>Thing 4</td> <td>Thing 4</td> <td>Thing 4</td> </tr>
+						  <tr> <td><a href="">Thing 5 Name</a></td> <td>Thing 5</td> <td>Thing 5</td>  <td>Thing 5</td>  <td>Thing 5</td> <td>Thing 5</td> <td>Thing 5</td> </tr>
+						  <tr> <td><a href="">Thing 6 Name</a></td> <td>Thing 6</td> <td>Thing 6</td>  <td>Thing 6</td>  <td>Thing 6</td> <td>Thing 6</td> <td>Thing 6</td> </tr>
+						  <tr> <td><a href="">Thing 7 Name</a></td> <td>Thing 7</td> <td>Thing 7</td>  <td>Thing 7</td>  <td>Thing 7</td> <td>Thing 7</td> <td>Thing 7</td> </tr>
+						  <tr> <td><a href="">Thing 8 Name</a></td> <td>Thing 8</td> <td>Thing 8</td>  <td>Thing 8</td>  <td>Thing 8</td> <td>Thing 8</td> <td>Thing 8</td> </tr>
+						  <tr> <td><a href="">Thing 9 Name</a></td> <td>Thing 9</td> <td>Thing 9</td>  <td>Thing 9</td>  <td>Thing 9</td> <td>Thing 9</td> <td>Thing 9</td> </tr>
+						  <tr> <td><a href="">Thing 10 Name</a></td> <td>Thing 10</td> <td>Thing 10</td>  <td>Thing 10</td>  <td>Thing 10</td> <td>Thing 10</td> <td>Thing 10</td> </tr>
+						  <tr> <td><a href="">Thing 1 Name</a></td> <td>Thing 1</td> <td>Thing 1</td>  <td>Thing 1</td>  <td>Thing 1</td> <td>Thing 1</td> <td>Thing 1</td> </tr>
+						  <tr> <td><a href="">Thing 2 Name</a></td> <td>Thing 2</td> <td>Thing 2</td>  <td>Thing 2</td>  <td>Thing 2</td> <td>Thing 2</td> <td>Thing 2</td> </tr>
+						  <tr> <td><a href="">Thing 3 Name</a></td> <td>Thing 3</td> <td>Thing 3</td>  <td>Thing 3</td>  <td>Thing 3</td> <td>Thing 3</td> <td>Thing 3</td> </tr>
+						  <tr> <td><a href="">Thing 4 Name</a></td> <td>Thing 4</td> <td>Thing 4</td>  <td>Thing 4</td>  <td>Thing 4</td> <td>Thing 4</td> <td>Thing 4</td> </tr>
+						  <tr> <td><a href="">Thing 5 Name</a></td> <td>Thing 5</td> <td>Thing 5</td>  <td>Thing 5</td>  <td>Thing 5</td> <td>Thing 5</td> <td>Thing 5</td> </tr>
+						  <tr> <td><a href="">Thing 6 Name</a></td> <td>Thing 6</td> <td>Thing 6</td>  <td>Thing 6</td>  <td>Thing 6</td> <td>Thing 6</td> <td>Thing 6</td> </tr>
+						  <tr> <td><a href="">Thing 7 Name</a></td> <td>Thing 7</td> <td>Thing 7</td>  <td>Thing 7</td>  <td>Thing 7</td> <td>Thing 7</td> <td>Thing 7</td> </tr>
+						  <tr> <td><a href="">Thing 8 Name</a></td> <td>Thing 8</td> <td>Thing 8</td>  <td>Thing 8</td>  <td>Thing 8</td> <td>Thing 8</td> <td>Thing 8</td> </tr>
+						  <tr> <td><a href="">Thing 9 Name</a></td> <td>Thing 9</td> <td>Thing 9</td>  <td>Thing 9</td>  <td>Thing 9</td> <td>Thing 9</td> <td>Thing 9</td> </tr>
+						  <tr> <td><a href="">Thing 10 Name</a></td> <td>Thing 10</td> <td>Thing 10</td>  <td>Thing 10</td>  <td>Thing 10</td> <td>Thing 10</td> <td>Thing 10</td> </tr>
+						  
+						</tbody>
+					</table>
+				  </div>
+				</div>
+			
+				<p>More examples of other text that may be displayed here on this page.</p>
+			
+			</div>		
+		</body>
+		
+		<footer>
+		
+			<a href={% url 'new_project'  %}>
+				<div class="button">Add New Project</div>
+			</a>
+		
+		</footer>
+	</div>
+</html>

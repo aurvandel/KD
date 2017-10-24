@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+	<head>
+		<title>New Budget - Waste Slabs || Casting Beds Table</title>
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	</head>
+	<div class="wrapper">
+		<body>	
+			<div class="nav">
+				<a href={% url 'index' %}><div class="button"> Budgets </div></a>
+                                <a href={% url 'proposals' %}><div class="button"> Proposals</div></a>
+                                <a href={% url 'project' %}><div class="button">Project</div></a>
+                                <a href={% url 'reports' %}><div class="button">Reports</div></a>
+                                <a href={% url 'admin' %}><div class="button">Admin</div></a>
+			</div>
+			
+			<div class="content">
+				
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th><div class="text">Slab Description</div></th>
+								<th><div class="text">Basis</div></th>
+								<th><div class="text">SF</div></th>
+								<th><div class="text">Concrete Description</div></th>
+								<th><div class="text">Concrete Total CY</div></th>
+								<th><div class="text">Concrete PSI</div></th>
+								<th><div class="text">Mats/Labor</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><input type="checkbox" value="1"/></td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data</td>								
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="1"/></td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data</td>								
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="1"/></td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data</td>								
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="1"/></td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data</td>								
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="1"/></td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data Data Data Data Data Data </td>								
+								<td>Data</td>								
+								<td>Data</td>								
+								<td>Data</td>								
+							</tr>
+						</tbody>
+					</table>
+					
+					<table class="bottom_table">
+					<thead>
+						<tr>
+							<th><div class="text"> Materials </div></th>
+							<th><div class="text"> Phase Labor </div></th>
+							<th><div class="text"> Additional Items </div></th>
+							<th><div class="text"> Business Tax </div></th>
+							<th><div class="text"> Total </div></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+						</tr>
+					</tbody>
+				</table>
+					
+					<div class="tableButtons">
+						<a href={% url 'waste_insert' %}>
+							<button class="tab_button" type="Add">Insert</button>
+						</a>								
+						<button class="tab_button" type="Delete">Delete Checked</button>
+						<a href={% url 'new_project' %}>
+							<button class="tab_button" type="Save">Save</button>
+						</a>
+					</div>
+				
+				
+				
+			
+			</div>
+			
+		
+		</body>
+		
+		<footer>
+			<a href={% url 'new_project' %}><button class="tab_button" type="GeneralConditions">General Conditions</button></a>
+                        <a href={% url 'footings_table' %}><button class="tab_button" type="Footings">Footings</button></a>
+                        <a href={% url 'slab_grade' %}><button class="tab_button" type="SlabOnGrade">Slab on Grade</button></a>
+                        <a href={% url 'waste' %}><button class="tab_button" type="WasteCasting">Waste Slabs/Casting Beds</button></a>
+                        <a href={% url 'tilt_up' %}><button class="tab_button" type="Tilt-Up">Tilt-Up Panels</button></a>
+                        <a href={% url 'new_project' %}><button class="selected_button" type="CastInPlace">Cast in Place</button></a>
+                        <a href={% url 'slab_deck' %}><button class="tab_button" type="SlabOnDeck">Slab on Deck</button></a>
+		</footer>
+	</div>
+</html>
