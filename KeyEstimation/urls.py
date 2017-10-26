@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.conf.urls import include
 from WebApp import views
 
+
 urlpatterns = [
     url(r'^$',views.index,name='index'),
-    url(r'^WebApp/',include('WebApp.urls')),    
+    url(r'^templates/',include('WebApp.urls')), 
+#    url(r'^general_conditions/', include('general_conditions.urls')),
+    
+
 ]
 
 

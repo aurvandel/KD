@@ -11,7 +11,7 @@
 			<div class="nav">
                                 <a href={% url 'index' %}><div class="button"> Budgets </div></a>
                                 <a href={% url 'proposals' %}><div class="button"> Proposals</div></a>
-                                <a href={% url 'project' %}><div class="button">Project</div></a>
+                                <a href={% url 'projects' %}><div class="button">Project</div></a>
                                 <a href={% url 'reports' %}><div class="button">Reports</div></a>
                                 <a href={% url 'admin' %}><div class="button">Admin</div></a>
 
@@ -120,7 +120,7 @@
 							<button class="tab_button" type="Add">Insert</button>
 						</a>								
 						<button class="tab_button" type="Delete">Delete Checked</button>
-						<a href={% 'new_project' %}>
+						<a href={% url 'new_project' %}>
 							<button class="tab_button" type="Save">Save</button>
 						</a>
 					</div>
