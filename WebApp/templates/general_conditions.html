@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+	<head> 
+		<title>New Budget - General Conditions</title>
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	</head>
+	<div class="wrapper">
+		<body>
+			
+			<div class="nav">
+				<a href={% url 'index' %}><div class="button"> Budgets </div></a>
+                                <a href={% url 'proposals' %}><div class="button"> Proposals</div></a>
+                                <a href={% url 'projects' %}><div class="button">Project</div></a>
+                                <a href={% url 'reports' %}><div class="button">Reports</div></a>
+                                <a href={% url 'admin' %}><div class="button">Admin</div></a>
+			</div>
+			
+			<div class="content">
+				
+					<table>
+						<thead>
+							<tr>
+								<th/>
+								<th><div class="text">Budget</div></th>
+								<th><div class="text">Description</div></th>
+								<th><div class="text">Total Cost</div></th>
+								
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><input type="checkbox" value="1"/></td>
+								<td> <input type="text" value="Budget_1"></input></td> 
+								<td><select name="">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td>  
+								<td><input type="text" value="Cost_1"></input></td> 
+							</tr>
+							<tr> 
+								<td><input type="checkbox" value="2"/></td>
+								<td><input type="text" value="Budget_2"></input></td> 
+								<td><select name="">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td>  
+								<td><input type="text" value="Cost_2"></input></td> 
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="3"/></td>
+								<td><input type="text" value="Budget_3"></input></td> 
+								<td><select name="">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td>  
+								<td><input type="text" value="Cost_3"></input></td> 
+							</tr>
+						</tbody>
+					</table>
+				
+					<div class="tableButtons">
+						
+						<button class="tab_button" type="Add">Insert</button>
+						<button class="tab_button" type="Delete">Delete Checked</button>
+						<button class="tab_button" type="Save">Save</button>
+					</div>
+				
+			
+			</div>
+			
+		
+		</body>
+		
+		<footer>
+			<a href={% url 'new_project' %}><button class="tab_button" type="GeneralConditions">General Conditions</button></a>
+                        <a href={% url 'footings_table' %}><button class="tab_button" type="Footings">Footings</button></a>
+                        <a href={% url 'slab_grade' %}><button class="tab_button" type="SlabOnGrade">Slab on Grade</button></a>
+                        <a href={% url 'waste' %}><button class="tab_button" type="WasteCasting">Waste Slabs/Casting Beds</button></a>
+                        <a href={% url 'tilt_up' %}><button class="tab_button" type="Tilt-Up">Tilt-Up Panels</button></a>
+                        <a href={% url 'new_project' %}><button class="selected_button" type="CastInPlace">Cast in Place</button></a>
+                        <a href={% url 'slab_deck' %}><button class="tab_button" type="SlabOnDeck">Slab on Deck</button></a>
+		</footer>
+	</div>
+</html>
