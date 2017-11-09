@@ -1,7 +1,10 @@
-from django.conf.urls import url
+from django.conf.urls import url,include
 from WebApp import views
+from django.contrib import admin
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
+    url(r'^login\$', auth_views.login, name='user_login'),
     url(r'^$',views.index,name = 'index'),
     url(r'^new_project\$',views.new_project,name = 'new_project'),
     url(r'^cast\$',views.cast,name = 'cast'),

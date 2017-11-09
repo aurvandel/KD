@@ -1,8 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core.urlresolvers import reverse
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib.auth import authenticate, login, logout
 
 def index(request):
 	return render(request,"index.html")
+
+def user_login(request):
+        return render(request,"login.html")
 
 def new_project(request):
         return render(request, "new_project.html")
