@@ -1,10 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+#TODO redo foreign key structure
+
 class UserProfileInfo(models.Model):
 
     # Create relationship (doesnt inherit from User
-    user =models.OneToOneField(User)
+    user = models.OneToOneField(User)
 
     def __str__(self):
         return self.user.username
@@ -28,7 +30,7 @@ class openBudgets(models.Model):
     TAX_EXEMPT_CHOICES = (
 
         (TAX_EXEMPT, '*'),
-    (NOT_TAX_EXEMPT, '')
+        (NOT_TAX_EXEMPT, '')
 
     )
 
@@ -45,7 +47,7 @@ class openBudgets(models.Model):
 
         max_length = 3,
         choices = BUDGET_STATUS_CHOICES,
-    default = IN_PROGRESS
+        default = IN_PROGRESS
 
     )
 
@@ -55,7 +57,7 @@ class openBudgets(models.Model):
         max_length = 1,
         unique = False,
         choices = TAX_EXEMPT_CHOICES,
-    default = NOT_TAX_EXEMPT
+        default = NOT_TAX_EXEMPT
 
     )
 
@@ -79,7 +81,7 @@ class pendingBudgets(models.Model):
     TAX_EXEMPT_CHOICES = (
 
         (TAX_EXEMPT, '*'),
-    (NOT_TAX_EXEMPT, '')
+        (NOT_TAX_EXEMPT, '')
 
     )
 
@@ -96,7 +98,7 @@ class pendingBudgets(models.Model):
 
         max_length = 3,
         choices = BUDGET_STATUS_CHOICES,
-    default = IN_PROGRESS
+        default = IN_PROGRESS
 
     )
 
@@ -106,7 +108,7 @@ class pendingBudgets(models.Model):
         max_length = 1,
         unique = False,
         choices = TAX_EXEMPT_CHOICES,
-    default = NOT_TAX_EXEMPT
+        default = NOT_TAX_EXEMPT
 
     )
 
@@ -129,7 +131,7 @@ class awardedBudgets(models.Model):
     TAX_EXEMPT_CHOICES = (
 
         (TAX_EXEMPT, '*'),
-    (NOT_TAX_EXEMPT, '')
+        (NOT_TAX_EXEMPT, '')
 
     )
 
@@ -146,7 +148,7 @@ class awardedBudgets(models.Model):
 
         max_length = 3,
         choices = BUDGET_STATUS_CHOICES,
-    default = IN_PROGRESS
+        default = IN_PROGRESS
 
     )
 
@@ -156,7 +158,7 @@ class awardedBudgets(models.Model):
         max_length = 1,
         unique = False,
         choices = TAX_EXEMPT_CHOICES,
-    default = NOT_TAX_EXEMPT
+        default = NOT_TAX_EXEMPT
 
     )
 
@@ -179,7 +181,7 @@ class closedBudgets(models.Model):
     TAX_EXEMPT_CHOICES = (
 
         (TAX_EXEMPT, '*'),
-    (NOT_TAX_EXEMPT, '')
+        (NOT_TAX_EXEMPT, '')
 
     )
 
@@ -196,7 +198,7 @@ class closedBudgets(models.Model):
 
         max_length = 3,
         choices = BUDGET_STATUS_CHOICES,
-    default = IN_PROGRESS
+        default = IN_PROGRESS
 
     )
 
@@ -206,7 +208,7 @@ class closedBudgets(models.Model):
         max_length = 1,
         unique = False,
         choices = TAX_EXEMPT_CHOICES,
-    default = NOT_TAX_EXEMPT
+        default = NOT_TAX_EXEMPT
 
     )
 
@@ -224,7 +226,7 @@ class castInPlace(models.Model):
 
 class footings(models.Model):
     footing_id = models.PositiveIntegerField(primary_key = True, unique = True)
-    fooding_description = models.CharField(max_length = 255, unique = False)
+    footing_description = models.CharField(max_length = 255, unique = False)
     footing_type = models.CharField(max_length = 255, unique = False)
     footing_width = models.PositiveSmallIntegerField() #width in inches
     footing_depth = models.PositiveSmallIntegerField() #width in inches
@@ -259,7 +261,7 @@ class slabOnGrade(models.Model):
     sog_subcontractor_third = models.CharField(max_length = 100, unique = False)#probably needs to be populated from another table and be a selection list
 
 class tiltUp(models.Model):
-    titl_up_panel_id = models.AutoField(primary_key = True, unique = True)
+    tilt_up_panel_id = models.AutoField(primary_key = True, unique = True)
     tilt_up_panel_description = models.CharField(max_length = 255, unique = False)
     tilt_up_panel_thickness = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in inches
     tilt_up_panel_width = models.DecimalField(max_digits = 15, decimal_places = 4) #measred in feet
