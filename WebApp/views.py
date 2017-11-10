@@ -9,10 +9,10 @@ def index(request):
 	return render(request,"index.html")
 
 def user_login(request):
-        return render(request,"login.html")
+	return render(request,"login.html")
 
 def new_project(request):
-        return render(request, "new_project.html")
+	return render(request, "new_project.html")
 
 def cast(request):
 	return render(request, "cast.html")
