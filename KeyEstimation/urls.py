@@ -22,8 +22,7 @@ from WebApp import views
 urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^templates/',include('WebApp.urls')), 
-#    url(r'^general_conditions/', include('general_conditions.urls')),
-    
+    url(r'^admin/', include(admin.site.urls)),
 
 ]
 
