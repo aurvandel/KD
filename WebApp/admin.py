@@ -4,9 +4,6 @@ from WebApp.models import *
 
 admin.site.register(UserProfileInfo)
 admin.site.register(openBudgets)
-admin.site.register(openBudgets.pendingBudgets)
-admin.site.register(openBudgets.pendingBudgets.awardedBudgets)
-admin.site.register(openBudgets.pendingBudgets.awardedBudgets.closedBudgets)
 admin.site.register(openBudgets.pendingBudgets.awardedBudgets.closedBudgets.castInPlace)
 admin.site.register(openBudgets.pendingBudgets.awardedBudgets.closedBudgets.castInPlace.footings)
 admin.site.register(openBudgets.pendingBudgets.awardedBudgets.closedBudgets.castInPlace.footings.slabOnGrade)
