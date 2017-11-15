@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-#TODO redo foreign key structure
+#TODO have to rename models a special way prior to migration to delete unused duplicate tables.  Try this from stack overflow https://goo.gl/fZDJ7V
 
 class UserProfileInfo(models.Model):
 
