@@ -1,0 +1,139 @@
+/*
+
+********************************************
+Colors:
+Vertical Nav Text Color -> #595959
+Vertical Nav Hover -> #11469b
+
+********************************************
+Fonts:
+Vertical Nav Bar-> Rubic
+
+
+********************************************
+*/
+
+.first-slide{
+	width: 100%;
+}
+
+.second-slide{
+	width: 100%;
+}
+
+.third-slide{
+	width: 100%;
+}
+
+.container{
+	margin-top: 2%;
+}
+
+.right-border{
+	padding-right: 5px;
+	border-right: solid;
+	border-width: 1px;
+}
+
+.VerticalNav{
+
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+}
+
+.VerticalNav a{
+	color: #595959;
+}
+
+.VerticalNav a:hover{
+	color: #11469b;
+}
+
+footer{
+	bottom: 0;
+	left: 0;
+}
+
+.float-right{
+	left: o;
+}
+
+.HomePageGraphs{
+	position: relative;
+	float: right;
+}
+
+.GraphAndHeader{
+	height: 500px;
+	width: 83%;
+}
+.GeneralReportButtons{
+	margin-top: 2%;
+	margin-left: 5%;
+	width: 25%;
+	
+	padding-right: 5%;
+}
+.GeneralReportButtons a{
+	margin-bottom: 20px;
+}
+.GeneralReportButtons2{
+	margin-top: 2%;
+	width: 25%;
+	padding-left: 5%;
+}
+
+.GeneralReportButtons2 a{
+	margin-bottom: 20px;
+}
+
+.BudgetTable{
+	width: 83%;
+	padding: 0;
+}
+
+.BudgetTableButtons{
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+.BudgetTableButtons button{
+	width: 15%;
+}
+
+.BudgetTableYearSelect{
+	width: 20%;
+	display: inline-block;
+	float: right;
+	margin-right: 5%;
+	padding-bottom: 1%;
+
+}
+
+.GraphAndHeader h2{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.NewBudgetModalNav{
+	width: 250px;
+}
+
+.NewBudgetButton{
+	color: white;
+}
+
+.btn-group{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ServicesCards{
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+.full-length-nav{
+	height: 100vh;
+}
+
