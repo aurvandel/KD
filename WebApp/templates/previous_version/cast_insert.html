@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+	<head>
+		<title>New Budget - Cast in Place Update</title>
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	</head>
+	<div class="wrapper">
+		<body>
+			
+		<div class="nav">
+                                <a href={% url 'index' %}><div class="button"> Budgets </div></a>
+                                <a href={% url 'proposals' %}><div class="button"> Proposals</div></a>
+                                <a href={% url 'project' %}><div class="button">Project</div></a>
+                                <a href={% url 'reports' %}><div class="button">Reports</div></a>
+                                <a href={% url 'admin' %}><div class="button">Admin</div></a>
+
+			</div>
+			
+			<div class="content">
+				
+				<div style="margin: auto; max-width: 80%;">
+					<div class="text">
+						<input style="font-size:30px; text-align: center; margin: auto; display:inline;" placeholder="Description"></input>
+					</div>
+					<div class="text" style="margin-left: 2%;font-weight: bold;">
+						Type:
+						<select name="Type">
+							<option value="Populate">Database Population 1</option>
+							<option value="Populate">Database Population 2</option>
+							<option value="Populate">Database Population 3</option>
+							<option value="Populate">Database Population 4</option>
+						</select>
+					</div>
+				</div>
+							
+				<table class="top_table">
+					<thead>
+						<tr><th><div class="text">Quantity:</div></th>
+							<th><div class="text">Thickness (in.)</div></th>
+							<th><div class="text">Length (ft.)</div></th>
+							<th><div class="text">Height (ft.)</div></th>
+							<th><div class="text">Contact SF</div></th>
+							<th><div class="text">Wall SF</div></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+							<td> <input type="text"></input> </td>
+						</tr>
+					</tbody>
+				</table>
+				
+					<h2 class="TableName"> Concrete </h2>
+				
+					<table>
+						<thead>
+							<tr>
+								<th/>
+								<th/>
+								<th/>
+								<th><div class="text">Budget</div></th>
+								<th><div class="text">Quantity</div></th>
+								<th><div class="text">Units</div></th>
+								<th><div class="text">Unit Cost</div></th>
+								<th><div class="text">Tax Subtotal</div></th>
+								<th><div class="text">Subtotal</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><input type="checkbox" value="ConcreteMix"/></td>
+								<td>Concrete Mix</td>
+								<td><select name="ConcreteMix">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td>CY</td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr> 
+								<td><input type="checkbox" value="Additive1"/></td>
+								<td>Additive #1</td>
+								<td><select name="Additive1">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr> 
+								<td><input type="checkbox" value="Additive2"/></td>
+								<td>Additive #2</td>
+								<td><select name="Additive2">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+					<h2 class="TableName"> Lumber </h2>
+				
+					<table>
+						<thead>
+							<tr>
+								<th/>
+								<th/>
+								<th/>
+								<th><div class="text">Budget</div></th>
+								<th><div class="text">Quantity</div></th>
+								<th><div class="text">Units</div></th>
+								<th><div class="text">Unit Cost</div></th>
+								<th><div class="text">Tax Subtotal</div></th>
+								<th><div class="text">Subtotal</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><input type="checkbox" value="FormLumber"/></td>
+								<td>Form Lumber</td>
+								<td><select name="FormLumber">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td>EA</td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>						 	
+							<tr> 
+								<td><input type="checkbox" value="FormPlywood"/></td>
+								<td>Form Plywood</td>
+								<td><select name="FormPlywood">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td>EA</td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr> 
+								<td><input type="checkbox" value="OtherLumber"/></td>
+								<td>Other Lumber</td>
+								<td><select name="OtherLumber">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td>EA</td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<h2 class="TableName"> Materials </h2>
+				
+					<table>
+						<thead>
+							<tr>
+								<th/>
+								<th/>
+								<th/>
+								<th><div class="text">Budget</div></th>
+								<th><div class="text">Quantity</div></th>
+								<th><div class="text">Units</div></th>
+								<th><div class="text">Unit Cost</div></th>
+								<th><div class="text">Tax Subtotal</div></th>
+								<th><div class="text">Subtotal</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><input type="checkbox" value="FormOil"/></td>
+								<td>Form Oil</td>
+								<td><select name="FormOil">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td>SF</td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							<tr> 
+								<td><input type="checkbox" value="WallChambers"/></td>
+								<td>Wall Chambers</td>
+								<td><select name="WallChambers">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+							
+							<tr> 
+								<td><input type="checkbox" value="MaterialMisc"/></td>
+								<td>Material Misc.</td>
+								<td></td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td>SF</td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+					<h2 class="TableName"> Subcontractor </h2>
+				
+					<table>
+						<thead>
+							<tr>
+								<th/>
+								<th/>
+								<th/>
+								<th><div class="text">Budget</div></th>
+								<th><div class="text">Quantity</div></th>
+								<th><div class="text">Units</div></th>
+								<th><div class="text">Unit Cost</div></th>
+								<th><div class="text">Tax Subtotal</div></th>
+								<th><div class="text">Subtotal</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><input type="checkbox" value="Subcontractor1"/></td>
+								<td>Subcontractor #1</td>
+								<td><select name="Subcontractor1">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="Subcontractor2"/></td>
+								<td>Subcontractor #2</td>
+								<td><select name="Subcontractor2">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="Subcontractor3"/></td>
+								<td>Subcontractor #3</td>
+								<td><select name="Subcontractor3">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						</tbody>
+					</table>					
+					
+					<h2 class="TableName"> Equipment Rental </h2>
+				
+					<table>
+						<thead>
+							<tr>
+								<th/>
+								<th/>
+								<th/>
+								<th><div class="text">Budget</div></th>
+								<th><div class="text">Quantity</div></th>
+								<th><div class="text">Units</div></th>
+								<th><div class="text">Unit Cost</div></th>
+								<th><div class="text">Tax Subtotal</div></th>
+								<th><div class="text">Subtotal</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><input type="checkbox" value="BraceRental"/></td>
+								<td>Brace Rental</td>
+								<td><select name="BraceRental">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						 	<tr> 
+								<td><input type="checkbox" value="FormRental"/></td>
+								<td>Form Rental</td>
+								<td><select name="FormRental">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Data</td>
+								<td><input type="text"></input></td>
+								<td></td>
+								<td><input type="text"></input></td>
+								<td>Data</td>
+								<td>Data</td>
+							</tr>
+						</tbody>
+					</table>					
+						 	
+					<div class="tableButtons">
+						<button class="tab_button" type="Delete">Delete Checked</button>
+						<a href={% url 'cast' %}>
+							<button class="tab_button" type="Cancel">Cancel</button>
+						</a>
+						<button class="tab_button" type="Save">Save</button>
+					</div>		
+			</div>
+			
+		
+		</body>
+		
+		<footer>
+			<a href={% url 'new_project' %}><button class="tab_button" type="GeneralConditions">General Conditions</button></a>
+                        <a href={% url 'footings_table' %}><button class="tab_button" type="Footings">Footings</button></a>
+                        <a href={% url 'slab_grade' %}><button class="tab_button" type="SlabOnGrade">Slab on Grade</button></a>
+                        <a href={% url 'waste' %}><button class="tab_button" type="WasteCasting">Waste Slabs/Casting Beds</button></a>
+                        <a href={% url 'tilt_up' %}><button class="tab_button" type="Tilt-Up">Tilt-Up Panels</button></a>
+                        <a href={% url 'new_project' %}><button class="selected_button" type="CastInPlace">Cast in Place</button></a>
+                        <a href={% url 'slab_deck' %}><button class="tab_button" type="SlabOnDeck">Slab on Deck</button></a>
+
+		</footer>
+	</div>
+</html>

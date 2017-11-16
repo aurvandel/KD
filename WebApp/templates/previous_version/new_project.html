@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>New Budget</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	</head>
+	<div class="wrapper">
+		<body>
+			
+			<div class="nav">
+				<a href={% url 'index' %}><div class="button"> Budgets </div></a>
+                                <a href={% url 'proposals' %}><div class="button"> Proposals</div></a>
+                                <a href={% url 'projects' %}><div class="button">Project</div></a>
+                                <a href={% url 'reports' %}><div class="button">Reports</div></a>
+                                <a href={% url 'admin' %}><div class="button">Admin</div></a>
+
+			</div>
+			
+			<div class="content">
+				
+				<div class="margin-bottom">
+					<H1></H1>
+				</div>
+					<div class="Row_1">
+						<input class="Title" type="text" placeholder="Project Name"></input> 
+						<button class="button" type="comment">Coments</button>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th><div class="text"></div></th>
+								<th><div class="text">C.O.G. & Labor</div></th>
+								<th><div class="text">O/H%</div></th>
+								<th><div class="text">Overhead</div></th>
+								<th><div class="text">Profit%</div></th>
+								<th><div class="text">Profit</div></th>
+								<th><div class="text">Total</div></th>
+								<th><div class="text">$/CY</div></th>
+								<th><div class="text">$/SF</div></th>
+							</tr>
+						</thead>
+						<tbody>
+						 	<tr> 
+								<td><a href={% url 'general_conditions' %}>General Conditions</a></td> 
+								<td><select name="0/H%">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Overhead Value</td>  
+								<td><select name="Profit">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Profit Calculation</td> 
+								<td><input type="text" value="TOTAL"></input></td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+							</tr>
+						 	<tr> 
+								<td><a href={% url 'footings_table' %}>Footings</a></td> 
+								<td><select name="0/H%">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Overhead Value</td>  
+								<td><select name="Profit">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Profit Calculation</td> 
+								<td><input type="text" value="TOTAL"></input></td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+							</tr>
+						 	<tr> 
+								<td><a href={% url 'slab_grade' %}>Slab on Grade</a></td>
+								<td><select name="0/H%">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Overhead Value</td>  
+								<td><select name="Profit">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Profit Calculation</td> 
+								<td><input type="text" value="TOTAL"></input></td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+							</tr>
+						 	<tr> 
+								<td><a href={% url 'waste' %}>Waste Slabs/Casting Beds</a></td> 
+								<td><select name="0/H%">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Overhead Value</td>  
+								<td><select name="Profit">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Profit Calculation</td> 
+								<td><input type="text" value="TOTAL"></input></td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+							</tr>
+						 	<tr> 
+								<td><a href={% url 'tilt_up' %}>Tilt-Up Panels</a></td>
+								<td><select name="0/H%">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Overhead Value</td>  
+								<td><select name="Profit">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Profit Calculation</td> 
+								<td><input type="text" value="TOTAL"></input></td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+							</tr>
+						 	<tr> 
+								<td><a href={% url 'cast' %}>Cast in Place</a></td>
+								<td><select name="0/H%">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Overhead Value</td>  
+								<td><select name="Profit">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Profit Calculation</td> 
+								<td><input type="text" value="TOTAL"></input></td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+							</tr>
+						 	<tr>
+								<td><a href={% url 'slab_deck' %}>Slab on Deck</a></td>
+								<td><select name="0/H%">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Overhead Value</td>  
+								<td><select name="Profit">
+									<option value="Populate">Database Population 1</option>
+									<option value="Populate">Database Population 2</option>
+									<option value="Populate">Database Population 3</option>
+									<option value="Populate">Database Population 4</option>
+								</td> 
+								<td>Profit Calculation</td> 
+								<td><input type="text" value="TOTAL"></input></td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+								<td>Database Population</td>
+							</tr>
+							<tr class="last_row"> 
+								<td></td>
+								<td>Final Adjustments</td> 
+								<td>Overhead: </td> 
+								<td><input type="text" value="FinalOverhead"</input></td>  
+								<td>Profit</td> 
+								<td><input type="text" value="FinalProfit"></input></td>
+								<td></td>
+								<td></td>								
+								<td></td>
+							</tr>					
+						</tbody>
+					</table>
+				
+					<div class="tableButtons">
+						<button class="tab_button" type="Save">Save</button>
+					</div>
+				
+			
+			</div>
+			
+		
+		</body>
+		
+		<footer>
+			<a href={% url 'general_conditions' %}><button class="tab_button" type="GeneralConditions">General Conditions</button></a>
+                        <a href={% url 'footings_table' %}><button class="tab_button" type="Footings">Footings</button></a>
+                        <a href={% url 'slab_grade' %}><button class="tab_button" type="SlabOnGrade">Slab on Grade</button></a>
+                        <a href={% url 'waste' %}><button class="tab_button" type="WasteCasting">Waste Slabs/Casting Beds</button></a>
+                        <a href={% url 'tilt_up' %}><button class="tab_button" type="Tilt-Up">Tilt-Up Panels</button></a>
+                        <a href={% url 'new_project' %}><button class="selected_button" type="CastInPlace">Cast in Place</button></a>
+                        <a href={% url 'slab_deck' %}><button class="tab_button" type="SlabOnDeck">Slab on Deck</button></a>
+
+		</footer>
+	</div>
+</html>
