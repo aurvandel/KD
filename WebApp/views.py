@@ -5,59 +5,33 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 
+
 def index(request):
 	return render(request,"index.html")
 
 def user_login(request):
 	return render(request,"login.html")
 
-def new_project(request):
-	return render(request, "new_project.html")
+def analytics(request):
+	return render(request, "analytics.html")
 
-def cast(request):
-	return render(request, "cast.html")
+def budgets(request):
+	return render(request, "budgets.html")
 
-def cast_insert(request):
-	return render(request, "cast_insert.html")
+def main_screen(request):
+	return render(request, "main_screen.html")
 
-def footings_insert(request):
-	return render(request, "footings_insert.html")
+def new_budget(request):
+	return render(request, "new_budget.html")
 
-def footings_table(request):
-	return render(request, "footings_table.html")
+def new_budget_footings(request):
+	return render(request, "new_budget_footings.html")
 
-def general_conditions(request):
-	return render(request, "general_conditions.html")
-
-def slab_deck(request):
-	return render(request, "slab_deck.html")
-
-def slab_deck_insert(request):
-	return render(request, "slab_deck_insert.html")
-
-def slab_grade(request):
-	return render(request, "slab_grade.html")
-
-def slab_grade_insert(request):
-	return render(request, "slab_grade_insert.html")
-
-def waste(request):
-	return render(request, "waste.html")
-
-def waste_insert(request):
-	return render(request, "waste_insert.html")
-
-def proposals(request):
-	return render(request, "proposals.html")
-
-def projects(request):
-	return render(request, "projects.html")
+def new_budget_general_conditions(request):
+	return render(request, "new_budget_general_conditions.html")
 
 def reports(request):
 	return render(request, "reports.html")
 
-def admin(request):
-	return render(request, "admin.html")
-
-def tilt_up(request):
-	return render(request, "tilt_up.html")
+def services(request):
+	return render(request, "services.html")
