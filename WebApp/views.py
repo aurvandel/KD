@@ -10,7 +10,7 @@ from django.contrib.auth import authenticate, login, logout
 class MainScreenView(generic.ListView):
     model = openBudgets
     context_object_name = 'recentBudgets'
-    queryset = openBudgets.objects.filter(created__day=timezone.now())
+    #queryset = openBudgets.objects.filter(created__day=timezone.now())
     template_name = 'main_screen.html'
 
 def index(request):
