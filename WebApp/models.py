@@ -66,12 +66,12 @@ class openBudgets(models.Model):
     def __str__(self):
         return self.project_name
 
-'''    def save(self, *args, **kwargs):
-        # On save, update timestamps
-        if not self.budget_id:
-            self.created = timezone.now()
-        self.modified = timezone.now()
-        return super(openBudgets, self).save(*args, **kwargs)'''
+    # def save(self, *args, **kwargs):
+    #     # On save, update timestamps
+    #     if not self.budget_id:
+    #         self.created = timezone.now()
+    #     self.modified = timezone.now()
+    #     return super(openBudgets, self).save(*args, **kwargs)
 
     class castInPlace(models.Model):
         panel_id = models.PositiveIntegerField(primary_key = True, unique = True)

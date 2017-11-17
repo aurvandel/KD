@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 <!--TODO fix link to media files-->
 {% block budgetNav %}{% endblock %}
 
 {% block content %}
       <div class="ServicesCards">
         <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="maps.jpeg" alt="Card image cap">
+          <img class="card-img-top" src="{% static "media/maps.jpeg" %}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Google Maps</h4>
             <p class="card-text">Get directions, find out the distance from your office to the job, see a street view of the job all from Google Maps</p>
@@ -15,7 +16,7 @@
       </div>
       <div class="ServicesCards">
         <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="earth.jpeg" alt="Card image cap">
+          <img class="card-img-top" src="{% static "media/earth.jpeg" %}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Google Earth</h4>
             <p class="card-text">View your project from Google Earth. Use all of Google Earth's tools to get all the information about the job site you will need.</p>
@@ -25,7 +26,7 @@
       </div>
       <div class="ServicesCards">
         <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="maps.jpeg" alt="Card image cap">
+          <img class="card-img-top" src="{% static "media/maps.jpeg" %}" alt="Card image cap">
           <div class="card-body">
             <h4 class="card-title">Google Maps</h4>
             <p class="card-text">Get directions, find out the distance from your office to the job, see a street view of the job all from Google Maps</p>
