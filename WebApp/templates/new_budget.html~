@@ -8,13 +8,12 @@
 <div class="BudgetTable">
     <div class="btn-group" role="group">
         <a href={% url "new_budget_general_conditions" %}><button type="button" class="btn btn-primary">General Conditions</button></a>
-
         <button type="button" class="btn btn-primary">Footings</button>
-	<a href={% url "new_budget_sog" %}><button type = "button" class = "btn btn-primary">Slab On Grade</button></a>
+        <button type="button" class="btn btn-primary">Slab On Grade</button>
         <button type="button" class="btn btn-primary">Waste Slab/Casting Bed</button>
         <button type="button" class="btn btn-primary">Tilt-Up Panels</button>
         <button type="button" class="btn btn-primary">Cast In Place</button>
-        <a hred={% url "new_budget_sod" %}<button type="button" class="btn btn-primary">Slab On Deck</button></a>
+        <button type="button" class="btn btn-primary">Slab On Deck</button>
     </div>
     <div class="table table-responsive">
         <table class="table table-striped">
