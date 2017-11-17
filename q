@@ -1,0 +1,72 @@
+[33mcommit b54db8f23782ec28dc294b26a57d17aaa6aa60ae[m
+Author: user <blah@gmail.com>
+Date:   Tue Oct 24 17:22:57 2017 -0600
+
+    linked HTML. Not working
+
+[33mcommit 71def65ebcb8d729809ce193cc7b6f0497c2a9da[m
+Author: user <blah@gmail.com>
+Date:   Tue Oct 24 10:58:40 2017 -0600
+
+    added settings.py to git repo
+
+[33mcommit f76f17d5f6895575b6851b93488ad58268b51e5e[m
+Author: user <blah@gmail.com>
+Date:   Tue Oct 24 10:57:55 2017 -0600
+
+    django tagged HTML. Updated urls and views. Still buggy not working
+
+[33mcommit 18cffa9b5506ee61a24b871587b15e16993dd427[m
+Author: Dylan Martinez <dylanmartinez@Dylans-MacBook-Air.local>
+Date:   Fri Oct 13 13:17:59 2017 -0600
+
+    now using the include function and creating a urls file in our application folder
+
+[33mcommit 9d126287f5c25f0878a18d72080c390283c43ba3[m
+Author: Dylan Martinez <dylanmartinez@Dylans-MacBook-Air.local>
+Date:   Fri Oct 13 12:38:45 2017 -0600
+
+    now using html code
+
+[33mcommit 350600060f8609137e0cc650caf412a8e23e1605[m
+Author: Dylan Martinez <dylanmartinez@Dylans-MacBook-Air.local>
+Date:   Fri Oct 13 12:02:32 2017 -0600
+
+    creating a simple view
+
+[33mcommit 790c7c9aa233d6536701ddd0eb937e8dcad7df23[m
+Author: Dylan Martinez <dylanmartinez@Dylans-MacBook-Air.local>
+Date:   Fri Oct 13 11:54:30 2017 -0600
+
+    making a simple view
+
+[33mcommit b2da273df1e84d8d1641bfd1b4cd2f7aab72c639[m
+Author: Dylan Martinez <dylanmartinez@Dylans-MacBook-Air.local>
+Date:   Fri Oct 13 11:47:01 2017 -0600
+
+    learning how to use github
+
+[33mcommit 3f65db853208a255923dede551faaf3330270f2d[m
+Author: Dylan Martinez <dylanmartinez@Dylans-MacBook-Air.local>
+Date:   Thu Sep 28 11:42:32 2017 -0600
+
+    Testing
+
+[33mcommit 5e6fdf9f2d9f28d5e632839077bbd7e618353a8b[m
+Merge: c62506c 584ab0c
+Author: user <blah@gmail.com>
+Date:   Thu Sep 28 11:36:24 2017 -0600
+
+    Merge branch 'master' of https://github.com/Key-Estimation/back-end
+
+[33mcommit c62506cfdf80149a99268aa502f387094520af1b[m
+Author: user <blah@gmail.com>
+Date:   Thu Sep 28 11:31:08 2017 -0600
+
+    Init Commit
+
+[33mcommit 584ab0c500b3c748e772a90bb3db5ebeb55b5cad[m
+Author: aurvandel <parkergw@gmail.com>
+Date:   Fri Sep 8 08:59:31 2017 -0600
+
+    Initial commit
