@@ -54,5 +54,5 @@ def new_budget_waste_casting(request):
 def services_g_maps(request):
 	return render(request, "services_g_maps.html")
 
-def services_satallite_view(request):
-	return render(request, "services_satallite_view.html")
+def services_satellite_view(request):
+	return render(request, "services_satellite_view.html")

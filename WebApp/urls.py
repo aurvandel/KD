@@ -20,5 +20,5 @@ urlpatterns = [
     url(r'^new_budget_sog\$', views.new_budget_sog, name='new_budget_sog'),
     url(r'^new_budget_waste-casting\$', views.new_budget_waste_casting, name='new_budget_waste-casting'),
     url(r'^services_g_maps\$', views.services_g_maps, name='services_g_maps'),
-    url(r'^services_satallite_view\$', views.services_satallite_view, name='services_satallite_view'),
+    url(r'^services_satellite_view\$', views.services_satellite_view, name='services_satellite_view'),
 ]
