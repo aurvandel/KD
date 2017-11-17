@@ -1,16 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
-    <div class="BudgetTable">
-        <div class="btn-group" role="group">
-            <a href={% url 'new_budget_general_conditions' %}><button type="button" class="btn btn-primary">General Conditions</button></a>
-            <a href={% url 'new_budget_footings' %}><button type="button" class="btn btn-primary active">Footings</button></a>
-            <a href={% url 'new_budget_sog' %}><button type="button" class="btn btn-primary">Slab On Grade</button></a>
-            <button type="button" class="btn btn-primary">Waste Slab/Casting Bed</button>
-            <button type="button" class="btn btn-primary">Tilt-Up Panels</button>
-            <button type="button" class="btn btn-primary">Cast In Place</button>
-            <a href={% url 'new_budget_sod' %}><button type="button" class="btn btn-primary">Slab On Deck</button></a>
-        </div>
+<!--<main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">-->
+
 
         <div class="table table-reponsive table-bordered table-hover"> <!--Come back and see if I can keep table window limited to certain number rows... either use pagination or a scrollable window-->
             <table class="table table-striped table-reponsive">
