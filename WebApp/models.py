@@ -68,9 +68,9 @@ class openBudgets(models.Model):
 
     # def save(self, *args, **kwargs):
     #     # On save, update timestamps
-    #     if not self.budget_id:
+    #     if not self.id:
     #         self.created = timezone.now()
-    #     self.modified = timezone.now()
+    #     self.revised_date = timezone.now()
     #     return super(openBudgets, self).save(*args, **kwargs)
 
     class castInPlace(models.Model):
