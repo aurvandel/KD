@@ -1,11 +1,15 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import *
+from django.views import generic
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 
 
+class MainScreenView(generic.ListView):
+	model = openBudgets
+	context_object_name = 'recentBudgets'
 def index(request):
 	return render(request,"index.html")
 

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 
 class UserProfileInfo(models.Model):
@@ -34,12 +35,14 @@ class openBudgets(models.Model):
     )
 
 
-    budget_id = models.PositiveIntegerField(primary_key = True, unique = True)
+    budget_id = models.PositiveIntegerField(unique = True)
+    # Created and modified fields will be auto populated
+    created = models.DateField(auto_now_add=True, editable=False)
     project_name = models.CharField(max_length = 255, unique = True)
     city = models.CharField(max_length = 35, unique = False)
     state = models.CharField(max_length = 35, unique = False)
-    internal_due_date = models.DateField() #need to add javascript calendar
-    external_due_date = models.DateField() #need to add javascript calendar
+    internal_due_date = models.DateField()
+    external_due_date = models.DateField()
     estimator = models.CharField(max_length = 50, unique = False)
     budget_amount = models.DecimalField(max_digits = 15, decimal_places = 8)
     budget_complete = models.CharField(
@@ -50,7 +53,7 @@ class openBudgets(models.Model):
 
     )
 
-    revised_date = models.DateField()
+    revised_date = models.DateField(auto_now=True, editable=False)
     tax_exempt_status = models.CharField(
 
         max_length = 1,
@@ -63,6 +66,12 @@ class openBudgets(models.Model):
     def __str__(self):
         return self.project_name
 
+'''    def save(self, *args, **kwargs):
+        # On save, update timestamps
+        if not self.budget_id:
+            self.created = timezone.now()
+        self.modified = timezone.now()
+        return super(openBudgets, self).save(*args, **kwargs)'''
 
     class castInPlace(models.Model):
         panel_id = models.PositiveIntegerField(primary_key = True, unique = True)
