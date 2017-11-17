@@ -35,3 +35,24 @@ def reports(request):
 
 def services(request):
 	return render(request, "services.html")
+
+def new_budget_cip(request):
+	return render(request, "new_budget_cip.html")
+
+def new_budget_insert_footing(request):
+	return render(request, "new_budget_insert_footing.html")
+
+def new_budget_sod(request):
+	return render(request, "new_budget_sod.html")
+
+def new_budget_sog(request):
+	return render(request, "new_budget_sog.html")
+
+def new_budget_waste_casting(request):
+	return render(request, "new_budget_waste-casting.html")
+
+def services_g_maps(request):
+	return render(request, "services_g_maps.html")
+
+def services_satallite_view(request):
+	return render(request, "services_satallite_view.html")

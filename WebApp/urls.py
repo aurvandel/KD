@@ -14,4 +14,11 @@ urlpatterns = [
     url(r'^new_budget_general_conditions\$', views.new_budget_general_conditions, name='new_budget_general_conditions'),
     url(r'^reports\$', views.reports, name='reports'),
     url(r'^services\$', views.services, name='services'),
+    url(r'^new_budget_cip\$', views.new_budget_cip, name='new_budget_cip'),
+    url(r'^new_budget_insert_footing\$', views.new_budget_insert_footing, name='new_budget_insert_footings'),
+    url(r'^new_budget_sod\$', views.new_budget_sod, name='new_budget_sod'),
+    url(r'^new_budget_sog\$', views.new_budget_sog, name='new_budget_sog'),
+    url(r'^new_budget_waste-casting\$', views.new_budget_waste_casting, name='new_budget_waste-casting'),
+    url(r'^services_g_maps\$', views.services_g_maps, name='services_g_maps'),
+    url(r'^services_satallite_view\$', views.services_satallite_view, name='services_satallite_view'),
 ]
