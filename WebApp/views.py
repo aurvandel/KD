@@ -19,6 +19,9 @@ class BudgetsView(generic.ListView):
     queryset = openBudgets.objects.all().order_by('-budget_id')
     template_name = 'budgets.html'
 
+class EditBudgetView(generic.DetailView):   # allows budgets to by hyperlinked
+    model = openBudgets
+
 def index(request):
     return render(request,"index.html")
 

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 from django.utils import timezone
 
 
@@ -64,6 +65,12 @@ class openBudgets(models.Model):
 
     )
 
+    def get_absolute_url(self):
+         """
+         Returns the url to access a particular instance of a budget.
+         """
+         return reverse('budget-detail', args=[str(self.id)])
+
     def __str__(self):
         return self.project_name
 
@@ -73,6 +80,10 @@ class openBudgets(models.Model):
     #         self.created = timezone.now()
     #     self.revised_date = timezone.now()
     #     return super(openBudgets, self).save(*args, **kwargs)
+
+    class Meta:
+        # orders data
+        ordering = ['-budget_id']
 
     class castInPlace(models.Model):
         panel_id = models.PositiveIntegerField(primary_key = True, unique = True)

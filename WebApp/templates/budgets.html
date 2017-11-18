@@ -41,7 +41,7 @@
                     {% for budget in allBudgets %}
                         <tr>
                             <td>{{ budget.budget_id }}</td>
-                            <td>{{ budget.project_name }}</td>
+                            <td><a href="{{ budget.get_absolute_url }}">{{ budget.project_name }}</a></td>
                             <td>{{ budget.budget_complete }}</td>
                             <td>{{ budget.general_contractor }}</td>
                             <td>{{ budget.internal_due_date }}</td>
