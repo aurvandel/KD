@@ -54,6 +54,7 @@ class openBudgets(models.Model):
     )
 
     revised_date = models.DateField(auto_now=True, editable=False)
+    general_contractor = models.CharField(max_length = 50, unique = False)
     tax_exempt_status = models.CharField(
 
         max_length = 1,

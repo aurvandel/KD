@@ -7,11 +7,17 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 
 
-class MainScreenView(generic.ListView):
+class MainScreenView(generic.ListView):     # main_screen is now a class
+    model = openBudgets                     # data to populate in main_screen is from openBudgets table
+    context_object_name = 'recentBudgets'   # list of fields used to tag html
+    queryset = openBudgets.objects.all().order_by('-created')[:10]      # only show the 10 most recently created budgets
+    template_name = 'main_screen.html'      # template to load
+
+class BudgetsView(generic.ListView):
     model = openBudgets
-    context_object_name = 'recentBudgets'
-    #queryset = openBudgets.objects.filter(created__day=timezone.now())
-    template_name = 'main_screen.html'
+    context_object_name = 'allBudgets'
+    queryset = openBudgets.objects.all().order_by('-budget_id')
+    template_name = 'budgets.html'
 
 def index(request):
     return render(request,"index.html")
@@ -21,12 +27,6 @@ def user_login(request):
 
 def analytics(request):
     return render(request, "analytics.html")
-
-def budgets(request):
-    return render(request, "budgets.html")
-
-#def main_screen(request):
-#    return render(request, "main_screen.html")
 
 def new_budget(request):
     return render(request, "new_budget.html")
