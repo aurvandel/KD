@@ -33,6 +33,12 @@ class FootingsView(generic.ListView):
     context_object_name = 'lstFootings'
     queryset = model.objects.all().order_by('id')
     template_name = 'new_budget_footings.html'
+
+class SlabOnGradeView(generic.ListView):
+    model = openBudgets.slabOnGrade
+    context_object_name = 'lstSlabOnGrade'
+    queryset= model.objects.all().order_by('id')
+    template_name = 'new_budget_sog.html'
     
 def index(request):
     return render(request,"index.html")
@@ -64,8 +70,8 @@ def new_budget_insert_footing(request):
 def new_budget_sod(request):
     return render(request, "new_budget_sod.html")
 
-def new_budget_sog(request):
-    return render(request, "new_budget_sog.html")
+#def new_budget_sog(request):
+#    return render(request, "new_budget_sog.html")
 
 def new_budget_waste_casting(request):
     return render(request, "new_budget_waste-casting.html")
