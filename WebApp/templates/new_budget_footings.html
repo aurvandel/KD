@@ -16,86 +16,27 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
-        <tr>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-            <td>ipsum</td>
-            <td>1,001</td>
-            <td>Lorem</td>
-        </tr>
+            {% if lstFootings %}
+                {% for footing in lstFootings %}
+                <tr>
+                    <td>
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox">
+                          </span>
+                        </div>
+                    </td>
+                    <td>footing.footing_type</td>
+                    <td>footing.footing_description</td>
+                    <td>footing.footing_length</td>
+                    <td>footing.footing_count</td>
+                    <td>footing.footing_concrete_mix</td>
+                    <td>data not available</td>
+                    <td>data not available</td>
+                    <td>data not available</td>
+                </tr>
+                {% endfor %}
+            {% endif %}
         </tbody>
     </table>
   </div>
