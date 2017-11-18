@@ -27,177 +27,36 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                
+
+                {% if lstCastInPlace %}
+                    {% for item in lstCastInPlace %}
+                        <tr>
+                            <td>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <input type="checkbox">
+                                    </span>
+                                </div>
+                            </td>
+                            <td>{{ item.panel_description }}</td>
+                            <td>{{ item.panel_thickness }}</td>
+                            <td>{{ item.panel_height }}</td>
+                            <td>{{ item.panel_length }}</td>
+                            <td>{{ item.wall_area }}</td>
+                            <td>Is SF square footage calc?</td>
+                            <td>mixDesign.concrete_mix_description</td>
+                            <td>Total concrete yardage calc?</td>
+                            <td>pull from mixDesign.concrete_mix_psi</td>
+                            <td>calculation of which fields?</td>
+                            <td>Where does this come from?</td>
+                            <td>Calculation from what fields?</td>
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+
               </tbody>
             </table>
-          </div>
+            </div>
     <a href={% url 'new_budget_insert_footing' %}><button type="button" class="btn btn-primary">Insert</button></a>
     <button type="button" class="btn btn-primary">Copy</button>
 

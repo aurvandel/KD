@@ -97,6 +97,13 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         wall_area = models.DecimalField(max_digits = 10, decimal_places = 3)
         wall_type = models.CharField(max_length = 255, unique = False) #maybe add a list here to restrict user input
 
+        def __str__(self):
+            return self.panel_description
+
+        class Meta:
+            ordering = ['id']
+
+
         class footings(models.Model):
             # id = models.AutoField(primary_key=True)       id field is handled by django
             footing_description = models.CharField(max_length = 255, unique = False)
@@ -158,9 +165,11 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
                     tilt_up_sack_patch = models.CharField(max_length = 100, unique = False)
                     tilt_up_brace_rental = models.CharField(max_length = 100, unique = False)
 
-                    class mixDesign(models.Model):
-                        # id = models.AutoField(primary_key=True)       id field is handled by django
-                        concrete_mix_description = models.CharField(max_length = 255, unique = False)
-                        concrete_mix_psi = models.PositiveSmallIntegerField()
-                        concrete_mix_price = models.DecimalField(max_digits = 15, decimal_places = 4)
+class mixDesign(models.Model):
+    # id = models.AutoField(primary_key=True)       id field is handled by django
+    concrete_mix_description = models.CharField(max_length = 255, unique = False)
+    concrete_mix_psi = models.PositiveSmallIntegerField()
+    concrete_mix_price = models.DecimalField(max_digits = 15, decimal_places = 4)
 
+    def __str__(self):
+        return self.concrete_mix_description

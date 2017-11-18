@@ -10,7 +10,7 @@ from django.contrib.auth import authenticate, login, logout
 class MainScreenView(generic.ListView):     # main_screen is now a class
     model = openBudgets                     # data to populate in main_screen is from openBudgets table
     context_object_name = 'recentBudgets'   # list of fields used to tag html
-    queryset = openBudgets.objects.all().order_by('-created')[:10]      # only show the 10 most recently created budgets
+    queryset = model.objects.all().order_by('-created')[:10]      # only show the 10 most recently created budgets
     template_name = 'main_screen.html'      # template to load
 
 class BudgetsView(generic.ListView):
@@ -21,6 +21,12 @@ class BudgetsView(generic.ListView):
 
 class EditBudgetView(generic.DetailView):   # allows budgets to by hyperlinked
     model = openBudgets
+
+class CastInPlaceView(generic.ListView):
+    model = openBudgets.castInPlace
+    context_object_name = 'lstCastInPlace'
+    queryset = model.objects.all().order_by('id')
+    template_name = 'new_budget_cip.html'
 
 def index(request):
     return render(request,"index.html")
@@ -45,9 +51,6 @@ def reports(request):
 
 def services(request):
     return render(request, "services.html")
-
-def new_budget_cip(request):
-    return render(request, "new_budget_cip.html")
 
 def new_budget_insert_footing(request):
     return render(request, "new_budget_insert_footing.html")
