@@ -23,142 +23,27 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <input type="checkbox">
-                      </span>
-                    </div>
-                  </td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                </tr>
+                {% if recentSOG %}
+                  {% for SOG in recentSOG %}
+                    <tr>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox">
+                          </span>
+                        </div>
+                      </td>
+                      <td>SOG.slabDescription</td>
+                      <td>{{ SOG.sog_thickness }}</td>
+                      <td>SOG.SQFT</td>
+                      <td>SOG.concreteMix.concreteDescription</td>
+                      <td>SOG.CY</td>
+                      <td>SOG.PSI</td>
+                      <td>SOG.materials</td>
+                    </tr>
+                  {% endfor %}
+                {% endif %}  
+
                 
               </tbody>
             </table>
