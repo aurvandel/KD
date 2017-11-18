@@ -42,7 +42,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
     project_name = models.CharField(max_length = 255, unique = True)
     city = models.CharField(max_length = 35, unique = False)
     state = models.CharField(max_length = 35, unique = False)
-    internal_due_date = models.DateField()x`
+    internal_due_date = models.DateField()
     external_due_date = models.DateField()
     estimator = models.CharField(max_length = 50, unique = False)
     budget_amount = models.DecimalField(max_digits = 15, decimal_places = 8)
