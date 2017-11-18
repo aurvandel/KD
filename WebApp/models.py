@@ -37,12 +37,12 @@ class openBudgets(models.Model):
 
 
     budget_id = models.PositiveIntegerField(unique = True)
-    # Created and modified fields will be auto populated
+    # Created and revised_date fields will be auto populated
     created = models.DateField(auto_now_add=True, editable=False)
     project_name = models.CharField(max_length = 255, unique = True)
     city = models.CharField(max_length = 35, unique = False)
     state = models.CharField(max_length = 35, unique = False)
-    internal_due_date = models.DateField()
+    internal_due_date = models.DateField()x`
     external_due_date = models.DateField()
     estimator = models.CharField(max_length = 50, unique = False)
     budget_amount = models.DecimalField(max_digits = 15, decimal_places = 8)
@@ -82,7 +82,7 @@ class openBudgets(models.Model):
     #     return super(openBudgets, self).save(*args, **kwargs)
 
     class Meta:
-        # orders data
+        # orders data by budget_id in reverse order
         ordering = ['-budget_id']
 
     class castInPlace(models.Model):
