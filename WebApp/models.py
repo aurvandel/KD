@@ -106,7 +106,6 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
 
     class footings(models.Model):
         # id = models.AutoField(primary_key=True)       id field is handled by django
-        budget_id = models.ForeignKey('openBudgets', on_delete = models.CASCADE)
         footing_description = models.CharField(max_length = 255, unique = False)
         footing_type = models.CharField(max_length = 255, unique = False)
         footing_width = models.PositiveSmallIntegerField() #width in inches

@@ -28,6 +28,12 @@ class CastInPlaceView(generic.ListView):
     queryset = model.objects.all().order_by('id')
     template_name = 'new_budget_cip.html'
 
+class FootingsView(generic.ListView):
+    model = openBudgets.footings
+    context_object_name = 'lstFootings'
+    queryset = model.objects.all().order_by('id')
+    template_name = 'new_budget_footings.html'
+    
 def index(request):
     return render(request,"index.html")
 
@@ -40,8 +46,8 @@ def analytics(request):
 def new_budget(request):
     return render(request, "new_budget.html")
 
-def new_budget_footings(request):
-    return render(request, "new_budget_footings.html")
+#def new_budget_footings(request):
+#    return render(request, "new_budget_footings.html")
 
 def new_budget_general_conditions(request):
     return render(request, "new_budget_general_conditions.html")
