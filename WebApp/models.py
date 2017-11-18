@@ -140,30 +140,30 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         sog_subcontractor_second = models.CharField(max_length = 100, unique = False)#probably needs to be populated from another table and be a selection list
         sog_subcontractor_third = models.CharField(max_length = 100, unique = False)#probably needs to be populated from another table and be a selection list
 
-        class tiltUp(models.Model):
-            # id = models.AutoField(primary_key=True)       id field is handled by django
-            tilt_up_panel_description = models.CharField(max_length = 255, unique = False)
-            tilt_up_panel_thickness = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in inches
-            tilt_up_panel_width = models.DecimalField(max_digits = 15, decimal_places = 4) #measred in feet
-            tilt_up_panel_height = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in feet
-            tilt_up_panel_area = models.DecimalField(max_digits = 15, decimal_places = 4)
-            tilt_up_forms = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in linear feet
-            tilt_up_perimeter = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in linear feet
-            tilt_up_gross_sqft = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in sq/ft
-            tilt_up_openings_sqft = models.DecimalField(max_digits = 15, decimal_places = 4)
-            tilt_up_net_sqft = models.DecimalField(max_digits = 15, decimal_places = 4)
-            tilt_up_panel_weight = models.PositiveSmallIntegerField() #measured in tons
-            tilt_up_panel_concrete_mix = models.CharField(max_length = 150, unique = False)
-            tilt_up_panel_additive = models.CharField(max_length = 100, unique = False) #will eventually be a selection list populated by another table
-            tilt_up_panel_second_additive = models.CharField(max_length = 100, unique = False) #will eventually be a selection list populated by another table
-            tilt_up_panel_forms = models.CharField(max_length = 100, unique = False)
-            tilt_up_panel_engineering = models.CharField(max_length = 100, unique = False)
-            tilt_up_panel_crane = models.CharField(max_length = 100, unique = False)
-            tilt_up_panel_caulking = models.CharField(max_length = 100, unique = False)
-            tilt_up_panel_pumping = models.CharField(max_length = 100, unique = False)
-            tilt_up_panel_welding = models.CharField(max_length = 100, unique = False)
-            tilt_up_sack_patch = models.CharField(max_length = 100, unique = False)
-            tilt_up_brace_rental = models.CharField(max_length = 100, unique = False)
+    class tiltUp(models.Model):
+        # id = models.AutoField(primary_key=True)       id field is handled by django
+        tilt_up_panel_description = models.CharField(max_length = 255, unique = False)
+        tilt_up_panel_thickness = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in inches
+        tilt_up_panel_width = models.DecimalField(max_digits = 15, decimal_places = 4) #measred in feet
+        tilt_up_panel_height = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in feet
+        tilt_up_panel_area = models.DecimalField(max_digits = 15, decimal_places = 4)
+        tilt_up_forms = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in linear feet
+        tilt_up_perimeter = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in linear feet
+        tilt_up_gross_sqft = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in sq/ft
+        tilt_up_openings_sqft = models.DecimalField(max_digits = 15, decimal_places = 4)
+        tilt_up_net_sqft = models.DecimalField(max_digits = 15, decimal_places = 4)
+        tilt_up_panel_weight = models.PositiveSmallIntegerField() #measured in tons
+        tilt_up_panel_concrete_mix = models.CharField(max_length = 150, unique = False)
+        tilt_up_panel_additive = models.CharField(max_length = 100, unique = False) #will eventually be a selection list populated by another table
+        tilt_up_panel_second_additive = models.CharField(max_length = 100, unique = False) #will eventually be a selection list populated by another table
+        tilt_up_panel_forms = models.CharField(max_length = 100, unique = False)
+        tilt_up_panel_engineering = models.CharField(max_length = 100, unique = False)
+        tilt_up_panel_crane = models.CharField(max_length = 100, unique = False)
+        tilt_up_panel_caulking = models.CharField(max_length = 100, unique = False)
+        tilt_up_panel_pumping = models.CharField(max_length = 100, unique = False)
+        tilt_up_panel_welding = models.CharField(max_length = 100, unique = False)
+        tilt_up_sack_patch = models.CharField(max_length = 100, unique = False)
+        tilt_up_brace_rental = models.CharField(max_length = 100, unique = False)
 
 class mixDesign(models.Model):
     # id = models.AutoField(primary_key=True)       id field is handled by django
