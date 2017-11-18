@@ -6,19 +6,19 @@ from django.utils import timezone
 
 class UserProfileInfo(models.Model):
 
-    # Create relationship (doesnt inherit from User
+    # Create relationship (doesnt inherit from User)
     user = models.OneToOneField(User)
 
     def __str__(self):
         return self.user.username
 
-class openBudgets(models.Model):
+class openBudgets(models.Model): #come back in and set appropriate fields to blank=false to force user to input information
     TAX_EXEMPT = '*'
     NOT_TAX_EXEMPT = ''
-    IN_PROGRESS = 'IP'
-    READY_TO_REVIEW = 'RTR'
-    REVIEWED = 'RV'
-    COMPLETE = 'CMP'
+    IN_PROGRESS = 'In Progress'
+    READY_TO_REVIEW = 'Ready For Review'
+    REVIEWED = 'Reviewed'
+    COMPLETE = 'Complete'
     BUDGET_STATUS_CHOICES = (
 
         (IN_PROGRESS, 'In Progress'),
@@ -48,7 +48,7 @@ class openBudgets(models.Model):
     budget_amount = models.DecimalField(max_digits = 15, decimal_places = 8)
     budget_complete = models.CharField(
 
-        max_length = 3,
+        max_length = 20,
         choices = BUDGET_STATUS_CHOICES,
         default = IN_PROGRESS
 
@@ -69,7 +69,7 @@ class openBudgets(models.Model):
          """
          Returns the url to access a particular instance of a budget.
          """
-         return reverse('budget-detail', args=[str(self.id)])
+         return reverse('budget-detail', args=[str(self.id)]) #budget-detail comes form URlS.py
 
     def __str__(self):
         return self.project_name
