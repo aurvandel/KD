@@ -118,7 +118,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         footing_misc_materials = models.CharField(max_length = 255, unique = False) #will eventually be selection list populated by another table
 
     class slabOnGrade(models.Model):
-        # id = models.AutoField(primary_key=True)       id field is handled by django
+        id = models.AutoField(primary_key=True)      # id field is handled by django
         sog_grading_material_thickness = models.PositiveSmallIntegerField() #thickness in inches
         sog_thickness = models.PositiveSmallIntegerField() #thickness measured in inches
         sog_width = models.PositiveSmallIntegerField() #measured in feet
