@@ -165,13 +165,13 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         tilt_up_sack_patch = models.CharField(max_length = 100, unique = False)
         tilt_up_brace_rental = models.CharField(max_length = 100, unique = False)
 
-    class slabOnDeck(models.Model):
+    '''class slabOnDeck(models.Model):
         slab_on_deck_type = models.CharField(max_length = 255, unique = False)
         slab_on_deck_description = models.CharField(max_length = 255, unique = False)
         slab_on_deck_thickness = models.DecimalField(max_digits = 25, decimal_places = 4)
         slab_on_deck_area = models.DecimalField(max_digits = 25, decimal_places = 4)
         slab_on_deck_forms = models.DecimalField(max_digits = 25, decimal_places = 4)
-        slab_on_deck_concrete_mix = models.CharField(max_length = 255, unique = False) #need to create additive table or shopping table
+        slab_on_deck_concrete_mix = models.CharField(max_length = 255, unique = False) #need to create additive table or shopping table'''
 
 class mixDesign(models.Model):
     #mix_id = models.AutoField(primary_key=True, default="1")       #id field is handled by django
