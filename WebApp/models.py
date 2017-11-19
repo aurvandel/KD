@@ -86,7 +86,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         ordering = ['-budget_id']
 
     class castInPlace(models.Model):
-        panel_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
+        #panel_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
         panel_description = models.CharField(max_length = 255, unique = False)
         budget_id = models.ForeignKey('openBudgets', on_delete = models.CASCADE)
         panel_quantity = models.PositiveSmallIntegerField()
@@ -105,7 +105,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
 
 
     class footings(models.Model):
-        footing_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
+        #footing_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
         footing_description = models.CharField(max_length = 255, unique = False)
         footing_type = models.CharField(max_length = 255, unique = False)
         footing_width = models.PositiveSmallIntegerField() #width in inches
@@ -118,7 +118,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         footing_misc_materials = models.CharField(max_length = 255, unique = False) #will eventually be selection list populated by another table
 
     class slabOnGrade(models.Model):
-        sog_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
+        #sog_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
         sog_grading_material_thickness = models.PositiveSmallIntegerField() #thickness in inches
         sog_thickness = models.PositiveSmallIntegerField() #thickness measured in inches
         sog_width = models.PositiveSmallIntegerField() #measured in feet
@@ -141,7 +141,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         sog_subcontractor_third = models.CharField(max_length = 100, unique = False)#probably needs to be populated from another table and be a selection list
 
     class tiltUp(models.Model):
-        tilt_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
+        #tilt_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
         tilt_up_panel_description = models.CharField(max_length = 255, unique = False)
         tilt_up_panel_thickness = models.DecimalField(max_digits = 15, decimal_places = 4) #measured in inches
         tilt_up_panel_width = models.DecimalField(max_digits = 15, decimal_places = 4) #measred in feet
@@ -166,7 +166,6 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         tilt_up_brace_rental = models.CharField(max_length = 100, unique = False)
 
     class slabOnDeck(models.Model):
-        sod_id = models.AutoField(primary_key=True, default = "1")
         slab_on_deck_type = models.CharField(max_length = 255, unique = False)
         slab_on_deck_description = models.CharField(max_length = 255, unique = False)
         slab_on_deck_thickness = models.DecimalField(max_digits = 25, decimal_places = 4)
@@ -175,7 +174,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         slab_on_deck_concrete_mix = models.CharField(max_length = 255, unique = False) #need to create additive table or shopping table
 
 class mixDesign(models.Model):
-    mix_id = models.AutoField(primary_key=True, default="1")       #id field is handled by django
+    #mix_id = models.AutoField(primary_key=True, default="1")       #id field is handled by django
     concrete_mix_description = models.CharField(max_length = 255, unique = False)
     concrete_mix_psi = models.PositiveSmallIntegerField()
     concrete_mix_price = models.DecimalField(max_digits = 15, decimal_places = 4) 
