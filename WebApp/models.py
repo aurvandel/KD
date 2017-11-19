@@ -119,6 +119,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
 
     class slabOnGrade(models.Model):
         #sog_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
+        sog_slab_description = models.CharField(max_length = 255, unique = False)
         sog_grading_material_thickness = models.PositiveSmallIntegerField() #thickness in inches
         sog_thickness = models.PositiveSmallIntegerField() #thickness measured in inches
         sog_width = models.PositiveSmallIntegerField() #measured in feet
@@ -139,6 +140,12 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         sog_subcontractor_first = models.CharField(max_length = 100, unique = False) #probably needs to be populated from another table and be a selection list
         sog_subcontractor_second = models.CharField(max_length = 100, unique = False)#probably needs to be populated from another table and be a selection list
         sog_subcontractor_third = models.CharField(max_length = 100, unique = False)#probably needs to be populated from another table and be a selection list
+
+        def __str__(self):
+            return self.sog_slab_description
+
+        class Meta:
+            ordering = ['id']
 
     class tiltUp(models.Model):
         #tilt_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
