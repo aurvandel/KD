@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+            <div class="table table-reponsive table-hover"> <!--Come back and see if I can keep table window limited to certain number rows... either use pagination or a scrollable window-->
+            <table class="table table-striped table-reponsive">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <input type="checkbox">
+                      </span>
+                    </div>
+                  </th>
+                  </th>
+
+                  <th>Panel Number</th>
+                  <th>Slab Description</th>
+                  <th>Height</th>
+                  <th>Width</th>
+                  <th>Thickness</th>
+                  <th>Net SF</th>
+                  <th>Gross SF</th>
+                  <th>CY (Panel)</th>
+                  <th>CY (BF)</th>
+                  <th>Weight (Tons)</th>
+                  <th>Materials</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% if lstTiltUp %}
+                  {% for tilt in lstTiltUp %}
+                    <tr>
+                      <td>
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox">
+                          </span>
+                        </div>
+                      </td>
+                      <td>{{ tilt.id }}</td>
+                      <td>{{ tilt.tilt_up_panel_description }}</td>
+                      <td>{{ tilt.tilt_up_panel_height }}</td>
+                      <td>{{ tilt.tilt_up_panel_width }}</td>
+                      <td>{{ tilt.tilt_up_panel_thickness }}</td>
+                      <td>{{ tilt.tilt_up_panel_net_sqft }}</td>
+                      <td>{{ tilt.tilt_up_panel_gross_sqft }}</td>
+                      <td>tilt.CY_panel</td>
+                      <td>tilt.CY_backfill</td>
+                      <td>{{ tilt.tilt_up_panel_weight }}</td>
+                      <td>tilt.materials</td>
+                      
+                    </tr>
+                  {% endfor %}
+                {% endif %}  
+
+                
+              </tbody>
+            </table>
+          </div>
+{% endblock %}

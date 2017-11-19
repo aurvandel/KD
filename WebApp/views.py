@@ -45,6 +45,12 @@ class SlabOnDeckView(generic.ListView):
     context_object_name = 'lstSlabOnDeck'
     queryset = model.objects.all().order_by('id')
     template_name = 'new_budget_sod.html'
+
+class TiltUpPanelView(generic.ListView):
+    model = openBudgets.tiltUp
+    context_object_name = 'lstSlabOnDeck'
+    queryset = model.objects.all().order_by('id')
+    template_name = 'new_budget_tiltup.html'
     
 def index(request):
     return render(request,"index.html")
