@@ -29,173 +29,33 @@
 </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
-  <tr>
-    <td>
-      <div class="input-group">
-        <span class="input-group-addon">
-          <input type="checkbox">
-        </span>
-      </div>
-    </td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-    <td>ipsum</td>
-    <td>1,001</td>
-    <td>Lorem</td>
-  </tr>
+
+  {% if recentSOD %}
+    {% for SOD in recentSOD %}
+
+      <tr>
+        <td>
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="checkbox">
+            </span>
+          </div>
+        </td>
+        <td>{{ SOD.slab_on_deck_description }}</td>
+        <td>{{ SOD.slab_on_deck_type }}</td>
+        <td>Height</td>
+        <td>Width</td>
+        <td>{{ SOD.slab_on_deck_thickness }}</td>
+        <td>SF</td>
+        <td>{{ SOD.slab_on_deck_concrete_mix }}</td>
+        <td>CY</td>
+        <td>PSI</td>
+        <td>Cost</td>
+        <td>Materials</td>
+        <td>PDI</td>
+      </tr>
+    {% endfor %}
+  {% endif %}
   
 </tbody>
 </table>
