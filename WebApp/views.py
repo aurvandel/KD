@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from .models import *
+from .models import openBudgets
 from django.views import generic
+from .forms import *
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
@@ -64,9 +65,6 @@ def analytics(request):
 def new_budget(request):
     return render(request, "new_budget.html")
 
-#def new_budget_footings(request):
-#    return render(request, "new_budget_footings.html")
-
 def new_budget_general_conditions(request):
     return render(request, "new_budget_general_conditions.html")
 
@@ -77,13 +75,16 @@ def services(request):
     return render(request, "services.html")
 
 def new_budget_insert_footing(request):
-    return render(request, "new_budget_insert_footing.html")
-
-#def new_budget_sod(request):
-#    return render(request, "new_budget_sod.html")
-
-#def new_budget_sog(request):
-#    return render(request, "new_budget_sog.html")
+    form = NewFootingForm()
+    if request.method == 'POST':
+        form = NewFootingForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return FootingsView
+            #return new_budget_insert_footing(request)
+        else:
+            print("ERROR FORM INVALID")
+    return render(request, "new_budget_insert_footing.html", {'form':form})
 
 def new_budget_waste_casting(request):
     return render(request, "new_budget_waste-casting.html")

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'WebApp',
     # 'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [
