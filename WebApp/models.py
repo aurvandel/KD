@@ -88,7 +88,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
     class castInPlace(models.Model):
         #panel_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
         panel_description = models.CharField(max_length = 255, unique = False)
-        budget_id = models.ForeignKey('openBudgets', on_delete = models.CASCADE)
+        #budget_id = models.ForeignKey('openBudgets', on_delete = models.CASCADE)
         panel_quantity = models.PositiveSmallIntegerField()
         panel_thickness = models.DecimalField(max_digits = 10, decimal_places = 3)
         panel_length = models.DecimalField(max_digits = 10, decimal_places = 3)
