@@ -101,7 +101,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
             return self.panel_description
 
         class Meta:
-            ordering = ['panel_id']
+            ordering = ['id']
 
 
     class footings(models.Model):
