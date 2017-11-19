@@ -86,7 +86,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         ordering = ['-budget_id']
 
     class castInPlace(models.Model):
-        id = models.AutoField(primary_key=True)       #id field is handled by django
+        panel_id = models.AutoField(primary_key=True)       #id field is handled by django
         panel_description = models.CharField(max_length = 255, unique = False)
         budget_id = models.ForeignKey('openBudgets', on_delete = models.CASCADE)
         panel_quantity = models.PositiveSmallIntegerField()
