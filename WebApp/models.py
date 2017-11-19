@@ -175,7 +175,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         slab_on_deck_concrete_mix = models.CharField(max_length = 255, unique = False) #need to create additive table or shopping table
 
 class mixDesign(models.Model):
-    mix_id = models.AutoField(primary_key=True)       #id field is handled by django
+    mix_id = models.AutoField(primary_key=True, default=1)       #id field is handled by django
     concrete_mix_description = models.CharField(max_length = 255, unique = False)
     concrete_mix_psi = models.PositiveSmallIntegerField()
     concrete_mix_price = models.DecimalField(max_digits = 15, decimal_places = 4) 
