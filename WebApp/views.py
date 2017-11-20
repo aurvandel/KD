@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import openBudgets
 from django.views import generic
 from .forms import *
@@ -80,7 +80,7 @@ def new_budget_insert_footing(request):
         form = NewFootingForm(request.POST)
         if form.is_valid():
             form.save(commit=True)
-            return HttpResponseRedirect('new_budget_footings')
+            return redirect('new_budget_footings')
             #return new_budget_insert_footing(request)
         else:
             print("ERROR FORM INVALID")
