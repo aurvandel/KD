@@ -8,6 +8,7 @@ class NewFootingForm(forms.ModelForm):
         model = openBudgets.footings
         fields = '__all__'
 
+    # overload django's widget styling for the footing input form
     def __init__(self, *args, **kwargs):
         super(NewFootingForm, self).__init__(*args, **kwargs)
         self.fields['footing_description'].widget.attrs={
