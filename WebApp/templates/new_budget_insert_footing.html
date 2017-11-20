@@ -12,7 +12,7 @@
                         <label for="footing_description">Footing Description</label>
                         <div class="">
 {#                            <input type="text" class="form-control" id="footing_description" aria-describedby="basic-addon3">#}
-                              {{ form.footing_description }}
+                            {{ form.footing_description }}
                         </div>
                     </div>
                     <div class="col-lg-6 input_test">
@@ -168,12 +168,15 @@
                             <tr>
                                 <th scope="row">Material Miscellaneous</th>
                                 <td>
+                                    <div class="form-group">
+{#                                       <input type="text" class="form-control" id="footing_width" aria-describedby="basic-addon3">#}
+                                        {{ form.footing_misc_materials }}
+                                    </div>
                                 </td>
                                 <td></td>
                                 <td></td>
                                 <td>CY</td>
-{#                                <td><input type="text" style="width: 100px;"></td>#}
-                                <td>{{ form.footing_misc_materials }}</td>
+                                <td><input type="text" style="width: 100px;"></td>
                                 <td></td>
                                 <td></td>
                             </tr>
