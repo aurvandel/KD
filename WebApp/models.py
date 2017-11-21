@@ -28,12 +28,12 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
 
     )
 
-    TAX_EXEMPT_CHOICES = (
-
-        (TAX_EXEMPT, '*'),
-        (NOT_TAX_EXEMPT, '')
-
-    )
+    # TAX_EXEMPT_CHOICES = (
+    #
+    #     (TAX_EXEMPT, '*'),
+    #     (NOT_TAX_EXEMPT, '')
+    #
+    # )
 
     # id = models.AutoField(primary_key=True)       id field is handled by django
     budget_id = models.PositiveIntegerField(unique = True)
@@ -54,17 +54,17 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         default = IN_PROGRESS
 
     )
-
+    tax_exempt_status = models.BooleanField()
     revised_date = models.DateField(auto_now=True, editable=False)
     general_contractor = models.CharField(max_length = 50, unique = False)
-    tax_exempt_status = models.CharField(
-
-        max_length = 1,
-        unique = False,
-        choices = TAX_EXEMPT_CHOICES,
-        default = NOT_TAX_EXEMPT
-
-    )
+    # tax_exempt_status = models.CharField(
+    #
+    #     max_length = 1,
+    #     unique = False,
+    #     choices = TAX_EXEMPT_CHOICES,
+    #     default = NOT_TAX_EXEMPT
+    #
+    # )
 
     def get_absolute_url(self):
          """
