@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'WebApp',
-    # 'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django_extensions'
+    #'django.contrib.staticfiles.finders.FileSystemFinder',
+    #'django_extensions',
+    #'widget_tweaks',
 ]
 
 MIDDLEWARE = [

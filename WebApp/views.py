@@ -81,7 +81,6 @@ def new_budget_insert_footing(request):
         if form.is_valid():
             form.save(commit=True)
             return redirect('new_budget_footings')
-            #return new_budget_insert_footing(request)
         else:
             print("ERROR FORM INVALID")
     return render(request, "new_budget_insert_footing.html", {'form':form})
