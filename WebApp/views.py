@@ -85,6 +85,9 @@ def new_budget_insert_footing(request):
             print("ERROR FORM INVALID")
     return render(request, "new_budget_insert_footing.html", {'form':form})
 
+def new_budget_information_page(request):
+    return render(request, "new_budget_information_page.html")
+
 def new_budget_waste_casting(request):
     return render(request, "new_budget_waste-casting.html")
 

@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^services\$', views.services, name='services'),
     url(r'^new_budget_cip\$', views.CastInPlaceView.as_view(), name='new_budget_cip'),
     url(r'^new_budget_insert_footing\$', views.new_budget_insert_footing, name='new_budget_insert_footing'),
+    url(r'^new_budget_information_page\$', views.new_budget_information_page, name='new_budget_information_page'),
     url(r'^new_budget_sod\$', views.SlabOnDeckView.as_view(), name='new_budget_sod'),
     url(r'^new_budget_sog\$', views.SlabOnGradeView.as_view(), name='new_budget_sog'),
     url(r'^new_budget_tiltup\$', views.TiltUpPanelView.as_view(), name='new_budget_tiltup'),
