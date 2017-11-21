@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.models import User
 from .models import *
 
-#TODO: checkbox for tax exempt
+
 #TODO: date picker
 
 class NewBudgetForm(forms.ModelForm):
@@ -15,7 +15,12 @@ class NewBudgetForm(forms.ModelForm):
             'budget_amount',
             'estimator'
         ]
-    # overload django's widget styling for the footing input form
+
+        widgets = {
+            'internal_due_date': forms.DateInput(attrs={'class': 'datepicker'}),
+            'external_due_date': forms.DateInput(attrs={'class': 'datepicker'}),
+        }
+    # overload django's widget styling
     def __init__(self, *args, **kwargs):
         super(NewBudgetForm, self).__init__(*args, **kwargs)
         self.fields['budget_id'].widget.attrs={
@@ -47,7 +52,7 @@ class NewBudgetForm(forms.ModelForm):
         self.fields['internal_due_date'].widget.attrs={
             'class': 'form-control',
             'id': 'InternalDueDate',
-            'placeholder': ''
+            'placeholder': '',
         }
         self.fields['external_due_date'].widget.attrs={
             'class': 'form-control',
