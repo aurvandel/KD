@@ -86,7 +86,15 @@ def new_budget_insert_footing(request):
     return render(request, "new_budget_insert_footing.html", {'form':form})
 
 def new_budget_information_page(request):
-    return render(request, "new_budget_information_page.html")
+    form = NewBudgetForm()
+    if request.method == 'POST':
+        form = NewBudgetForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return redirect('new_budget')
+        else:
+            print("ERROR FORM INVALID")
+    return render(request, "new_budget_information_page.html", {'form':form})
 
 def new_budget_waste_casting(request):
     return render(request, "new_budget_waste-casting.html")

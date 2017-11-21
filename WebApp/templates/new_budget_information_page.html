@@ -1,133 +1,52 @@
-<!Doctype html>
-{% load staticfiles %}
-<html lang="en" class="gr__getbootstrap_com">
+{% extends 'base.html' %}
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+{% block budgetNav %}{% endblock %}
 
-            <title>Key Estimating</title>
+{% block content %}
 
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
-        {% block headScripts %}
-            <!-- Use for extra scripts otherwise ignore -->
-        {% endblock %}
-    </head>
-
-        <header>
-            <nav class="navbar navbar-dark bg-dark justify-content-between">
-                <a class="navbar-brand" style="color: white;">Key Estimating</a>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </nav>
-        </header>
-    <body>
-        <!-- Sidebar navigation -->
-        <div class="row">
-            <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar full-length-nav">
-                <ul class="nav nav-pills flex-column">
-                    <div class="VerticalNav">
-                        <li class="nav-item">
-                            <a class="nav-link" href={% url 'main_screen' %}>Company Overview <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href={% url 'reports' %}>Reports</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href={% url 'analytics' %}>Analytics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href={% url 'budgets' %}>Budgets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proposals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Administrative Panel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href={% url 'services' %}>Services</a>
-                        </li>
-                    </div>
-                </ul>
-            </nav>
-    <body>
-
-        <div class="col-lg-8" style="background-color: #F4F4F4; margin-left: 7%; "> 
-            <form>
-              <div class="form-group">
-                <label for="BudgetId">Budget ID</label>
-                <input type="text" class="form-control" id="BudgetId" aria-describedby="BudgetID" placeholder="Enter Budget Number">
-                <small id="budgetHelp" class="form-text text-muted">Do not ever duplice existing budget number</small>
-              </div>
-              <div class="form-group">
-                <label for="ProjectName">Project Name</label>
-                <input type="text" class="form-control" id="ProjectName" placeholder="Project Name">
-              </div>
-              <div class="form-group">
-                <label for="ZipCode">Zip Code</label>
-                <input type="text" class="form-control" id="ZipCode" placeholder="ZipCode">
-              </div>
-              <div class="form-group">
-                <label for="City">City</label>
-                <input type="text" class="form-control" id="City" placeholder="City">
-              </div>
-              <div class="form-group">
-                <label for="State">State</label>
-                <input type="text" class="form-control" id="State" placeholder="State">
-              </div>
-              <div class="form-group">
-                <label for="City">City</label>
-                <input type="text" class="form-control" id="City" placeholder="City">
-              </div>
-              <div class="form-group">
-                <label for="InternalDueDate">Internal Due Date</label>
-                <input type="date" class="form-control" id="InternalDueDate" placeholder="">
-              </div>
-              <div class="form-group">
-                <label for="ExternalDueDate">City</label>
-                <input type="date" class="form-control" id="ExternalDueDate" placeholder="">
-              </div>
-              <div class="form-group">
-                <label for="GeneralContractor">General Contractor</label>
-                <input type="text" class="form-control" id="GeneralContractor" placeholder="General Contractor">
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
-                  Tax Exempt
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+<div class="col-lg-8" style="background-color: #F4F4F4; margin-left: 7%; ">
+    <form action="" method="post"> {% csrf_token %}
+        <div class="form-group">
+            <label for="BudgetId">Budget ID</label>
+            {{ form.budget_id }}
+            <small id="budgetHelp" class="form-text text-muted">Do not ever duplicate existing budget number</small>
         </div>
+        <div class="form-group">
+            <label for="ProjectName">Project Name</label>
+            {{ form.project_name }}
+        </div>
+        <div class="form-group">
+            <label for="ZipCode">Zip Code</label>
+            {{ form.zip_code }}
+        </div>
+        <div class="form-group">
+            <label for="City">City</label>
+            {{ form.city }}
+        </div>
+        <div class="form-group">
+            <label for="State">State</label>
+            {{ form.state }}
+        </div>
+        <div class="form-group">
+            <label for="InternalDueDate">Internal Due Date</label>
+            {{ form.internal_due_date }}
+        </div>
+        <div class="form-group">
+            <label for="ExternalDueDate">External Due Date</label>
+            {{ form.external_due_date }}
+        </div>
+        <div class="form-group">
+            <label for="GeneralContractor">General Contractor</label>
+            {{ form.general_contractor }}
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                {{ form.tax_exempt_status }} Tax Exempt
+                <!--<input type="checkbox" class="form-check-input">-->
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 
-            
-    </body>
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2017 Key Estimating, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script>window.jQuery || document.write('<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"><\/script>')</script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-</html>
+{% endblock %}

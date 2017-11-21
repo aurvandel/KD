@@ -2,6 +2,67 @@ from django import forms
 from django.contrib.auth.models import User
 from .models import *
 
+#TODO: checkbox for tax exempt
+#TODO: date picker
+
+class NewBudgetForm(forms.ModelForm):
+    class Meta:
+        model = openBudgets
+        exclude = [
+            'created',
+            'revised_date',
+            'budget_complete',
+            'budget_amount',
+            'estimator'
+        ]
+    # overload django's widget styling for the footing input form
+    def __init__(self, *args, **kwargs):
+        super(NewBudgetForm, self).__init__(*args, **kwargs)
+        self.fields['budget_id'].widget.attrs={
+            'id': 'BudgetId',
+            'class': 'form-control',
+            'aria-describedby': 'BudgetID',
+            'placeholder': 'Enter Budget Number'
+        }
+        self.fields['project_name'].widget.attrs={
+            'class': 'form-control',
+            'id': 'ProjectName',
+            'placeholder': 'Project Name'
+        }
+        self.fields['zip_code'].widget.attrs={
+            'class': 'form-control',
+            'id': 'ZipCode',
+            'placeholder': 'ZipCode'
+        }
+        self.fields['city'].widget.attrs={
+            'class': 'form-control',
+            'id': 'City',
+            'placeholder': 'City'
+        }
+        self.fields['state'].widget.attrs={
+            'class': 'form-control',
+            'id': 'State',
+            'placeholder': 'State'
+        }
+        self.fields['internal_due_date'].widget.attrs={
+            'class': 'form-control',
+            'id': 'InternalDueDate',
+            'placeholder': ''
+        }
+        self.fields['external_due_date'].widget.attrs={
+            'class': 'form-control',
+            'id': 'ExternalDueDate',
+            'placeholder': ''
+        }
+        self.fields['general_contractor'].widget.attrs={
+            'class': 'form-control',
+            'id': 'GeneralContractor',
+            'placeholder': 'General Contractor'
+        }
+        self.fields['tax_exempt_status'].widget.attrs={
+            'class': 'form-check-input',
+        }
+
 class NewFootingForm(forms.ModelForm):
     # Form fields go here if we use custom validators
     class Meta:
@@ -60,6 +121,11 @@ class NewFootingForm(forms.ModelForm):
             'id': 'footing_width',
             'aria-describedby': 'basic-addon3'
         }
+        self.fields['footing_subcontractor'].widget.attrs={
+            'class': 'form-control',
+            'aria-label': 'Text input with segmented button dropdown'
+        }
+
 
 # class UserForm(forms.ModelForm):
 #     password = forms.CharField(widget=forms.PasswordInput())

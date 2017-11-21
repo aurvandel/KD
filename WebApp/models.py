@@ -37,6 +37,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
 
     # id = models.AutoField(primary_key=True)       id field is handled by django
     budget_id = models.PositiveIntegerField(unique = True)
+    zip_code = models.PositiveIntegerField(unique = False)
     # Created and revised_date fields will be auto populated
     created = models.DateField(auto_now_add=True, editable=False)
     project_name = models.CharField(max_length = 255, unique = True)
@@ -44,8 +45,8 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
     state = models.CharField(max_length = 35, unique = False)
     internal_due_date = models.DateField()
     external_due_date = models.DateField()
-    estimator = models.CharField(max_length = 50, unique = False)
-    budget_amount = models.DecimalField(max_digits = 15, decimal_places = 8)
+    estimator = models.CharField(null = True, blank = True, max_length = 50, unique = False)
+    budget_amount = models.DecimalField(null = True, blank = True, max_digits = 15, decimal_places = 8)
     budget_complete = models.CharField(
 
         max_length = 20,
@@ -116,6 +117,7 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         footing_concrete_grout = models.CharField(max_length = 255, unique = False) #will eventually be a selection list populated from another table
         footing_lumber = models.CharField(max_length = 255, unique = False) #will eventually be a selection list populated by another table
         footing_misc_materials = models.CharField(max_length = 255, unique = False) #will eventually be selection list populated by another table
+        footing_subcontractor = models.CharField(max_length = 255, unique = False)
 
         def __str__(self):
             return self.footing_description
