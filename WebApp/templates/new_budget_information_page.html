@@ -68,68 +68,52 @@
     <body>
 
         <div class="col-lg-8"> 
-            <div class="col-lg-8 newBudgetInfoForm">
-                <div class="input-group input-group-lg">
-                    <label for="BudgetID">Budget ID</label>
-                    <input type="text" class="form-control" placeholder="BudgetID" aria-label="BudgetID">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="ProjectName">Project Name</label>
-                    <input type="text" class="form-control" placeholder="ProjectName" aria-label="ProjectName">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="ZipCode">Zip Code</label>
-                    <input type="text" class="form-control" placeholder="ZipCode" aria-label="ZipCode">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="City">City</label>
-                    <input type="text" class="form-control" placeholder="City" aria-label="City">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="State">State</label>
-                    <input type="text" class="form-control" placeholder="State" aria-label="State">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="InternalDueDate">Internal Due Date</label>
-                    <input type="date" class="form-control" placeholder="InternalDueDate" aria-label="InternalDueDate">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="ExternalDueDate">External Due Date</label>
-                    <input type="date" class="form-control" placeholder="ExternalDueDate" aria-label="ExternalDueDate">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="Estimator">Estimator</label>
-                    <input type="text" class="form-control" placeholder="Estimator" aria-label="Estimator">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="GeneralContractor">General Contractor</label>
-                    <input type="text" class="form-control" placeholder="GeneralContractor" aria-label="GeneralContractor">
-                </div>
-                <br>
-                <br>
-                <div class="input-group input-group-lg">
-                    <label for="TaxExempt">Tax Exempt</label>
-                    <input type="checkbox" class="form-control" placeholder="TaxExempt" aria-label="TaxExempt">
-                </div>
-                <br>
-                <br>
-            </div>
+            <form>
+              <div class="form-group">
+                <label for="BudgetId">Budget ID</label>
+                <input type="text" class="form-control" id="BudgetId" aria-describedby="BudgetID" placeholder="Enter Budget Number">
+                <small id="budgetHelp" class="form-text text-muted">Do not ever duplice existing budget number</small>
+              </div>
+              <div class="form-group">
+                <label for="ProjectName">Project Name</label>
+                <input type="text" class="form-control" id="ProjectName" placeholder="Project Name">
+              </div>
+              <div class="form-group">
+                <label for="ZipCode">Zip Code</label>
+                <input type="text" class="form-control" id="ZipCode" placeholder="ZipCode">
+              </div>
+              <div class="form-group">
+                <label for="City">City</label>
+                <input type="text" class="form-control" id="City" placeholder="City">
+              </div>
+              <div class="form-group">
+                <label for="State">State</label>
+                <input type="text" class="form-control" id="State" placeholder="State">
+              </div>
+              <div class="form-group">
+                <label for="City">City</label>
+                <input type="text" class="form-control" id="City" placeholder="City">
+              </div>
+              <div class="form-group">
+                <label for="InternalDueDate">Internal Due Date</label>
+                <input type="date" class="form-control" id="InternalDueDate" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="ExternalDueDate">City</label>
+                <input type="date" class="form-control" id="ExternalDueDate" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="GeneralContractor">General Contractor</label>
+                <input type="text" class="form-control" id="GeneralContractor" placeholder="General Contractor">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">
+                  Tax Exempt
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
 
             
