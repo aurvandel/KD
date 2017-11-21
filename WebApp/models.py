@@ -117,6 +117,12 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         footing_lumber = models.CharField(max_length = 255, unique = False) #will eventually be a selection list populated by another table
         footing_misc_materials = models.CharField(max_length = 255, unique = False) #will eventually be selection list populated by another table
 
+        def __str__(self):
+            return self.footing_description
+
+        class Meta:
+            ordering = ['id']
+
     class slabOnGrade(models.Model):
         #sog_id = models.AutoField(primary_key=True, default = "1")       #id field is handled by django
         sog_slab_description = models.CharField(max_length = 255, unique = False)
@@ -171,6 +177,10 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
         tilt_up_panel_welding = models.CharField(max_length = 100, unique = False)
         tilt_up_sack_patch = models.CharField(max_length = 100, unique = False)
         tilt_up_brace_rental = models.CharField(max_length = 100, unique = False)
+
+        def __str__(self):
+            return self.tilt_up_panel_description
+
 
     class slabOnDeck(models.Model):
         slab_on_deck_type = models.CharField(max_length = 255, unique = False)
