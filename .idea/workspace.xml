@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/budgets.html" afterPath="$PROJECT_DIR$/WebApp/templates/budgets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/models.py" afterPath="$PROJECT_DIR$/WebApp/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/main_screen.html" afterPath="$PROJECT_DIR$/WebApp/templates/main_screen.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/urls.py" afterPath="$PROJECT_DIR$/WebApp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/views.py" afterPath="$PROJECT_DIR$/WebApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="1717">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -43,21 +53,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="budgets.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/templates/budgets.html">
+      <file leaf-file-name="main_screen.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/templates/main_screen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+            <state relative-caret-position="595">
+              <caret line="56" column="24" lean-forward="true" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="budgets.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/templates/budgets.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,6 +100,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>pendingBudgets.awardedBudgets.closedBudgets.</find>
+      <find>budget-de</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebApp/templates/main_screen.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sod.html" />
@@ -106,11 +126,12 @@
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html" />
         <option value="$PROJECT_DIR$/WebApp/forms.py" />
         <option value="$PROJECT_DIR$/WebApp/admin.py" />
-        <option value="$PROJECT_DIR$/WebApp/models.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/WebApp/openbudgets_detail.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/budgets.html" />
-        <option value="$PROJECT_DIR$/WebApp/views.py" />
+        <option value="$PROJECT_DIR$/WebApp/models.py" />
+        <option value="$PROJECT_DIR$/WebApp/templates/main_screen.html" />
         <option value="$PROJECT_DIR$/WebApp/urls.py" />
+        <option value="$PROJECT_DIR$/WebApp/views.py" />
       </list>
     </option>
   </component>
@@ -342,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511378099195</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changed edit budget view from class to function">
+      <created>1511378750625</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1511378750625</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -409,7 +437,8 @@
     <MESSAGE value="hyperlink for cancel button on insert_footing" />
     <MESSAGE value="budgets can now be updated." />
     <MESSAGE value="changed budgets.html view to use a function instead of class" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed budgets.html view to use a function instead of class" />
+    <MESSAGE value="changed edit budget view from class to function" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed edit budget view from class to function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -690,22 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/main_screen.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -738,14 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -772,29 +777,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="50" column="67" lean-forward="false" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/budgets.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        <state relative-caret-position="405">
+          <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/main_screen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="56" column="24" lean-forward="true" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="1717">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

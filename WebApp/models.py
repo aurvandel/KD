@@ -66,11 +66,11 @@ class openBudgets(models.Model): #come back in and set appropriate fields to bla
     #
     # )
 
-    def get_absolute_url(self):
-         """
-         Returns the url to access a particular instance of a budget.
-         """
-         return reverse('budget-detail', args=[str(self.id)]) #budget-detail comes form URlS.py
+    # def get_absolute_url(self):
+    #      """
+    #      Returns the url to access a particular instance of a budget.
+    #      """
+    #      return reverse('budget-detail', args=[str(self.id)]) #budget-detail comes form URlS.py
 
     def __str__(self):
         return self.project_name

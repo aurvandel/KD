@@ -9,12 +9,6 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 
 
-class MainScreenView(generic.ListView):     # main_screen is now a class
-    model = openBudgets                     # data to populate in main_screen is from openBudgets table
-    context_object_name = 'recentBudgets'   # list of fields used to tag html
-    queryset = model.objects.all().order_by('-created')[:10]      # only show the 10 most recently created budgets
-    template_name = 'main_screen.html'      # template to load
-
 class CastInPlaceView(generic.ListView): # Cast in place turned into a class
     model = castInPlace     #data to populate in cip table
     context_object_name = 'lstCastInPlace' #list of fields used to tag html
@@ -66,6 +60,12 @@ def reports(request):
 def services(request):
     return render(request, "services.html")
 
+def main_screen(request):
+    budgets = openBudgets.objects.all().order_by('-created')[:10]   # only show the 10 most recently created budgets
+    data = {}
+    data['recentBudgets'] = budgets
+    return render(request, 'main_screen.html', data)
+
 def budget_list(request):
     budgets = openBudgets.objects.all()
     data = {}
@@ -89,8 +89,6 @@ def new_budget_insert_footing(request):
             form.clean()
             form.save(commit=True)
             return redirect('new_budget_footings')
-        else:
-            print("ERROR FORM INVALID")
     return render(request, "new_budget_insert_footing.html", {'form':form})
 
 def new_budget_information_page(request):
@@ -101,8 +99,6 @@ def new_budget_information_page(request):
             form.clean()
             form.save(commit=True)
             return redirect('new_budget')
-        else:
-            print("ERROR FORM INVALID")
     return render(request, "new_budget_information_page.html", {'form':form})
 
 def new_budget_waste_casting(request):
