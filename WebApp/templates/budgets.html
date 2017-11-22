@@ -35,8 +35,8 @@
                 </thead>
                 <tbody>
 
-                {% if allBudgets %}
-                    {% for budget in allBudgets %}
+                {% if object_list %}
+                    {% for budget in object_list %}
                         <tr>
                             <td>{{ budget.budget_id }}</td>
                             <td><a href="{{ budget.get_absolute_url }}">{{ budget.project_name }}</a></td>

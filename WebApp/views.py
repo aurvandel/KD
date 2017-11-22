@@ -15,12 +15,6 @@ class MainScreenView(generic.ListView):     # main_screen is now a class
     queryset = model.objects.all().order_by('-created')[:10]      # only show the 10 most recently created budgets
     template_name = 'main_screen.html'      # template to load
 
-class BudgetsView(generic.ListView):
-    model = openBudgets
-    context_object_name = 'allBudgets'
-    queryset = openBudgets.objects.all().order_by('-budget_id')
-    template_name = 'budgets.html'
-
 class EditBudgetView(generic.UpdateView):   # allows budgets to by hyperlinked
     model = openBudgets
     form_class = NewBudgetForm
@@ -79,6 +73,12 @@ def reports(request):
 
 def services(request):
     return render(request, "services.html")
+
+def budget_list(request):
+    budgets = openBudgets.objects.all()
+    data = {}
+    data['object_list'] = budgets
+    return render(request, 'budgets.html', data)
 
 def new_budget_insert_footing(request):
     form = NewFootingForm()
