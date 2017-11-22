@@ -1,16 +1,12 @@
 {% extends "base.html" %}
-
-{#TODO change inline CSS#}
-
 {% block budgetNav %}{% endblock %}
 {% block content %}
     <div class="BudgetTable">
         <div class="BudgetTableButtons">
-            <button type="button" class="btn btn-danger">Open Budgets</button>
-            <button type="button" class="btn btn-warning">Pending Budgets</button>
-            <button type="button" class="btn btn-success">Awarded Budgets</button>
-            <button type="button" class="btn btn-primary">
-                <a href={% url 'new_budget_information_page' %}  class="NewBudgetButton">New Budget</button></a>
+            <a href='#' class="btn btn-danger" role="button">Open Budgets</a>
+            <a href='#' class="btn btn-warning" role="button">Pending Budgets</a>
+            <a href='#' class="btn btn-success" role="button">Awarded Budgets</a>
+            <a href={% url 'new_budget_information_page' %} class="btn btn-primary" role="button">New Budget</a>
             <div class="BudgetTableYearSelect">
                 <div class="form-group">
                     <select class="form-control" id="exampleFormControlSelect1">

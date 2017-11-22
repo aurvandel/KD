@@ -101,6 +101,10 @@ footer{
 	width: 15%;
 }
 
+.BudgetTableButtons a{
+	width: 15%
+}
+
 .BudgetTableYearSelect{
 	width: 20%;
 	display: inline-block;
