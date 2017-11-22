@@ -34,6 +34,16 @@ def footing_update(request, pk):
         return redirect('footings_list')
     return render(request, 'new_budget_insert_footing.html', {'form':form})
 
+def new_budget_insert_footing(request):
+    form = NewFootingForm()
+    if request.method == 'POST':
+        form = NewFootingForm(request.POST)
+        if form.is_valid():
+            form.clean()
+            form.save(commit=True)
+            return redirect('new_budget_footings')
+    return render(request, "new_budget_insert_footing.html", {'form':form})
+
 class SlabOnGradeView(generic.ListView): #see previous example. Class replaced old view function.
     model = slabOnGrade
     context_object_name = 'lstSlabOnGrade'
@@ -93,16 +103,6 @@ def budget_update(request, pk):
         form.save(commit=True)
         return redirect('budgets')
     return render(request, 'new_budget_information_page.html', {'form':form})
-
-def new_budget_insert_footing(request):
-    form = NewFootingForm()
-    if request.method == 'POST':
-        form = NewFootingForm(request.POST)
-        if form.is_valid():
-            form.clean()
-            form.save(commit=True)
-            return redirect('new_budget_footings')
-    return render(request, "new_budget_insert_footing.html", {'form':form})
 
 def new_budget_information_page(request):
     form = NewBudgetForm()

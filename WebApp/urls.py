@@ -7,7 +7,6 @@ urlpatterns = [
     url(r'^login\$', auth_views.login, name='user_login'),
     url(r'^$',views.index, name = 'index'),
     url(r'^analytics\$', views.analytics, name='analytics'),
-    # changed code for main_screen, budgets because it's importing a class not a function
     url(r'^main_screen\$', views.main_screen, name='main_screen'),
     url(r'^budgets\$', views.budget_list, name='budgets'),
     url(r'^new_budget/(?P<pk>\d+)$', views.new_budget, name='new_budget'),
