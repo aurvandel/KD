@@ -8,6 +8,8 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 
+class BudgetView(generic.DetailView):
+    model = openBudgets
 
 class CastInPlaceView(generic.ListView): # Cast in place turned into a class
     model = castInPlace     #data to populate in cip table
@@ -48,7 +50,7 @@ def user_login(request):
 def analytics(request):
     return render(request, "analytics.html")
 
-def new_budget(request):
+def new_budget(request, pk):
     return render(request, "new_budget.html")
 
 def new_budget_general_conditions(request):

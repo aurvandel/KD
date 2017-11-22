@@ -10,7 +10,7 @@ urlpatterns = [
     # changed code for main_screen, budgets because it's importing a class not a function
     url(r'^main_screen\$', views.main_screen, name='main_screen'),
     url(r'^budgets\$', views.budget_list, name='budgets'),
-    url(r'^new_budget\$', views.new_budget, name='new_budget'),
+    url(r'^new_budget/(?P<pk>\d+)$', views.new_budget, name='new_budget'),
     url(r'^new_budget_footings\$', views.FootingsView.as_view(), name='new_budget_footings'),
     url(r'^new_budget_general_conditions\$', views.new_budget_general_conditions, name='new_budget_general_conditions'),
     url(r'^reports\$', views.reports, name='reports'),
@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^services_satellite_view\$', views.services_satellite_view, name='services_satellite_view'),
     # allows budgets to be hyperlinked
     url(r'^edit/(?P<pk>\d+)$', views.budget_update, name='budget_edit'),
+    url(r'budget/(?P<pk>\d+)$', views.BudgetView.as_view(), name='budget-detail'),
 ]

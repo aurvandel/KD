@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+
+{#TODO change inline CSS#}
+
 {% block budgetNav %}{% endblock %}
 {% block content %}
     <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
@@ -45,7 +48,10 @@
                     {% for budget in recentBudgets %}
                         <tr>
                             <td>{{ budget.budget_id }}</td>
-                            <td><a href="{% url 'budget_edit' budget.id %}">{{ budget.project_name }}</a></td>
+                            <td style="padding-right: 2em">
+                                <a href="{% url 'budget-detail' budget.id %}">{{ budget.project_name }}</a>
+                                <a href="{% url 'budget_edit' budget.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true" style="float: right">Edit</a>
+                            </td>
                             <td>{{ budget.budget_complete }}</td>
                             <td>{{ budget.general_contractor }}</td>
                             <td>{{ budget.internal_due_date }}</td>
