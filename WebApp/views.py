@@ -24,31 +24,31 @@ class EditBudgetView(generic.DetailView):   # allows budgets to by hyperlinked
     model = openBudgets
 
 class CastInPlaceView(generic.ListView): # Cast in place turned into a class
-    model = openBudgets.castInPlace     #data to populate in cip table
+    model = castInPlace     #data to populate in cip table
     context_object_name = 'lstCastInPlace' #list of fields used to tag html
     queryset = model.objects.all().order_by('id')   #order by django generated Id
     template_name = 'new_budget_cip.html'   #template to load from templates folder
 
 class FootingsView(generic.ListView): #see previous example. Class replaces old view function
-    model = openBudgets.footings
+    model = footings
     context_object_name = 'lstFootings'
     queryset = model.objects.all().order_by('id')
     template_name = 'new_budget_footings.html'
 
 class SlabOnGradeView(generic.ListView): #see previous example. Class replaced old view function.
-    model = openBudgets.slabOnGrade
+    model = slabOnGrade
     context_object_name = 'lstSlabOnGrade'
     queryset= model.objects.all().order_by('id')
     template_name = 'new_budget_sog.html'
 
 class SlabOnDeckView(generic.ListView):
-    model = openBudgets.slabOnDeck
+    model = slabOnDeck
     context_object_name = 'lstSlabOnDeck'
     queryset = model.objects.all().order_by('id')
     template_name = 'new_budget_sod.html'
 
 class TiltUpPanelView(generic.ListView):
-    model = openBudgets.tiltUp
+    model = tiltUp
     context_object_name = 'lstSlabOnDeck'
     queryset = model.objects.all().order_by('id')
     template_name = 'new_budget_tiltup.html'

@@ -71,7 +71,7 @@ class NewBudgetForm(forms.ModelForm):
 class NewFootingForm(forms.ModelForm):
     # Form fields go here if we use custom validators
     class Meta:
-        model = openBudgets.footings
+        model = footings
         fields = '__all__'
 
     # overload django's widget styling for the footing input form
@@ -129,7 +129,7 @@ class NewFootingForm(forms.ModelForm):
         self.fields['footing_subcontractor'].widget.attrs={
             'class': 'form-control',
             'aria-label': 'Text input with segmented button dropdown'
-        }
+    }
 
 
 # class UserForm(forms.ModelForm):
