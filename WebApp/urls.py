@@ -11,11 +11,11 @@ urlpatterns = [
     url(r'^main_screen\$', views.main_screen, name='main_screen'),
     url(r'^budgets\$', views.budget_list, name='budgets'),
     url(r'^new_budget/(?P<pk>\d+)$', views.new_budget, name='new_budget'),
-    url(r'^new_budget_footings\$', views.FootingsView.as_view(), name='new_budget_footings'),
+    url(r'^new_budget_footings\$', views.footings_list, name='new_budget_footings'),
     url(r'^new_budget_general_conditions\$', views.new_budget_general_conditions, name='new_budget_general_conditions'),
     url(r'^reports\$', views.reports, name='reports'),
     url(r'^services\$', views.services, name='services'),
-    url(r'^new_budget_cip\$', views.CastInPlaceView.as_view(), name='new_budget_cip'),
+    url(r'^new_budget_cip\$', views.cast_in_place, name='new_budget_cip'),
     url(r'^new_budget_insert_footing\$', views.new_budget_insert_footing, name='new_budget_insert_footing'),
     url(r'^new_budget_information_page\$', views.new_budget_information_page, name='new_budget_information_page'),
     url(r'^new_budget_sod\$', views.SlabOnDeckView.as_view(), name='new_budget_sod'),
@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'^services_g_maps\$', views.services_g_maps, name='services_g_maps'),
     url(r'^services_satellite_view\$', views.services_satellite_view, name='services_satellite_view'),
     # allows budgets to be hyperlinked
-    url(r'^edit/(?P<pk>\d+)$', views.budget_update, name='budget_edit'),
+    # (?P<pk>\d+) regex to pass primary key into dynamic url
+    url(r'^budget/edit/(?P<pk>\d+)$', views.budget_update, name='budget_edit'),
     url(r'budget/(?P<pk>\d+)$', views.BudgetView.as_view(), name='budget-detail'),
+    url(r'^footing/edit/(?P<pk>\d+)$', views.footing_update, name='footing_edit'),
 ]

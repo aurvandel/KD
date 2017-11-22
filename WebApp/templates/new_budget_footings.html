@@ -28,7 +28,7 @@
                         </div>
                     </td>
                     <td>{{ footing.footing_type }}</td>
-                    <td>{{ footing.footing_description }}</td>
+                    <td><a href="{% url 'footing_edit' footing.id %}">{{ footing.footing_description }}</a></td>
                     <td>{{ footing.footing_length }}</td>
                     <td>{{ footing.footing_count }}</td>
                     <td>{{ footing.footing_concrete_mix }}</td>

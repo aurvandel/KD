@@ -1,3 +1,5 @@
+#TODO convert everything but BudgetView back to functions
+
 from django.shortcuts import render, redirect
 from .models import openBudgets
 from django.views import generic
@@ -11,17 +13,26 @@ from django.contrib.auth import authenticate, login, logout
 class BudgetView(generic.DetailView):
     model = openBudgets
 
-class CastInPlaceView(generic.ListView): # Cast in place turned into a class
-    model = castInPlace     #data to populate in cip table
-    context_object_name = 'lstCastInPlace' #list of fields used to tag html
-    queryset = model.objects.all().order_by('id')   #order by django generated Id
-    template_name = 'new_budget_cip.html'   #template to load from templates folder
+def cast_in_place(request):
+    cip = castInPlace.objects.all()
+    data = {}
+    data['lstCastInPlace'] = cip
+    return render(request, 'new_budget_cip.html', data)
 
-class FootingsView(generic.ListView): #see previous example. Class replaces old view function
-    model = footings
-    context_object_name = 'lstFootings'
-    queryset = model.objects.all().order_by('id')
-    template_name = 'new_budget_footings.html'
+def footings_list(request):
+    footing = footings.objects.all()
+    data = {}
+    data['lstFootings'] = footing
+    return render(request, 'new_budget_footings.html', data)
+
+def footing_update(request, pk):
+    footing = get_object_or_404(footings, pk = pk)
+    form = NewFootingForm(request.POST or None, instance = footing)
+    if form.is_valid():
+        form.clean()
+        form.save(commit=True)
+        return redirect('footings_list')
+    return render(request, 'new_budget_insert_footing.html', {'form':form})
 
 class SlabOnGradeView(generic.ListView): #see previous example. Class replaced old view function.
     model = slabOnGrade
