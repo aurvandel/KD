@@ -1,7 +1,5 @@
-#TODO convert everything but BudgetView back to functions
-
 from django.shortcuts import render, redirect
-from .models import openBudgets
+from .models import *
 from django.views import generic
 from .forms import *
 from django.shortcuts import get_object_or_404
@@ -75,7 +73,10 @@ def new_budget(request, pk):
     return render(request, "new_budget.html")
 
 def new_budget_general_conditions(request):
-    return render(request, "new_budget_general_conditions.html")
+    gc = GeneralConditions.objects.all()
+    data = {}
+    data['lstgc'] = gc
+    return render(request, 'new_budget_general_conditions.html', data)
 
 def reports(request):
     return render(request, "reports.html")

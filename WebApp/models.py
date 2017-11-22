@@ -198,6 +198,11 @@ class slabOnDeck(models.Model):
     class Meta:
         ordering = ['id']
 
+class GeneralConditions(models.Model):
+    budget_id = models.ForeignKey(openBudgets, on_delete = models.CASCADE)
+    general_conditions_description = models.CharField(max_length=255, unique=False)
+    general_conditions_cost = models.DecimalField(max_digits = 15, decimal_places = 4)
+
 class mixDesign(models.Model):
     #mix_id = models.AutoField(primary_key=True, default="1")       #id field is handled by django
     concrete_mix_description = models.CharField(max_length = 255, unique = False)
