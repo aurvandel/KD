@@ -26,6 +26,9 @@ class EditBudgetView(generic.UpdateView):   # allows budgets to by hyperlinked
     form_class = NewBudgetForm
     template_name = "new_budget_information_page.html"
 
+    def get_success_url(self, *args, **kwargs):     #upon completion go back to budgets
+        return reverse("budgets")
+
 class CastInPlaceView(generic.ListView): # Cast in place turned into a class
     model = castInPlace     #data to populate in cip table
     context_object_name = 'lstCastInPlace' #list of fields used to tag html
