@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import openBudgets
 from django.views import generic
 from .forms import *
+from django.shortcuts import get_object_or_404
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse
@@ -20,8 +21,10 @@ class BudgetsView(generic.ListView):
     queryset = openBudgets.objects.all().order_by('-budget_id')
     template_name = 'budgets.html'
 
-class EditBudgetView(generic.DetailView):   # allows budgets to by hyperlinked
+class EditBudgetView(generic.UpdateView):   # allows budgets to by hyperlinked
     model = openBudgets
+    form_class = NewBudgetForm
+    template_name = "new_budget_information_page.html"
 
 class CastInPlaceView(generic.ListView): # Cast in place turned into a class
     model = castInPlace     #data to populate in cip table
