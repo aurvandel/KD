@@ -44,23 +44,23 @@ def new_budget_insert_footing(request):
             return redirect('new_budget_footings')
     return render(request, "new_budget_insert_footing.html", {'form':form})
 
-class SlabOnGradeView(generic.ListView): #see previous example. Class replaced old view function.
-    model = slabOnGrade
-    context_object_name = 'lstSlabOnGrade'
-    queryset= model.objects.all().order_by('id')
-    template_name = 'new_budget_sog.html'
+def slab_on_grade_list(request):
+    slab = slabOnGrade.objects.all()
+    data = {}
+    data['lstSlabOnGrade'] = slab
+    return render(request, 'new_budget_sog.html', data)
 
-class SlabOnDeckView(generic.ListView):
-    model = slabOnDeck
-    context_object_name = 'lstSlabOnDeck'
-    queryset = model.objects.all().order_by('id')
-    template_name = 'new_budget_sod.html'
+def slab_on_deck_list(request):
+    slab = slabOnDeck.objects.all()
+    data = {}
+    data['lstSlabOnDeck'] = slab
+    return render(request, 'new_budget_sod.html', data)
 
-class TiltUpPanelView(generic.ListView):
-    model = tiltUp
-    context_object_name = 'lstSlabOnDeck'
-    queryset = model.objects.all().order_by('id')
-    template_name = 'new_budget_tiltup.html'
+def tilt_up_panel_list(request):
+    panel = tiltUp.objects.all()
+    data = {}
+    data['lstTiltUp'] = panel
+    return render(request, 'new_budget_tiltup.html', data)
     
 def index(request):
     return render(request,"index.html")
