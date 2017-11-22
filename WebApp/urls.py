@@ -26,5 +26,5 @@ urlpatterns = [
     url(r'^services_g_maps\$', views.services_g_maps, name='services_g_maps'),
     url(r'^services_satellite_view\$', views.services_satellite_view, name='services_satellite_view'),
     # allows budgets to be hyperlinked
-    url(r'^budget/(?P<pk>\d+)$', views.EditBudgetView.as_view(), name='budget-detail'),
+    url(r'^edit/(?P<pk>\d+)$', views.budget_update, name='budget_edit'),
 ]

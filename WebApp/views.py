@@ -15,14 +15,6 @@ class MainScreenView(generic.ListView):     # main_screen is now a class
     queryset = model.objects.all().order_by('-created')[:10]      # only show the 10 most recently created budgets
     template_name = 'main_screen.html'      # template to load
 
-class EditBudgetView(generic.UpdateView):   # allows budgets to by hyperlinked
-    model = openBudgets
-    form_class = NewBudgetForm
-    template_name = "new_budget_information_page.html"
-
-    def get_success_url(self, *args, **kwargs):     #upon completion go back to budgets
-        return reverse("budgets")
-
 class CastInPlaceView(generic.ListView): # Cast in place turned into a class
     model = castInPlace     #data to populate in cip table
     context_object_name = 'lstCastInPlace' #list of fields used to tag html
@@ -80,11 +72,21 @@ def budget_list(request):
     data['object_list'] = budgets
     return render(request, 'budgets.html', data)
 
+def budget_update(request, pk):
+    budget = get_object_or_404(openBudgets, pk = pk)
+    form = NewBudgetForm(request.POST or None, instance = budget)
+    if form.is_valid():
+        form.clean()
+        form.save(commit=True)
+        return redirect('budgets')
+    return render(request, 'new_budget_information_page.html', {'form':form})
+
 def new_budget_insert_footing(request):
     form = NewFootingForm()
     if request.method == 'POST':
         form = NewFootingForm(request.POST)
         if form.is_valid():
+            form.clean()
             form.save(commit=True)
             return redirect('new_budget_footings')
         else:
@@ -96,6 +98,7 @@ def new_budget_information_page(request):
     if request.method == 'POST':
         form = NewBudgetForm(request.POST)
         if form.is_valid():
+            form.clean()
             form.save(commit=True)
             return redirect('new_budget')
         else:

@@ -39,7 +39,7 @@
                     {% for budget in object_list %}
                         <tr>
                             <td>{{ budget.budget_id }}</td>
-                            <td><a href="{{ budget.get_absolute_url }}">{{ budget.project_name }}</a></td>
+                            <td><a href="{% url 'budget_edit' budget.id %}">{{ budget.project_name }}</a></td>
                             <td>{{ budget.budget_complete }}</td>
                             <td>{{ budget.general_contractor }}</td>
                             <td>{{ budget.internal_due_date }}</td>
