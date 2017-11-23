@@ -116,7 +116,10 @@ def new_budget_information_page(request):
     return render(request, "new_budget_information_page.html", {'form':form})
 
 def new_budget_waste_casting(request):
-    return render(request, "new_budget_waste-casting.html")
+    wc = WasteCasting.objects.all()
+    data = {}
+    data['lstwc'] = wc
+    return render(request, 'new_budget_waste-casting.html', data)
 
 def services_g_maps(request):
     return render(request, "services_g_maps.html")

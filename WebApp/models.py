@@ -203,6 +203,16 @@ class GeneralConditions(models.Model):
     general_conditions_description = models.CharField(max_length=255, unique=False)
     general_conditions_cost = models.DecimalField(max_digits = 15, decimal_places = 4)
 
+class WasteCasting(models.Model):
+    budget_id = models.ForeignKey(openBudgets, on_delete = models.CASCADE)
+    waste_casting_description = models.CharField(max_length=255, unique=False)
+    waste_casting_basis = models.CharField(max_length=255, unique=False)
+    waste_casting_sqft = models.DecimalField(max_digits=15, decimal_places=4)
+    waste_casting_concrete_description = models.CharField(max_length=255, unique=False)     #does this pull from the mixDesign table?
+    waste_casting_totalCY = models.PositiveSmallIntegerField()
+    waste_casting_psi = models.PositiveSmallIntegerField()
+    waste_casting_materials_labor = models.CharField(max_length=255, unique=False)
+
 class mixDesign(models.Model):
     #mix_id = models.AutoField(primary_key=True, default="1")       #id field is handled by django
     concrete_mix_description = models.CharField(max_length = 255, unique = False)
