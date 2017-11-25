@@ -29,7 +29,7 @@ def footing_update(request, pk):
     if form.is_valid():
         form.clean()
         form.save(commit=True)
-        return redirect('footings_list')
+        return redirect('new_budget_footings')
     return render(request, 'new_budget_insert_footing.html', {'form':form})
 
 def new_budget_insert_footing(request):
