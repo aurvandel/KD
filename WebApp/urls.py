@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^budget/edit/(?P<pk>\d+)$', views.budget_update, name='budget_edit'),
     url(r'budget/(?P<pk>\d+)$', views.BudgetView.as_view(), name='budget-detail'),
     url(r'^footing/edit/(?P<pk>\d+)$', views.footing_update, name='footing_edit'),
+    url(r'^footing/delete/(?P<pk>\d+)$', views.footing_delete, name='footing_delete'),
 ]

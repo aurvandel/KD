@@ -126,3 +126,10 @@ def services_g_maps(request):
 
 def services_satellite_view(request):
     return render(request, "services_satellite_view.html")
+
+def footing_delete(request, pk):
+    footing = get_object_or_404(footings, pk=pk)
+    if request.method=='POST':
+        footing.delete()
+        return redirect('new_budget_footings')
+    return render(request, 'footing_confirm_delete.html', {'object':footing})

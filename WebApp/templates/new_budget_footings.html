@@ -21,11 +21,13 @@
                 {% for footing in lstFootings %}
                 <tr>
                     <td>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="checkbox">
-                          </span>
-                        </div>
+                        <a href="{% url 'footing_delete' footing.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" style="float: right">Delete</a>
+{#                            Old code for checkbox#}
+{#                        <div class="input-group">#}
+{#                          <span class="input-group-addon">#}
+{#                            <input type="checkbox">#}
+{#                          </span>#}
+{#                        </div>#}
                     </td>
                     <td><a href="{% url 'footing_edit' footing.id %}">{{ footing.footing_description }}</a></td>
                     <td>{{ footing.footing_type }}</td>
@@ -42,7 +44,7 @@
     </table>
   </div>
     <a href={% url 'new_budget_insert_footing' %}><button type="button" class="btn btn-primary">Insert Footing</button></a>
-    <button type="button" class="btn btn-primary">Copy Footing</button>
-    <button type="button" class="btn btn-danger">Delete Footing</button>
+{#    <button type="button" class="btn btn-primary">Copy Footing</button>#}
+{#    <button type="button" class="btn btn-danger">Delete Footing</button>#}
 
 {% endblock %}
