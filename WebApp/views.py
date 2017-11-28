@@ -43,6 +43,14 @@ def new_budget_insert_footing(request):
             return redirect('new_budget_footings')
     return render(request, "new_budget_insert_footing.html", {'form':form, 'budgets':budgets})
 
+def footing_delete(request, pk):
+    lstFootings = footings.objects.all()
+    footing = get_object_or_404(footings, pk=pk)
+    if request.method=='POST':
+        footing.delete()
+        return redirect('new_budget_footings')
+    return render(request, 'footing_confirm_delete.html', {'object':footing, 'lstFootings':lstFootings})
+
 def slab_on_grade_list(request):
     slab = slabOnGrade.objects.all()
     data = {}
@@ -128,9 +136,3 @@ def services_g_maps(request):
 def services_satellite_view(request):
     return render(request, "services_satellite_view.html")
 
-def footing_delete(request, pk):
-    footing = get_object_or_404(footings, pk=pk)
-    if request.method=='POST':
-        footing.delete()
-        return redirect('new_budget_footings')
-    return render(request, 'footing_confirm_delete.html', {'object':footing})
