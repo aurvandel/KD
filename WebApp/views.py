@@ -69,7 +69,7 @@ def general_conditions_delete(request, pk):
     if request.method=='POST':
         gc.delete()
         return redirect('new_budget_general_conditions')
-    return render(request, 'general_conditions_confirm_delete.html', {'object':gc, 'lstFootings':lstgc})
+    return render(request, 'new_budget_general_conditions_delete.html', {'object':gc, 'lstgc':lstgc})
 
 def footing_delete(request, pk):
     lstFootings = footings.objects.all()

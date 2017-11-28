@@ -30,4 +30,5 @@ urlpatterns = [
     url(r'^footing/edit/(?P<pk>\d+)$', views.footing_update, name='footing_edit'),
     url(r'^footing/delete/(?P<pk>\d+)$', views.footing_delete, name='footing_delete'),
     url(r'^general_conditions/edit/(?P<pk>\d+)$', views.general_conditions_update, name='general_conditions_edit'),
+    url(r'^general_conditions/delete/(?P<pk>\d+)$', views.general_conditions_delete, name='general_conditions_delete'),
 ]
