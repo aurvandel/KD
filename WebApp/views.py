@@ -34,13 +34,14 @@ def footing_update(request, pk):
 
 def new_budget_insert_footing(request):
     form = NewFootingForm()
+    budgets = openBudgets.objects.all()
     if request.method == 'POST':
         form = NewFootingForm(request.POST)
         if form.is_valid():
             form.clean()
             form.save(commit=True)
             return redirect('new_budget_footings')
-    return render(request, "new_budget_insert_footing.html", {'form':form})
+    return render(request, "new_budget_insert_footing.html", {'form':form, 'budgets':budgets})
 
 def slab_on_grade_list(request):
     slab = slabOnGrade.objects.all()

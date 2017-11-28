@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/WebApp/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_footings.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_footings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/urls.py" afterPath="$PROJECT_DIR$/WebApp/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/forms.py" afterPath="$PROJECT_DIR$/WebApp/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/views.py" afterPath="$PROJECT_DIR$/WebApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,38 +33,35 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="680">
+              <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
                 <element signature="e#434#453#0" expanded="false" />
                 <element signature="e#487#621#0" expanded="false" />
-                <element signature="e#655#796#0" expanded="false" />
-                <marker date="1511800592587" expanded="false" signature="1543:1684" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="1717:1856" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2051:2091" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2117:2157" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2182:2227" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2257:2303" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2348:2497" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2520:2563" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2587:2631" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="2658:2878" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="3075:3383" ph="..." />
-                <marker date="1511800592587" expanded="false" signature="3426:3737" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="1602:1743" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="1776:1915" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2110:2150" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2176:2216" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2241:2286" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2316:2362" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2407:2556" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2579:2622" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2646:2690" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="2717:2937" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="3134:3442" ph="..." />
+                <marker date="1511883344186" expanded="false" signature="3485:3796" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_budget_footings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_footings.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="3128">
+              <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,9 +69,21 @@
       <file leaf-file-name="new_budget_insert_footing.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2856">
-              <caret line="168" column="16" lean-forward="false" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
+            <state relative-caret-position="294">
+              <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -135,8 +141,6 @@
         <option value="$PROJECT_DIR$/WebApp/templates/services.html" />
         <option value="$PROJECT_DIR$/KeyEstimation/settings.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
-        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html" />
-        <option value="$PROJECT_DIR$/WebApp/forms.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/WebApp/openbudgets_detail.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/main_screen.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_cip.html" />
@@ -153,9 +157,11 @@
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_waste-casting.html" />
         <option value="$PROJECT_DIR$/WebApp/admin.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html" />
-        <option value="$PROJECT_DIR$/WebApp/views.py" />
         <option value="$PROJECT_DIR$/WebApp/urls.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_footings.html" />
+        <option value="$PROJECT_DIR$/WebApp/views.py" />
+        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html" />
+        <option value="$PROJECT_DIR$/WebApp/forms.py" />
       </list>
     </option>
   </component>
@@ -205,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,6 +247,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,127 +264,6 @@
       <recent name="C:\Users\pwatkin1\PycharmProjects\back-end\WebApp\templates\WebApp" />
       <recent name="C:\Users\pwatkin1\PycharmProjects\back-end\WebApp\static\css" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/migrations/0001_initial.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/views.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/db.sqlite3</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/migrations/0002_auto_20171117_1611.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/migrations/0003_openbudgets_general_contractor.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/migrations/0004_auto_20171117_2331.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/migrations/0009_auto_20171122_0849.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/migrations/0011_auto_20171122_1654.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/WebApp/migrations/0012_wastecasting.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -592,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511396136551</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="working on delete">
+      <created>1511804130380</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1511804130380</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -600,12 +492,13 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12996778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15220049" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15403423" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@back-end" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17615467" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -613,7 +506,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -656,7 +548,8 @@
     <MESSAGE value="created view for general_conditions along with associated model" />
     <MESSAGE value="created view for waste-casting along with associated model" />
     <MESSAGE value="added new models to admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new models to admin" />
+    <MESSAGE value="working on delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -977,19 +870,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="220" column="0" lean-forward="true" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,18 +888,8 @@
     <entry file="file://$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,43 +903,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_footings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="365">
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="680">
+          <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
             <element signature="e#434#453#0" expanded="false" />
             <element signature="e#487#621#0" expanded="false" />
-            <element signature="e#655#796#0" expanded="false" />
-            <marker date="1511800592587" expanded="false" signature="1543:1684" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="1717:1856" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2051:2091" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2117:2157" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2182:2227" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2257:2303" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2348:2497" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2520:2563" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2587:2631" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="2658:2878" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="3075:3383" ph="..." />
-            <marker date="1511800592587" expanded="false" signature="3426:3737" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="1602:1743" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="1776:1915" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2110:2150" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2176:2216" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2241:2286" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2316:2362" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2407:2556" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2579:2622" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2646:2690" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="2717:2937" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="3134:3442" ph="..." />
+            <marker date="1511883344186" expanded="false" signature="3485:3796" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="168" column="16" lean-forward="false" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
+        <state relative-caret-position="294">
+          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
           <folding />
         </state>
       </provider>

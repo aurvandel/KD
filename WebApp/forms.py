@@ -77,6 +77,11 @@ class NewFootingForm(forms.ModelForm):
     # overload django's widget styling for the footing input form
     def __init__(self, *args, **kwargs):
         super(NewFootingForm, self).__init__(*args, **kwargs)
+        self.fields['budget_id'].widget.attrs={
+            'id': 'footing_description',
+            'class': 'form-control',
+            'aria-describedby': 'basic-addon3'
+        }
         self.fields['footing_description'].widget.attrs={
             'id': 'footing_description',
             'class': 'form-control',
