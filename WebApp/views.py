@@ -54,13 +54,14 @@ def new_budget_general_conditions(request):
     return render(request, 'new_budget_general_conditions.html', {'lstgc':gc, 'form':form})
 
 def general_conditions_update(request, pk):
+    gc = GeneralConditions.objects.all()
     generalCondition = get_object_or_404(GeneralConditions, pk = pk)
     form = NewGeneralConditionForm(request.POST or None, instance = generalCondition)
     if form.is_valid():
         form.clean()
         form.save(commit=True)
         return redirect('new_budget_general_conditions')
-    return render(request, 'new_budget_general_conditions.html', {'form':form})
+    return render(request, 'new_budget_general_conditions_update.html', {'form':form, 'lstgc':gc})
 
 def general_conditions_delete(request, pk):
     lstgc = GeneralConditions.objects.all()
