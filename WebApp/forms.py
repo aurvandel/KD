@@ -5,6 +5,32 @@ from .models import *
 
 #TODO: date picker
 
+class NewGeneralConditionForm(forms.ModelForm):
+    # Form fields go here if we use custom validators
+    class Meta:
+        model = GeneralConditions
+        fields = '__all__'
+
+    # overload django's widget styling for the footing input form
+    def __init__(self, *args, **kwargs):
+        super(NewGeneralConditionForm, self).__init__(*args, **kwargs)
+
+        self.fields['budget_id'].widget.attrs={
+            'id': 'recipient-name',
+            'class': 'form-control',
+        }
+        self.fields['general_conditions_budget_code'].widget.attrs={
+            'id': 'recipient-name',
+            'class': 'form-control',
+        }
+        self.fields['general_conditions_cost'].widget.attrs={
+            'id': 'recipient-name',
+            'class': 'form-control',
+        }
+        self.fields['general_conditions_description'].widget.attrs={
+            'id': 'message-text',
+            'class': 'form-control',
+        }
 class NewBudgetForm(forms.ModelForm):
     class Meta:
         model = openBudgets

@@ -200,7 +200,8 @@ class slabOnDeck(models.Model):
 
 class GeneralConditions(models.Model):
     budget_id = models.ForeignKey(openBudgets, on_delete = models.CASCADE)
-    general_conditions_description = models.CharField(max_length=255, unique=False)
+    general_conditions_budget_code = models.PositiveIntegerField()
+    general_conditions_description = models.TextField()
     general_conditions_cost = models.DecimalField(max_digits = 15, decimal_places = 4)
 
 class WasteCasting(models.Model):

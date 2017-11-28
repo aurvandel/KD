@@ -34,14 +34,41 @@ def footing_update(request, pk):
 
 def new_budget_insert_footing(request):
     form = NewFootingForm()
-    budgets = openBudgets.objects.all()
     if request.method == 'POST':
         form = NewFootingForm(request.POST)
         if form.is_valid():
             form.clean()
             form.save(commit=True)
             return redirect('new_budget_footings')
-    return render(request, "new_budget_insert_footing.html", {'form':form, 'budgets':budgets})
+    return render(request, "new_budget_insert_footing.html", {'form':form})
+
+def new_budget_general_conditions(request):
+    gc = GeneralConditions.objects.all()
+    form = NewGeneralConditionForm()
+    if request.method == 'POST':
+        form = NewGeneralConditionForm(request.POST)
+        if form.is_valid():
+            form.clean()
+            form.save(commit=True)
+            return redirect('new_budget_general_conditions')
+    return render(request, 'new_budget_general_conditions.html', {'lstgc':gc, 'form':form})
+
+def general_conditions_update(request, pk):
+    generalCondition = get_object_or_404(GeneralConditions, pk = pk)
+    form = NewGeneralConditionForm(request.POST or None, instance = generalCondition)
+    if form.is_valid():
+        form.clean()
+        form.save(commit=True)
+        return redirect('new_budget_general_conditions')
+    return render(request, 'new_budget_general_conditions.html', {'form':form})
+
+def general_conditions_delete(request, pk):
+    lstgc = GeneralConditions.objects.all()
+    gc = get_object_or_404(GeneralConditions, pk=pk)
+    if request.method=='POST':
+        gc.delete()
+        return redirect('new_budget_general_conditions')
+    return render(request, 'general_conditions_confirm_delete.html', {'object':gc, 'lstFootings':lstgc})
 
 def footing_delete(request, pk):
     lstFootings = footings.objects.all()
@@ -80,12 +107,6 @@ def analytics(request):
 
 def new_budget(request, pk):
     return render(request, "new_budget.html")
-
-def new_budget_general_conditions(request):
-    gc = GeneralConditions.objects.all()
-    data = {}
-    data['lstgc'] = gc
-    return render(request, 'new_budget_general_conditions.html', data)
 
 def reports(request):
     return render(request, "reports.html")
