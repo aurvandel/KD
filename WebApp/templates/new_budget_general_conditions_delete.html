@@ -28,8 +28,8 @@
                 {% if lstgc %}
                     {% for gc in lstgc %}
                         <tr>
-                            <td><a href="{% url 'general_conditions_delete' gc.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" style="float: right">Delete</a></td>
-                            <td><a href="{% url 'general_conditions_edit' gc.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true" style="float: right">Edit</a></td>
+                            <td><a href="{% url 'general_conditions_delete' gc.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" style="float: right"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                            <td><a href="{% url 'general_conditions_edit' gc.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true" style="float: right"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
                             <td>{{ gc.budget_id }}</td>
                             <td>{{ gc.general_conditions_budget_code }}</td>
                             <td>{{ gc.general_conditions_cost }}</td>

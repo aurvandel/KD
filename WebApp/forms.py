@@ -42,10 +42,6 @@ class NewBudgetForm(forms.ModelForm):
             'estimator'
         ]
 
-        widgets = {
-            'internal_due_date': forms.DateInput(attrs={'class': 'datepicker'}),
-            'external_due_date': forms.DateInput(attrs={'class': 'datepicker'}),
-        }
     # overload django's widget styling
     def __init__(self, *args, **kwargs):
         super(NewBudgetForm, self).__init__(*args, **kwargs)

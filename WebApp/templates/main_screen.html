@@ -50,7 +50,7 @@
                             <td>{{ budget.budget_id }}</td>
                             <td style="padding-right: 2em">
                                 <a href="{% url 'budget-detail' budget.id %}">{{ budget.project_name }}</a>
-                                <a href="{% url 'budget_edit' budget.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true" style="float: right">Edit</a>
+                                <a href="{% url 'budget_edit' budget.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true" style="float: right"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                             </td>
                             <td>{{ budget.budget_complete }}</td>
                             <td>{{ budget.general_contractor }}</td>

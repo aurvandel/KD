@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block headScripts %}
+    <script src="https://use.fontawesome.com/fab2f8d95c.js"></script>
+{% endblock %}
 {% block content %}
 
 <div class="table table-responsive table-bordered table-hover"> <!--Come back and see if I can keep table window limited to certain number rows... either use pagination or a scrollable window. Django has pagination built in-->
@@ -21,7 +24,7 @@
                 {% for footing in lstFootings %}
                 <tr>
                     <td>
-                        <a href="{% url 'footing_delete' footing.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" style="float: right">Delete</a>
+                        <a href="{% url 'footing_delete' footing.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" style="float: right"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
 {#                            Old code for checkbox#}
 {#                        <div class="input-group">#}
 {#                          <span class="input-group-addon">#}
