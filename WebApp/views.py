@@ -89,6 +89,23 @@ def slab_on_grade_insert(request):
             return redirect('new_budget_sog')
     return render(request, "insert_sog.html", {'form':form})
 
+def slab_on_grade_update(request, pk):
+    slab = get_object_or_404(slabOnGrade, pk = pk)
+    form = NewSOGForm(request.POST or None, instance = slab)
+    if form.is_valid():
+        form.clean()
+        form.save(commit=True)
+        return redirect('new_budget_sog')
+    return render(request, 'insert_sog.html', {'form':form})
+
+def slab_on_grade_delete(request, pk):
+    lstSlabOnGrade = footings.objects.all()
+    slab = get_object_or_404(slabOnGrade, pk=pk)
+    if request.method=='POST':
+        slab.delete()
+        return redirect('new_budget_sog')
+    return render(request, 'sog_delete.html', {'object':slab, 'lstSlabOnGrade':lstSlabOnGrade})
+
 def slab_on_deck_list(request):
     slab = slabOnDeck.objects.all()
     data = {}

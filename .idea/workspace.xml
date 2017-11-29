@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/templates/sog_delete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" afterPath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/urls.py" afterPath="$PROJECT_DIR$/WebApp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/views.py" afterPath="$PROJECT_DIR$/WebApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,27 +31,58 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6578192">
+    <splitter split-orientation="horizontal" split-proportion="0.60329986">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApp/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="648">
-                  <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+                <state relative-caret-position="437">
+                  <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                     <element signature="e#434#453#0" expanded="false" />
                     <element signature="e#487#592#0" expanded="false" />
                     <element signature="e#626#738#0" expanded="false" />
-                    <element signature="e#777#1090#0" expanded="false" />
-                    <element signature="e#1490#1783#0" expanded="false" />
+                    <element signature="e#1136#1451#0" expanded="false" />
                     <element signature="e#1833#2233#0" expanded="false" />
                     <element signature="e#2283#2706#0" expanded="false" />
                     <element signature="e#2756#3058#0" expanded="false" />
-                    <element signature="e#3570#3704#0" expanded="false" />
-                    <element signature="e#3743#3874#0" expanded="false" />
+                    <element signature="e#3245#3532#0" expanded="false" />
+                    <element signature="e#3577#3863#0" expanded="false" />
+                    <element signature="e#4225#4359#0" expanded="false" />
+                    <element signature="e#4398#4529#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sog_delete.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/WebApp/templates/sog_delete.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="803">
+                  <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="new_budget_general_conditions_delete.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="279">
+                  <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="59" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="new_budget_sog.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_sog.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -66,11 +99,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+                <state relative-caret-position="408">
+                  <caret line="27" column="86" lean-forward="false" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
                   <folding />
                 </state>
               </provider>
@@ -83,8 +116,8 @@
           <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="454">
-                  <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+                <state relative-caret-position="357">
+                  <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
                     <element signature="e#3594#3733#0" expanded="false" />
@@ -135,18 +168,19 @@
         <option value="$PROJECT_DIR$/WebApp/templates/budget_delete.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_update.html" />
-        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_footings.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/main_screen.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/WebApp/models.py" />
-        <option value="$PROJECT_DIR$/WebApp/urls.py" />
-        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
         <option value="$PROJECT_DIR$/WebApp/forms.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
+        <option value="$PROJECT_DIR$/WebApp/urls.py" />
+        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
         <option value="$PROJECT_DIR$/WebApp/views.py" />
+        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html" />
+        <option value="$PROJECT_DIR$/WebApp/templates/sog_delete.html" />
       </list>
     </option>
   </component>
@@ -532,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511985967929</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="sog input page done.">
+      <created>1511986147583</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1511986147583</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -624,18 +665,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebApp/KeyEstimating1/services_g_maps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/KeyEstimating1/services.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -887,14 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -935,22 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_footings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="49" column="85" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_sog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -977,8 +987,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+        <state relative-caret-position="357">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
             <element signature="e#3594#3733#0" expanded="false" />
@@ -987,10 +997,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_footings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="370">
+          <caret line="27" column="186" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="186" />
           <folding />
         </state>
       </provider>
@@ -1007,21 +1017,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state relative-caret-position="437">
+          <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
             <element signature="e#434#453#0" expanded="false" />
             <element signature="e#487#592#0" expanded="false" />
             <element signature="e#626#738#0" expanded="false" />
-            <element signature="e#777#1090#0" expanded="false" />
-            <element signature="e#1490#1783#0" expanded="false" />
+            <element signature="e#1136#1451#0" expanded="false" />
             <element signature="e#1833#2233#0" expanded="false" />
             <element signature="e#2283#2706#0" expanded="false" />
             <element signature="e#2756#3058#0" expanded="false" />
-            <element signature="e#3570#3704#0" expanded="false" />
-            <element signature="e#3743#3874#0" expanded="false" />
+            <element signature="e#3245#3532#0" expanded="false" />
+            <element signature="e#3577#3863#0" expanded="false" />
+            <element signature="e#4225#4359#0" expanded="false" />
+            <element signature="e#4398#4529#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/sog_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_sog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="86" lean-forward="false" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
+          <folding />
         </state>
       </provider>
     </entry>
