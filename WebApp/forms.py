@@ -9,11 +9,6 @@ class NewSOGForm(forms.ModelForm):
     class Meta:
         model = slabOnGrade
         fields = '__all__'
-        labels = {
-            'budget_id': 'Budget',
-            'sog_slab_description': 'Slab Description',
-            'sog_grading_material_thickness': 'Grading Material Thickness',
-        }
 
     def __init__(self, *args, **kwargs):
         super(NewSOGForm, self).__init__(*args, **kwargs)

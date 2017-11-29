@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/forms.py" afterPath="$PROJECT_DIR$/WebApp/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/urls.py" afterPath="$PROJECT_DIR$/WebApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/views.py" afterPath="$PROJECT_DIR$/WebApp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" afterPath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,14 +28,14 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.33678398">
+    <splitter split-orientation="horizontal" split-proportion="0.42443064">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApp/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="393">
-                  <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+                <state relative-caret-position="359">
+                  <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                     <element signature="e#434#453#0" expanded="false" />
@@ -61,8 +57,8 @@
           <file leaf-file-name="insert_sog.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+                <state relative-caret-position="463">
+                  <caret line="89" column="43" lean-forward="false" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
                   <folding>
                     <element signature="e#147#250#0#HTML" expanded="true" />
                   </folding>
@@ -87,30 +83,12 @@
           <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+                <state relative-caret-position="454">
+                  <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
-                    <element signature="e#562#733#0" expanded="false" />
-                    <element signature="e#791#922#0" expanded="false" />
-                    <element signature="e#990#1133#0" expanded="false" />
-                    <element signature="e#1184#1302#0" expanded="false" />
-                    <element signature="e#1349#1459#0" expanded="false" />
-                    <element signature="e#1507#1620#0" expanded="false" />
-                    <element signature="e#1666#1774#0" expanded="false" />
-                    <element signature="e#1825#1943#0" expanded="false" />
-                    <element signature="e#1997#2120#0" expanded="false" />
-                    <element signature="e#2170#2286#0" expanded="false" />
-                    <element signature="e#2343#2472#0" expanded="false" />
-                    <element signature="e#2518#2626#0" expanded="false" />
-                    <element signature="e#2683#2812#0" expanded="false" />
-                    <element signature="e#2864#2984#0" expanded="false" />
-                    <element signature="e#3039#3164#0" expanded="false" />
-                    <element signature="e#3222#3353#0" expanded="false" />
-                    <element signature="e#3407#3530#0" expanded="false" />
-                    <element signature="e#3591#3728#0" expanded="false" />
-                    <element signature="e#3790#3929#0" expanded="false" />
-                    <element signature="e#3990#4127#0" expanded="false" />
+                    <element signature="e#3594#3733#0" expanded="false" />
+                    <element signature="e#3794#3931#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -163,10 +141,10 @@
         <option value="$PROJECT_DIR$/WebApp/templates/main_screen.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/WebApp/models.py" />
-        <option value="$PROJECT_DIR$/WebApp/views.py" />
         <option value="$PROJECT_DIR$/WebApp/urls.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
+        <option value="$PROJECT_DIR$/WebApp/views.py" />
         <option value="$PROJECT_DIR$/WebApp/forms.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
       </list>
@@ -540,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511972461431</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="working on sog input">
+      <created>1511977224641</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1511977224641</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -603,7 +588,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixing git" />
     <MESSAGE value="added new_budgets nav buttons to base and linked it to all subpages" />
     <MESSAGE value="tagged everything except services, services_g_maps and services_satallite_views. Styling of new_budgets_insert_footing is wrong." />
     <MESSAGE value="added .html~ files to gitignore" />
@@ -628,7 +612,8 @@
     <MESSAGE value="general conditions update complete" />
     <MESSAGE value="general conditions complete" />
     <MESSAGE value="ui changes to edit and delete buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="ui changes to edit and delete buttons" />
+    <MESSAGE value="working on sog input" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on sog input" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -993,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+        <state relative-caret-position="359">
+          <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
             <element signature="e#434#453#0" expanded="false" />
@@ -1012,42 +997,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="463">
+          <caret line="89" column="43" lean-forward="false" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#562#733#0" expanded="false" />
-            <element signature="e#791#922#0" expanded="false" />
-            <element signature="e#990#1133#0" expanded="false" />
-            <element signature="e#1184#1302#0" expanded="false" />
-            <element signature="e#1349#1459#0" expanded="false" />
-            <element signature="e#1507#1620#0" expanded="false" />
-            <element signature="e#1666#1774#0" expanded="false" />
-            <element signature="e#1825#1943#0" expanded="false" />
-            <element signature="e#1997#2120#0" expanded="false" />
-            <element signature="e#2170#2286#0" expanded="false" />
-            <element signature="e#2343#2472#0" expanded="false" />
-            <element signature="e#2518#2626#0" expanded="false" />
-            <element signature="e#2683#2812#0" expanded="false" />
-            <element signature="e#2864#2984#0" expanded="false" />
-            <element signature="e#3039#3164#0" expanded="false" />
-            <element signature="e#3222#3353#0" expanded="false" />
-            <element signature="e#3407#3530#0" expanded="false" />
-            <element signature="e#3591#3728#0" expanded="false" />
-            <element signature="e#3790#3929#0" expanded="false" />
-            <element signature="e#3990#4127#0" expanded="false" />
+            <element signature="e#147#250#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
+    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state relative-caret-position="454">
+          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
           <folding>
-            <element signature="e#147#250#0#HTML" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#3594#3733#0" expanded="false" />
+            <element signature="e#3794#3931#0" expanded="false" />
           </folding>
         </state>
       </provider>

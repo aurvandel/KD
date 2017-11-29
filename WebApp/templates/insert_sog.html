@@ -10,42 +10,84 @@
 <div class="col-lg-8" style="background-color: #F4F4F4; margin-left: 7%; margin-top: 1em; margin-bottom: auto; padding: 15px">
     <form action="" method="post"> {% csrf_token %}
         <div class="form-group">
-            {{ form.labels }}
+            <label for="BudgetId">Budget</label>
             {{ form.budget_id }}
         </div>
         <div class="form-group">
-            <label for="SlabDescription"></label>
-            {{ form.project_name }}
+            <label for="SlabDescription">Slab Description</label>
+            {{ form.sog_slab_description }}
         </div>
         <div class="form-group">
-            <label for="ZipCode">Zip Code</label>
-            {{ form.zip_code }}
+            <label for="MaterialThickness">Grading Material Thickness</label>
+            {{ form.sog_grading_material_thickness }}
         </div>
         <div class="form-group">
-            <label for="City">City</label>
-            {{ form.city }}
+            <label for="Thickness">Thickness</label>
+            {{ form.sog_thickness }}
         </div>
         <div class="form-group">
-            <label for="State">State</label>
-            {{ form.state }}
+            <label for="Width">Width</label>
+            {{ form.sog_width }}
         </div>
         <div class="form-group">
-            <label for="InternalDueDate">Internal Due Date</label>
-            {{ form.internal_due_date }}
+            <label for="Length">Length</label>
+            {{ form.sog_length }}
         </div>
         <div class="form-group">
-            <label for="ExternalDueDate">External Due Date</label>
-            {{ form.external_due_date }}
+            <label for="Area">Area</label>
+            {{ form.sog_area }}
         </div>
         <div class="form-group">
-            <label for="GeneralContractor">General Contractor</label>
-            {{ form.general_contractor }}
+            <label for="Perimeter">Perimeter</label>
+            {{ form.sog_perimeter }}
         </div>
-        <div class="form-check">
-            <label class="form-check-label">
-                {{ form.tax_exempt_status }} Tax Exempt
-                <!--<input type="checkbox" class="form-check-input">-->
-            </label>
+        <div class="form-group">
+            <label for="ConcreteMix">Concrete Mix</label>
+            {{ form.sog_concrete_mix }}
+        </div>
+        <div class="form-group">
+            <label for="Additive">Additive</label>
+            {{ form.sog_additive }}
+        </div>
+        <div class="form-group">
+            <label for="SecondAdditive">Second Additive</label>
+            {{ form.sog_second_additive }}
+        </div>
+        <div class="form-group">
+            <label for="Cure">Cure</label>
+            {{ form.sog_cure }}
+        </div>
+        <div class="form-group">
+            <label for="PerimeterForms">Perimeter Forms</label>
+            {{ form.sog_perimeter_forms }}
+        </div>
+        <div class="form-group">
+            <label for="BulkHeads">Bulk Heads</label>
+            {{ form.sog_bulk_heads }}
+        </div>
+        <div class="form-group">
+            <label for="VaporBarrier">Vapor Barrier</label>
+            {{ form.sog_vapor_barrier }}
+        </div>
+        <div class="form-group">
+            <label for="GradingMaterial">Grading Material</label>
+            {{ form.sog_grading_material }}
+        </div>
+                <div class="form-group">
+            <label for="AnchorBolts">Anchor Bolts</label>
+            {{ form.sog_anchor_bolts }}
+        </div>
+        <div class="form-group">
+            <label for="FirstSubcontractor">First Subcontractor</label>
+            {{ form.sog_subcontractor_first }}
+        </div>
+        <div class="form-group">
+            <label for="SecondSubcontractor">Second Subcontractor</label>
+            {{ form.sog_subcontractor_second }}
+        </div>
+        <div class="form-group">
+            <label for="ThirdSubcontractor">Third Subcontractor</label>
+            {{ form.sog_subcontractor_third }}
         </div>
         <a href={% url 'budgets' %}<button type="button" class="btn btn-secondary">Cancel</a>
         <button type="submit" class="btn btn-primary">Submit</button>
