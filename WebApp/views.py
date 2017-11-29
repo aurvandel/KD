@@ -86,7 +86,7 @@ def slab_on_grade_insert(request):
         if form.is_valid():
             form.clean()
             form.save(commit=True)
-            return redirect('slab_on_grade_list')
+            return redirect('new_budget_sog')
     return render(request, "insert_sog.html", {'form':form})
 
 def slab_on_deck_list(request):

@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/forms.py" afterPath="$PROJECT_DIR$/WebApp/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" afterPath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/views.py" afterPath="$PROJECT_DIR$/WebApp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,14 +29,14 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42443064">
+    <splitter split-orientation="horizontal" split-proportion="0.6578192">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebApp/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="359">
-                  <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+                <state relative-caret-position="648">
+                  <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                     <element signature="e#434#453#0" expanded="false" />
@@ -46,19 +47,18 @@
                     <element signature="e#1833#2233#0" expanded="false" />
                     <element signature="e#2283#2706#0" expanded="false" />
                     <element signature="e#2756#3058#0" expanded="false" />
-                    <element signature="e#3097#3204#0" expanded="false" />
-                    <element signature="e#3574#3708#0" expanded="false" />
-                    <element signature="e#3747#3878#0" expanded="false" />
+                    <element signature="e#3570#3704#0" expanded="false" />
+                    <element signature="e#3743#3874#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="insert_sog.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="insert_sog.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="463">
-                  <caret line="89" column="43" lean-forward="false" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+                <state relative-caret-position="497">
+                  <caret line="91" column="38" lean-forward="false" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
                   <folding>
                     <element signature="e#147#250#0#HTML" expanded="true" />
                   </folding>
@@ -144,9 +144,9 @@
         <option value="$PROJECT_DIR$/WebApp/urls.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
-        <option value="$PROJECT_DIR$/WebApp/views.py" />
         <option value="$PROJECT_DIR$/WebApp/forms.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
+        <option value="$PROJECT_DIR$/WebApp/views.py" />
       </list>
     </option>
   </component>
@@ -525,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511977224641</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="sog input page done.">
+      <created>1511985967929</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1511985967929</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -538,7 +545,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16756175" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12996778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11430318" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14792176" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@back-end" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19753087" sideWeight="0.49755502" order="11" side_tool="false" content_ui="tabs" />
@@ -588,7 +595,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new_budgets nav buttons to base and linked it to all subpages" />
     <MESSAGE value="tagged everything except services, services_g_maps and services_satallite_views. Styling of new_budgets_insert_footing is wrong." />
     <MESSAGE value="added .html~ files to gitignore" />
     <MESSAGE value="corrected spelling error" />
@@ -613,7 +619,8 @@
     <MESSAGE value="general conditions complete" />
     <MESSAGE value="ui changes to edit and delete buttons" />
     <MESSAGE value="working on sog input" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on sog input" />
+    <MESSAGE value="sog input page done." />
+    <option name="LAST_COMMIT_MESSAGE" value="sog input page done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -968,6 +975,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#3594#3733#0" expanded="false" />
+            <element signature="e#3794#3931#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -976,10 +995,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="91" column="38" lean-forward="false" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+          <folding>
+            <element signature="e#147#250#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        <state relative-caret-position="648">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
             <element signature="e#434#453#0" expanded="false" />
@@ -990,31 +1019,8 @@
             <element signature="e#1833#2233#0" expanded="false" />
             <element signature="e#2283#2706#0" expanded="false" />
             <element signature="e#2756#3058#0" expanded="false" />
-            <element signature="e#3097#3204#0" expanded="false" />
-            <element signature="e#3574#3708#0" expanded="false" />
-            <element signature="e#3747#3878#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="89" column="43" lean-forward="false" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
-          <folding>
-            <element signature="e#147#250#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#3594#3733#0" expanded="false" />
-            <element signature="e#3794#3931#0" expanded="false" />
+            <element signature="e#3570#3704#0" expanded="false" />
+            <element signature="e#3743#3874#0" expanded="false" />
           </folding>
         </state>
       </provider>
