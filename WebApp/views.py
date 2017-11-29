@@ -136,6 +136,14 @@ def budget_update(request, pk):
         return redirect('budgets')
     return render(request, 'new_budget_information_page.html', {'form':form})
 
+def budget_delete(request, pk):
+    budgets = openBudgets.objects.all()
+    budget = get_object_or_404(openBudgets, pk=pk)
+    if request.method=='POST':
+        budget.delete()
+        return redirect('budgets')
+    return render(request, 'budget_delete.html', {'object':budget, 'object_list':budgets})
+
 def new_budget_information_page(request):
     form = NewBudgetForm()
     if request.method == 'POST':
@@ -143,7 +151,7 @@ def new_budget_information_page(request):
         if form.is_valid():
             form.clean()
             form.save(commit=True)
-            return redirect('new_budget')
+            return redirect('budgets')
     return render(request, "new_budget_information_page.html", {'form':form})
 
 def new_budget_waste_casting(request):

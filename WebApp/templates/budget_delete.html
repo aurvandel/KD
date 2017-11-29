@@ -1,4 +1,14 @@
 {% extends "base.html" %}
+{% block headScripts %}
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
+{% endblock %}
 {% block budgetNav %}{% endblock %}
 {% block content %}
     <div class="BudgetTable">
@@ -57,4 +67,17 @@
             </table>
         </div>
     </div>
+        <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Are you sure you want to delete "{{ object.project_name }}" ?</p>
+                <form method="post">{% csrf_token %}
+                    <a href={% url 'budgets' %}<button type="button" class="btn btn-secondary">Cancel</a>
+                    <input type="submit" value="Confirm" class="btn btn-primary" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

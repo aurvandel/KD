@@ -26,6 +26,7 @@ urlpatterns = [
     # (?P<pk>\d+) regex to pass primary key into dynamic url
     url(r'^budget/edit/(?P<pk>\d+)$', views.budget_update, name='budget_edit'),
     url(r'budget/(?P<pk>\d+)$', views.BudgetView.as_view(), name='budget-detail'),
+    url(r'^budget/delete/(?P<pk>\d+)$', views.budget_delete, name='budget_delete'),
     url(r'^footing/edit/(?P<pk>\d+)$', views.footing_update, name='footing_edit'),
     url(r'^footing/delete/(?P<pk>\d+)$', views.footing_delete, name='footing_delete'),
     url(r'^general_conditions/edit/(?P<pk>\d+)$', views.general_conditions_update, name='general_conditions_edit'),
