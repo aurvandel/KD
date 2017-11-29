@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/templates/sog_delete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/urls.py" afterPath="$PROJECT_DIR$/WebApp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/views.py" afterPath="$PROJECT_DIR$/WebApp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +30,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.60329986">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebApp/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+                <state relative-caret-position="556">
+                  <caret line="118" column="58" lean-forward="true" selection-start-line="118" selection-start-column="58" selection-end-line="118" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                     <element signature="e#434#453#0" expanded="false" />
@@ -50,8 +46,8 @@
                     <element signature="e#2756#3058#0" expanded="false" />
                     <element signature="e#3245#3532#0" expanded="false" />
                     <element signature="e#3577#3863#0" expanded="false" />
-                    <element signature="e#4225#4359#0" expanded="false" />
-                    <element signature="e#4398#4529#0" expanded="false" />
+                    <element signature="e#4228#4362#0" expanded="false" />
+                    <element signature="e#4401#4532#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -60,8 +56,8 @@
           <file leaf-file-name="sog_delete.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApp/templates/sog_delete.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="803">
-                  <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+                <state relative-caret-position="340">
+                  <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -72,16 +68,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="279">
                   <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="59" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="new_budget_sog.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_sog.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="64" lean-forward="false" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
                   <folding />
                 </state>
               </provider>
@@ -99,7 +85,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="408">
@@ -178,9 +164,9 @@
         <option value="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
         <option value="$PROJECT_DIR$/WebApp/urls.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
-        <option value="$PROJECT_DIR$/WebApp/views.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/sog_delete.html" />
+        <option value="$PROJECT_DIR$/WebApp/views.py" />
       </list>
     </option>
   </component>
@@ -573,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511986147583</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="sog update and delete views completed">
+      <created>1511992312619</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1511992312619</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +629,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tagged everything except services, services_g_maps and services_satallite_views. Styling of new_budgets_insert_footing is wrong." />
     <MESSAGE value="added .html~ files to gitignore" />
     <MESSAGE value="corrected spelling error" />
     <MESSAGE value="update" />
@@ -661,7 +653,8 @@
     <MESSAGE value="ui changes to edit and delete buttons" />
     <MESSAGE value="working on sog input" />
     <MESSAGE value="sog input page done." />
-    <option name="LAST_COMMIT_MESSAGE" value="sog input page done." />
+    <MESSAGE value="sog update and delete views completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="sog update and delete views completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1015,39 +1008,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#434#453#0" expanded="false" />
-            <element signature="e#487#592#0" expanded="false" />
-            <element signature="e#626#738#0" expanded="false" />
-            <element signature="e#1136#1451#0" expanded="false" />
-            <element signature="e#1833#2233#0" expanded="false" />
-            <element signature="e#2283#2706#0" expanded="false" />
-            <element signature="e#2756#3058#0" expanded="false" />
-            <element signature="e#3245#3532#0" expanded="false" />
-            <element signature="e#3577#3863#0" expanded="false" />
-            <element signature="e#4225#4359#0" expanded="false" />
-            <element signature="e#4398#4529#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="59" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/sog_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1065,6 +1029,35 @@
         <state relative-caret-position="408">
           <caret line="27" column="86" lean-forward="false" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/sog_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="118" column="58" lean-forward="true" selection-start-line="118" selection-start-column="58" selection-end-line="118" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#434#453#0" expanded="false" />
+            <element signature="e#487#592#0" expanded="false" />
+            <element signature="e#626#738#0" expanded="false" />
+            <element signature="e#1136#1451#0" expanded="false" />
+            <element signature="e#1833#2233#0" expanded="false" />
+            <element signature="e#2283#2706#0" expanded="false" />
+            <element signature="e#2756#3058#0" expanded="false" />
+            <element signature="e#3245#3532#0" expanded="false" />
+            <element signature="e#3577#3863#0" expanded="false" />
+            <element signature="e#4228#4362#0" expanded="false" />
+            <element signature="e#4401#4532#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

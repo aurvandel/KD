@@ -99,7 +99,7 @@ def slab_on_grade_update(request, pk):
     return render(request, 'insert_sog.html', {'form':form})
 
 def slab_on_grade_delete(request, pk):
-    lstSlabOnGrade = footings.objects.all()
+    lstSlabOnGrade = slabOnGrade.objects.all()
     slab = get_object_or_404(slabOnGrade, pk=pk)
     if request.method=='POST':
         slab.delete()
