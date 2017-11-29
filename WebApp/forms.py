@@ -5,6 +5,121 @@ from .models import *
 
 #TODO: date picker
 
+class NewSOGForm(forms.ModelForm):
+    class Meta:
+        model = slabOnGrade
+        fields = '__all__'
+        labels = {
+            'budget_id': 'Budget',
+            'sog_slab_description': 'Slab Description',
+            'sog_grading_material_thickness': 'Grading Material Thickness',
+        }
+
+    def __init__(self, *args, **kwargs):
+        super(NewSOGForm, self).__init__(*args, **kwargs)
+
+        self.fields['budget_id'].widget.attrs={
+            'id': 'BudgetId',
+            'class': 'form-control',
+            'aria-describedby': 'BudgetID',
+            'placeholder': 'Enter Budget Number'
+        }
+        self.fields['sog_slab_description'].widget.attrs={
+            'class': 'form-control',
+            'id': 'SlabDescription',
+            'placeholder': 'Slab Description'
+        }
+        self.fields['sog_grading_material_thickness'].widget.attrs={
+            'class': 'form-control',
+            'id': 'MaterialThickness',
+            'placeholder': 'Grading Material Thickness'
+        }
+        self.fields['sog_thickness'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Thickness',
+            'placeholder': 'Thickness'
+        }
+        self.fields['sog_width'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Width',
+            'placeholder': 'Width'
+        }
+        self.fields['sog_length'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Length',
+            'placeholder': 'Length',
+        }
+        self.fields['sog_area'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Area',
+            'placeholder': 'Area'
+        }
+        self.fields['sog_perimeter'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Perimeter',
+            'placeholder': 'Perimeter'
+        }
+        self.fields['sog_concrete_mix'].widget.attrs={
+            'class': 'form-control',
+            'id': 'ConcreteMix',
+            'placeholder': 'Concrete Mix'
+        }
+        self.fields['sog_additive'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Additive',
+            'placeholder': 'Additive'
+        }
+        self.fields['sog_second_additive'].widget.attrs={
+            'class': 'form-control',
+            'id': 'SecondAdditive',
+            'placeholder': 'Second Additive'
+        }
+        self.fields['sog_cure'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Cure',
+            'placeholder': 'Cure'
+        }
+        self.fields['sog_perimeter_forms'].widget.attrs={
+            'class': 'form-control',
+            'id': 'PerimeterForms',
+            'placeholder': 'Perimeter Forms'
+        }
+        self.fields['sog_bulk_heads'].widget.attrs={
+            'class': 'form-control',
+            'id': 'BulkHeads',
+            'placeholder': 'Bulk Heads',
+        }
+        self.fields['sog_vapor_barrier'].widget.attrs={
+            'class': 'form-control',
+            'id': 'VaporBarrier',
+            'placeholder': 'Vapor Barrier'
+        }
+        self.fields['sog_grading_material'].widget.attrs={
+            'class': 'form-control',
+            'id': 'GradingMaterial',
+            'placeholder': 'Grading Material'
+        }
+        self.fields['sog_anchor_bolts'].widget.attrs={
+            'class': 'form-control',
+            'id': 'AnchorBolts',
+            'placeholder': 'Anchor Bolts'
+        }
+        self.fields['sog_subcontractor_first'].widget.attrs={
+            'class': 'form-control',
+            'id': 'FirstSubcontractor',
+            'placeholder': 'First Subcontractor'
+        }
+        self.fields['sog_subcontractor_second'].widget.attrs={
+            'class': 'form-control',
+            'id': 'SecondSubcontractor',
+            'placeholder': 'Second Subcontractor'
+        }
+        self.fields['sog_subcontractor_third'].widget.attrs={
+            'class': 'form-control',
+            'id': 'ThirdSubcontractor',
+            'placeholder': 'Third Subcontractor'
+        }
+
 class NewGeneralConditionForm(forms.ModelForm):
     # Form fields go here if we use custom validators
     class Meta:

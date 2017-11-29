@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/forms.py" afterPath="$PROJECT_DIR$/WebApp/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" afterPath="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/urls.py" afterPath="$PROJECT_DIR$/WebApp/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/views.py" afterPath="$PROJECT_DIR$/WebApp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,48 +32,93 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebApp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#655#796#0" expanded="false" />
-                <element signature="e#835#1148#0" expanded="false" />
-                <element signature="e#1194#1509#0" expanded="false" />
-                <element signature="e#1559#1959#0" expanded="false" />
-                <element signature="e#2009#2432#0" expanded="false" />
-                <element signature="e#2482#2784#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.33678398">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/WebApp/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="393">
+                  <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#0#45#0" expanded="true" />
+                    <element signature="e#434#453#0" expanded="false" />
+                    <element signature="e#487#592#0" expanded="false" />
+                    <element signature="e#626#738#0" expanded="false" />
+                    <element signature="e#777#1090#0" expanded="false" />
+                    <element signature="e#1490#1783#0" expanded="false" />
+                    <element signature="e#1833#2233#0" expanded="false" />
+                    <element signature="e#2283#2706#0" expanded="false" />
+                    <element signature="e#2756#3058#0" expanded="false" />
+                    <element signature="e#3097#3204#0" expanded="false" />
+                    <element signature="e#3574#3708#0" expanded="false" />
+                    <element signature="e#3747#3878#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="insert_sog.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#147#250#0#HTML" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+                  <folding>
+                    <element signature="e#0#24#0" expanded="true" />
+                    <element signature="e#562#733#0" expanded="false" />
+                    <element signature="e#791#922#0" expanded="false" />
+                    <element signature="e#990#1133#0" expanded="false" />
+                    <element signature="e#1184#1302#0" expanded="false" />
+                    <element signature="e#1349#1459#0" expanded="false" />
+                    <element signature="e#1507#1620#0" expanded="false" />
+                    <element signature="e#1666#1774#0" expanded="false" />
+                    <element signature="e#1825#1943#0" expanded="false" />
+                    <element signature="e#1997#2120#0" expanded="false" />
+                    <element signature="e#2170#2286#0" expanded="false" />
+                    <element signature="e#2343#2472#0" expanded="false" />
+                    <element signature="e#2518#2626#0" expanded="false" />
+                    <element signature="e#2683#2812#0" expanded="false" />
+                    <element signature="e#2864#2984#0" expanded="false" />
+                    <element signature="e#3039#3164#0" expanded="false" />
+                    <element signature="e#3222#3353#0" expanded="false" />
+                    <element signature="e#3407#3530#0" expanded="false" />
+                    <element signature="e#3591#3728#0" expanded="false" />
+                    <element signature="e#3790#3929#0" expanded="false" />
+                    <element signature="e#3990#4127#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -98,16 +149,10 @@
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_tiltup.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/services_satellite_view.html" />
         <option value="$PROJECT_DIR$/WebApp/static/css/style.css" />
-        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
-        <option value="$PROJECT_DIR$/WebApp/models.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_waste-casting.html" />
         <option value="$PROJECT_DIR$/WebApp/admin.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_insert_footing.html" />
-        <option value="$PROJECT_DIR$/WebApp/forms.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/base.html" />
-        <option value="$PROJECT_DIR$/WebApp/urls.py" />
-        <option value="$PROJECT_DIR$/WebApp/views.py" />
-        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/budgets.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/budget_delete.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions.html" />
@@ -117,6 +162,13 @@
         <option value="$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/main_screen.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/WebApp/models.py" />
+        <option value="$PROJECT_DIR$/WebApp/views.py" />
+        <option value="$PROJECT_DIR$/WebApp/urls.py" />
+        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_sog.html" />
+        <option value="$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html" />
+        <option value="$PROJECT_DIR$/WebApp/forms.py" />
+        <option value="$PROJECT_DIR$/WebApp/templates/insert_sog.html" />
       </list>
     </option>
   </component>
@@ -182,6 +234,19 @@
               <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
               <item name="WebApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="WebApp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PycharmProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="WebApp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -197,13 +262,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/KeyEstimation/settings.py" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pwatkin1\PycharmProjects\back-end\WebApp\templates\v1" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pwatkin1\PycharmProjects\PycharmProjects\WebApp\templates" />
       <recent name="$PROJECT_DIR$/WebApp/templates" />
       <recent name="C:\Users\pwatkin1\PycharmProjects\back-end\WebApp\templates\WebApp" />
       <recent name="C:\Users\pwatkin1\PycharmProjects\back-end\WebApp\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pwatkin1\PycharmProjects\back-end\WebApp\templates\v1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -467,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511972318518</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ui changes to edit and delete buttons">
+      <created>1511972461431</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1511972461431</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,15 +548,15 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18406285" sideWeight="0.502445" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18406285" sideWeight="0.502445" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16756175" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12996778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22555012" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11430318" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@back-end" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18406285" sideWeight="0.49755502" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@back-end" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19753087" sideWeight="0.49755502" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -558,17 +631,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="ui changes to edit and delete buttons" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebApp/KeyEstimating1/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2877">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/KeyEstimating1/services_g_maps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-714">
@@ -752,20 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="143" column="13" lean-forward="true" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_sog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_tiltup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -794,14 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="220" column="0" lean-forward="true" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -825,39 +871,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1546">
           <caret line="95" column="4" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#147#250#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,34 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="164" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="200" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_footings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="81" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="186" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/templates/footing_confirm_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/templates/budgets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="41" column="88" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="194" />
           <folding />
         </state>
       </provider>
@@ -933,18 +927,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_general_conditions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="20" column="164" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="200" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/budgets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="88" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="194" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_footings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="49" column="85" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_sog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="80" column="19" lean-forward="true" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/new_budget_information_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="10" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="148" column="27" lean-forward="false" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+        <state relative-caret-position="393">
+          <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#655#796#0" expanded="false" />
-            <element signature="e#835#1148#0" expanded="false" />
-            <element signature="e#1194#1509#0" expanded="false" />
-            <element signature="e#1559#1959#0" expanded="false" />
-            <element signature="e#2009#2432#0" expanded="false" />
-            <element signature="e#2482#2784#0" expanded="false" />
+            <element signature="e#434#453#0" expanded="false" />
+            <element signature="e#487#592#0" expanded="false" />
+            <element signature="e#626#738#0" expanded="false" />
+            <element signature="e#777#1090#0" expanded="false" />
+            <element signature="e#1490#1783#0" expanded="false" />
+            <element signature="e#1833#2233#0" expanded="false" />
+            <element signature="e#2283#2706#0" expanded="false" />
+            <element signature="e#2756#3058#0" expanded="false" />
+            <element signature="e#3097#3204#0" expanded="false" />
+            <element signature="e#3574#3708#0" expanded="false" />
+            <element signature="e#3747#3878#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#562#733#0" expanded="false" />
+            <element signature="e#791#922#0" expanded="false" />
+            <element signature="e#990#1133#0" expanded="false" />
+            <element signature="e#1184#1302#0" expanded="false" />
+            <element signature="e#1349#1459#0" expanded="false" />
+            <element signature="e#1507#1620#0" expanded="false" />
+            <element signature="e#1666#1774#0" expanded="false" />
+            <element signature="e#1825#1943#0" expanded="false" />
+            <element signature="e#1997#2120#0" expanded="false" />
+            <element signature="e#2170#2286#0" expanded="false" />
+            <element signature="e#2343#2472#0" expanded="false" />
+            <element signature="e#2518#2626#0" expanded="false" />
+            <element signature="e#2683#2812#0" expanded="false" />
+            <element signature="e#2864#2984#0" expanded="false" />
+            <element signature="e#3039#3164#0" expanded="false" />
+            <element signature="e#3222#3353#0" expanded="false" />
+            <element signature="e#3407#3530#0" expanded="false" />
+            <element signature="e#3591#3728#0" expanded="false" />
+            <element signature="e#3790#3929#0" expanded="false" />
+            <element signature="e#3990#4127#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/templates/insert_sog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#147#250#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

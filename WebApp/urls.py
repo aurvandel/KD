@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^new_budget_information_page\$', views.new_budget_information_page, name='new_budget_information_page'),
     url(r'^new_budget_sod\$', views.slab_on_deck_list, name='new_budget_sod'),
     url(r'^new_budget_sog\$', views.slab_on_grade_list, name='new_budget_sog'),
+    url(r'^slab_on_grade_insert\$', views.slab_on_grade_insert, name='slab_on_grade_insert'),
     url(r'^new_budget_tiltup\$', views.tilt_up_panel_list, name='new_budget_tiltup'),
     url(r'^new_budget_waste-casting\$', views.new_budget_waste_casting, name='new_budget_waste-casting'),
     url(r'^services_g_maps\$', views.services_g_maps, name='services_g_maps'),
