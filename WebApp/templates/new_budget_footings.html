@@ -24,15 +24,16 @@
                 {% for footing in lstFootings %}
                 <tr>
                     <td>
-                        <a href="{% url 'footing_delete' footing.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true" style="float: right"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-{#                            Old code for checkbox#}
+                        <a href="{% url 'footing_delete' footing.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                        <a href="{% url 'footing_edit' footing.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        {#Old code for checkbox#}
 {#                        <div class="input-group">#}
 {#                          <span class="input-group-addon">#}
 {#                            <input type="checkbox">#}
 {#                          </span>#}
 {#                        </div>#}
                     </td>
-                    <td><a href="{% url 'footing_edit' footing.id %}">{{ footing.footing_description }}</a></td>
+                    <td>{{ footing.footing_description }}</td>
                     <td>{{ footing.footing_type }}</td>
                     <td>{{ footing.footing_length }}</td>
                     <td>{{ footing.footing_count }}</td>

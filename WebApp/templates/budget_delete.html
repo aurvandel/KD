@@ -35,7 +35,6 @@
                 <thead>
                 <tr>
                     <th></th>
-                    <th></th>
                     <th>Budget Number</th>
                     <th>Job Name</th>
                     <th>Job Status</th>
@@ -49,8 +48,10 @@
                 {% if object_list %}
                     {% for budget in object_list %}
                         <tr>
-                            <td><a href="{% url 'budget_delete' budget.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
-                            <td><a href="{% url 'budget_edit' budget.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                            <td>
+                                <a href="{% url 'budget_delete' budget.id %}" class="btn btn-danger btn-sm" role="button" aria-pressed="true"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                <a href="{% url 'budget_edit' budget.id %}" class="btn btn-primary btn-sm" role="button" aria-pressed="true"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                            </td>
                             <td>{{ budget.budget_id }}</td>
                             <td style="padding-right: 2em">
                                 <a href="{% url 'budget-detail' budget.id %}">{{ budget.project_name }}</a>

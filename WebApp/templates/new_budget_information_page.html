@@ -7,12 +7,12 @@
 {% block budgetNav %}{% endblock %}
 
 {% block content %}
-<div class="col-lg-8" style="background-color: #F4F4F4; margin-left: 7%; margin-top: 2em; margin-bottom: auto">
+<div class="col-lg-8" style="background-color: #F4F4F4; margin-left: 2%; margin-top: 1em; margin-bottom: auto; padding: 15px">
     <form action="" method="post"> {% csrf_token %}
         <div class="form-group">
             <label for="BudgetId">Budget ID</label>
             {{ form.budget_id }}
-            <small id="budgetHelp" class="form-text text-muted">Do not ever duplicate existing budget number</small>
+            <small id="budgetHelp" class="form-text text-muted">Do not duplicate existing budget number</small>
         </div>
         <div class="form-group">
             <label for="ProjectName">Project Name</label>
