@@ -177,9 +177,34 @@ def new_budget_information_page(request):
 
 def new_budget_waste_casting(request):
     wc = WasteCasting.objects.all()
-    data = {}
-    data['lstwc'] = wc
-    return render(request, 'new_budget_waste-casting.html', data)
+    return render(request, 'new_budget_waste-casting.html', {'lstwc':wc})
+
+def waste_casting_insert(request):
+    form = WasteCastingForm()
+    if request.method == 'POST':
+        form = WasteCastingForm(request.POST)
+        if form.is_valid():
+            form.clean()
+            form.save(commit=True)
+            return redirect('new_budget_waste-casting')
+    return render(request, "insert_waste_casting.html", {'form':form})
+
+def waste_casting_update(request, pk):
+    wc = get_object_or_404(WasteCasting, pk = pk)
+    form = WasteCastingForm(request.POST or None, instance = wc)
+    if form.is_valid():
+        form.clean()
+        form.save(commit=True)
+        return redirect('new_budget_waste-casting')
+    return render(request, 'insert_waste_casting.html', {'form':form})
+
+def waste_casting_delete(request, pk):
+    lstwc = slabOnGrade.objects.all()
+    wc = get_object_or_404(WasteCasting, pk=pk)
+    if request.method=='POST':
+        wc.delete()
+        return redirect('new_budget_waste-casting')
+    return render(request, 'waste_casting_delete.html', {'object':wc, 'lstwc':lstwc})
 
 def services_g_maps(request):
     return render(request, "services_g_maps.html")

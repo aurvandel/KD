@@ -21,9 +21,12 @@ urlpatterns = [
     url(r'^new_budget_sog\$', views.slab_on_grade_list, name='new_budget_sog'),
     url(r'^slab_on_grade/edit/(?P<pk>\d+)$', views.slab_on_grade_update, name='sog_edit'),
     url(r'^slab_on_grade/delete/(?P<pk>\d+)$', views.slab_on_grade_delete, name='sog_delete'),
-    url(r'^slab_on_grade_insert\$', views.slab_on_grade_insert, name='slab_on_grade_insert'),
+    url(r'^slab_on_grade/insert\$', views.slab_on_grade_insert, name='slab_on_grade_insert'),
     url(r'^new_budget_tiltup\$', views.tilt_up_panel_list, name='new_budget_tiltup'),
     url(r'^new_budget_waste-casting\$', views.new_budget_waste_casting, name='new_budget_waste-casting'),
+    url(r'^waste_casting/edit/(?P<pk>\d+)$', views.waste_casting_update, name='waste_casting_edit'),
+    url(r'^waste_casting/delete/(?P<pk>\d+)$', views.waste_casting_delete, name='waste_casting_delete'),
+    url(r'^waste_casting/insert\$', views.waste_casting_insert, name='waste_casting_insert'),
     url(r'^services_g_maps\$', views.services_g_maps, name='services_g_maps'),
     url(r'^services_satellite_view\$', views.services_satellite_view, name='services_satellite_view'),
     # (?P<pk>\d+) regex to pass primary key into dynamic url

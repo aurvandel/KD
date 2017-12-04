@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block headScripts %}
+
+{% endblock %}
+
+{% block budgetNav %}{% endblock %}
+
+{% block content %}
+<div class="col-lg-8" style="background-color: #F4F4F4; margin-left: 7%; margin-top: 1em; margin-bottom: auto; padding: 15px">
+    <form action="" method="post"> {% csrf_token %}
+        <div class="form-group">
+            <label for="BudgetId">Budget</label>
+            {{ form.budget_id }}
+        </div>
+        <div class="form-group">
+            <label for="SlabDescription">Waste Casting Description</label>
+            {{ form.waste_casting_description }}
+        </div>
+        <div class="form-group">
+            <label for="MaterialThickness">Basis</label>
+            {{ form.waste_casting_basis }}
+        </div>
+        <div class="form-group">
+            <label for="Thickness">SQFT</label>
+            {{ form.waste_casting_sqft}}
+        </div>
+        <div class="form-group">
+            <label for="Width">Concrete Description</label>
+            {{ form.waste_casting_concrete_description }}
+        </div>
+        <div class="form-group">
+            <label for="Length">Total CY</label>
+            {{ form.waste_casting_totalCY }}
+        </div>
+        <div class="form-group">
+            <label for="Area">PSI</label>
+            {{ form.waste_casting_psi }}
+        </div>
+        <div class="form-group">
+            <label for="Perimeter">Materials Labor</label>
+            {{ form.waste_casting_materials_labor }}
+        </div>
+        <a href={% url 'new_budget_sog' %}<button type="button" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

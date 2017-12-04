@@ -5,6 +5,56 @@ from .models import *
 
 #TODO: date picker
 
+class WasteCastingForm(forms.ModelForm):
+    class Meta:
+        model = WasteCasting
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super(WasteCastingForm, self).__init__(*args, **kwargs)
+
+        self.fields['budget_id'].widget.attrs={
+            'id': 'BudgetId',
+            'class': 'form-control',
+            'aria-describedby': 'BudgetID',
+            'placeholder': 'Enter Budget Number'
+        }
+        self.fields['waste_casting_description'].widget.attrs={
+            'class': 'form-control',
+            'id': 'WCDescription',
+            'placeholder': 'Waste Casting Description'
+        }
+        self.fields['waste_casting_basis'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Basis',
+            'placeholder': 'Basis'
+        }
+        self.fields['waste_casting_sqft'].widget.attrs={
+            'class': 'form-control',
+            'id': 'Sqft',
+            'placeholder': 'SQFT'
+        }
+        self.fields['waste_casting_concrete_description'].widget.attrs={
+            'class': 'form-control',
+            'id': 'ConcreteDescription',
+            'placeholder': 'Concrete Description'
+        }
+        self.fields['waste_casting_totalCY'].widget.attrs={
+            'class': 'form-control',
+            'id': 'CY',
+            'placeholder': 'Total CY',
+        }
+        self.fields['waste_casting_psi'].widget.attrs={
+            'class': 'form-control',
+            'id': 'PSI',
+            'placeholder': 'PSI'
+        }
+        self.fields['waste_casting_materials_labor'].widget.attrs={
+            'class': 'form-control',
+            'id': 'MaterialsLabor',
+            'placeholder': 'Materials Labor'
+        }
+
 class NewSOGForm(forms.ModelForm):
     class Meta:
         model = slabOnGrade
@@ -141,6 +191,7 @@ class NewGeneralConditionForm(forms.ModelForm):
             'id': 'message-text',
             'class': 'form-control',
         }
+
 class NewBudgetForm(forms.ModelForm):
     class Meta:
         model = openBudgets
