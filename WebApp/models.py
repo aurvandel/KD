@@ -223,7 +223,7 @@ class mixDesign(models.Model):
     def __str__(self):
         return self.concrete_mix_description
 
-class TaxTable(models.Model):
+class States(models.Model):
 
     #TODO Tie state and abbreviation together so that selecting the state selects the abbreviation
 

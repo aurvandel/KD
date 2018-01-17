@@ -1,61 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="Working on tax table">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TaxRates-UpdatedRateTablesExplained.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AK201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AL201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AR201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AZ201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_CA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_CO201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_CT201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_DC201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_DE201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_FL201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_GA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_HI201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_IA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_ID201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_IL201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_IN201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_KS201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_KY201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_LA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_MA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_MD201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_ME201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_MI201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_MN201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_MO201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_MS201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_MT201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_NC201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_ND201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_NE201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_NH201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_NJ201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_NM201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_NV201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_NY201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_OH201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_OK201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_OR201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_PA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_PR201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_RI201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_SC201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_SD201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_TN201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_TX201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_UT201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_VA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_VT201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_WA201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_WI201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_WV201801.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_WY201801.csv" />
+    <list default="true" id="f92fff63-dec0-450f-aa28-088e5f38cecb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KeyEstimation/settings.py" afterPath="$PROJECT_DIR$/KeyEstimation/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/models.py" afterPath="$PROJECT_DIR$/WebApp/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AR201801.csv" afterPath="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AR201801.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +52,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="3468">
               <caret line="212" column="58" lean-forward="false" selection-start-line="212" selection-start-column="58" selection-end-line="212" selection-end-column="58" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -112,11 +62,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebApp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+            <state relative-caret-position="253">
+              <caret line="225" column="12" lean-forward="false" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TAXRATES_ZIP5_AR201801.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AR201801.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4471">
+              <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KeyEstimation/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -168,7 +138,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/WebApp/templates/analytics.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/services.html" />
-        <option value="$PROJECT_DIR$/KeyEstimation/settings.py" />
         <option value="$PROJECT_DIR$/WebApp/templates/WebApp/openbudgets_detail.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_cip.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/index.html" />
@@ -195,7 +164,9 @@
         <option value="$PROJECT_DIR$/WebApp/templates/new_budget_waste-casting.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/waste_casting_delete.html" />
         <option value="$PROJECT_DIR$/WebApp/templates/insert_waste_casting.html" />
+        <option value="$PROJECT_DIR$/KeyEstimation/settings.py" />
         <option value="$PROJECT_DIR$/WebApp/models.py" />
+        <option value="$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AR201801.csv" />
       </list>
     </option>
   </component>
@@ -244,8 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,16 +225,23 @@
             <path>
               <item name="key-development-repo" type="b2602c69:ProjectViewProjectNode" />
               <item name="key-development-repo" type="462c0819:PsiDirectoryNode" />
+              <item name="KeyEstimation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="key-development-repo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key-development-repo" type="462c0819:PsiDirectoryNode" />
               <item name="WebApp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="database.data.csv.formats" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/KeyEstimation/settings.py" />
   </component>
@@ -554,22 +530,29 @@
       <option name="project" value="LOCAL" />
       <updated>1516162420272</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Working on tax table">
+      <created>1516162532795</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1516162532795</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17929563" sideWeight="0.4953765" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18514532" sideWeight="0.50213444" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18249734" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16684607" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44886976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17716116" sideWeight="0.4953765" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18249734" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@back-end" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18514532" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44886976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17182498" sideWeight="0.50462353" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10512273" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -581,6 +564,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@back-end" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18514532" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -648,7 +632,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db.sqlite3" />
     <entry file="file://$PROJECT_DIR$/WebApp/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -661,13 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KeyEstimation/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1033,7 +1009,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="3468">
           <caret line="212" column="58" lean-forward="false" selection-start-line="212" selection-start-column="58" selection-end-line="212" selection-end-column="58" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
@@ -1046,14 +1022,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KeyEstimation/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="225" column="12" lean-forward="false" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/tax_tables/TAXRATES_ZIP5_AR201801.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4471">
+          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
           <folding />
         </state>
       </provider>

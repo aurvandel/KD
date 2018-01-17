@@ -1,5 +1,5 @@
 State,ZipCode,TaxRegionName,StateRate,EstimatedCombinedRate,EstimatedCountyRate,EstimatedCityRate,EstimatedSpecialRate,RiskLevel
-AR,71601,"PINE BLUFF",0.065000,0.103750,0.016250,0.022500,0,4
+AR,71601,"PINE BLUFF",0.103750 ,0.065000             ,0.016250           ,0.022500         ,0                   ,4
 AR,71602,"PINE BLUFF",0.065000,0.103750,0.016250,0.022500,0,2
 AR,71603,"PINE BLUFF",0.065000,0.103750,0.016250,0.022500,0,1
 AR,71611,"PINE BLUFF",0.065000,0.103750,0.016250,0.022500,0,1

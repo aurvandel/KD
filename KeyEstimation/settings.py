@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'WebApp',
+    #'localflavor',
     #'django.contrib.staticfiles.finders.FileSystemFinder',
     #'django_extensions',
     #'widget_tweaks',
