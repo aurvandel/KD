@@ -225,31 +225,42 @@ class mixDesign(models.Model):
 
 class States(models.Model):
 
-    #TODO Tie state and abbreviation together so that selecting the state selects the abbreviation
-
+    # stateChoices = (
+    #     ("Alabama", "Alabama"), ("Alaska", "Alaska"), ("Arizona", "Arizona"), ("Arkansas", "Arkansas"),
+    #     ("California", "California"), ("Colorado", "Colorado"), ("Connecticut", "Connecticut"),
+    #     ("Delaware", "Delaware"), ("Florida", "Florida"), ("Georgia", "Georgia"), ("Hawaii", "Hawaii"),
+    #     ("Idaho", "Idaho"), ("Illinois", "Illinois"), ("Indiana", "Indiana"), ("Iowa", "Iowa"), ("Kansas", "Kansas"),
+    #     ("Kentucky", "Kentucky"), ("Louisiana", "Louisiana"), ("Maine", "Maine"), ("Maryland", "Maryland"),
+    #     ("Massachusetts", "Massachusetts"), ("Michigan", "Michigan"), ("Minnesota", "Minnesota"),
+    #     ("Mississippi", "Mississippi"), ("Missouri", "Missouri"), ("Montana", "Montana"), ("Nebraska", "Nebraska"),
+    #     ("Nevada", "Nevada"), ("New Hampshire", "New Hampshire"), ("New Jersey", "New Jersey"),
+    #     ("New Mexico", "New Mexico"), ("New York", "New York"), ("North Carolina", "North Carolina"),
+    #     ("North Dakota", "North Dakota"), ("Ohio", "Ohio"), ("Oklahoma", "Oklahoma"), ("Oregon", "Oregon"),
+    #     ("Pennsylvania", "Pennsylvania"), ("Rhode", "Rhode"), ("Island", "Island"),
+    #     ("South Carolina", "South Carolina"), ("South Dakota", "South Dakota"), ("Tennessee", "Tennessee"),
+    #     ("Texas", "Texas"), ("Utah", "Utah"), ("Vermont", "Vermont"), ("Virginia", "Virginia"),
+    #     ("Washington", "Washington"), ("West Virginia", "West Virginia"), ("Wisconsin", "Wisconsin"),
+    #     ("Wyoming", "Wyoming")
+    # )
+    # StateAbbreviationChoices = (
+    #     ("AK", "AK"), ("AL", "AL"), ("AR", "AR"), ("AZ", "AZ"), ("CA", "CA"), ("CO", "CO"), ("CT", "CT"), ("DC", "DC"),
+    #     ("DE", "DE"), ("FL", "FL"), ("GA", "GA"), ("GU", "GU"), ("HI", "HI"), ("IA", "IA"), ("ID", 'ID'), ("IL", "IL"),
+    #     ("IN", "IN"), ("KS", "KS"), ("KY", "KY"), ("LA", "LA"), ("MA", "MA"), ("MD", "MD"), ("ME", "ME"), ("MH", "MH"),
+    #     ("MI", "MI"), ("MN", "MN"), ("MO", "MO"), ("MS", "MS"), ("MT", "MT"), ("NC", "NC"), ("ND", "ND"), ("NE", "NE"),
+    #     ("NH", "NH"), ("NJ", "NJ"), ("NM", "NM"), ("NV", "NV"), ("NY", "NY"), ("OH", "OH"), ("OK", "OK"), ("OR", "OR"),
+    #     ("PA", "PA"), ("PR", "PR"), ("PW", "PW"), ("RI", "RI"), ("SC", "SC"), ("SD", "SD"), ("TN", "TN"), ("TX", "TX"),
+    #     ("UT", "UT"), ("VA", "VA"), ("VI", "VI"), ("VT", "VT"), ("WA", "WA"), ("WI", "WI"), ("WV", "WV"), ("WY", "WY")
+    # )
     stateChoices = (
-        ("Alabama", "Alabama"), ("Alaska", "Alaska"), ("Arizona", "Arizona"), ("Arkansas", "Arkansas"),
-        ("California", "California"), ("Colorado", "Colorado"), ("Connecticut", "Connecticut"),
-        ("Delaware", "Delaware"), ("Florida", "Florida"), ("Georgia", "Georgia"), ("Hawaii", "Hawaii"),
-        ("Idaho", "Idaho"), ("Illinois", "Illinois"), ("Indiana", "Indiana"), ("Iowa", "Iowa"), ("Kansas", "Kansas"),
-        ("Kentucky", "Kentucky"), ("Louisiana", "Louisiana"), ("Maine", "Maine"), ("Maryland", "Maryland"),
-        ("Massachusetts", "Massachusetts"), ("Michigan", "Michigan"), ("Minnesota", "Minnesota"),
-        ("Mississippi", "Mississippi"), ("Missouri", "Missouri"), ("Montana", "Montana"), ("Nebraska", "Nebraska"),
-        ("Nevada", "Nevada"), ("New Hampshire", "New Hampshire"), ("New Jersey", "New Jersey"),
-        ("New Mexico", "New Mexico"), ("New York", "New York"), ("North Carolina", "North Carolina"),
-        ("North Dakota", "North Dakota"), ("Ohio", "Ohio"), ("Oklahoma", "Oklahoma"), ("Oregon", "Oregon"),
-        ("Pennsylvania", "Pennsylvania"), ("Rhode", "Rhode"), ("Island", "Island"),
-        ("South Carolina", "South Carolina"), ("South Dakota", "South Dakota"), ("Tennessee", "Tennessee"),
-        ("Texas", "Texas"), ("Utah", "Utah"), ("Vermont", "Vermont"), ("Virginia", "Virginia"),
-        ("Washington", "Washington"), ("West Virginia", "West Virginia"), ("Wisconsin", "Wisconsin"),
-        ("Wyoming", "Wyoming")
-    )
-    StateAbbreviationChoices = (
-        ("AK", "AK"), ("AL", "AL"), ("AR", "AR"), ("AZ", "AZ"), ("CA", "CA"), ("CO", "CO"), ("CT", "CT"), ("DC", "DC"),
-        ("DE", "DE"), ("FL", "FL"), ("GA", "GA"), ("GU", "GU"), ("HI", "HI"), ("IA", "IA"), ("ID", 'ID'), ("IL", "IL"),
-        ("IN", "IN"), ("KS", "KS"), ("KY", "KY"), ("LA", "LA"), ("MA", "MA"), ("MD", "MD"), ("ME", "ME"), ("MH", "MH"),
-        ("MI", "MI"), ("MN", "MN"), ("MO", "MO"), ("MS", "MS"), ("MT", "MT"), ("NC", "NC"), ("ND", "ND"), ("NE", "NE"),
-        ("NH", "NH"), ("NJ", "NJ"), ("NM", "NM"), ("NV", "NV"), ("NY", "NY"), ("OH", "OH"), ("OK", "OK"), ("OR", "OR"),
-        ("PA", "PA"), ("PR", "PR"), ("PW", "PW"), ("RI", "RI"), ("SC", "SC"), ("SD", "SD"), ("TN", "TN"), ("TX", "TX"),
-        ("UT", "UT"), ("VA", "VA"), ("VI", "VI"), ("VT", "VT"), ("WA", "WA"), ("WI", "WI"), ("WV", "WV"), ("WY", "WY")
+        ("AL", "Alabama"), ("AK", "Alaska"), ("AZ", "Arizona"), ("AR", "Arkansas"), ("CA", "California"),
+        ("CO", "Colorado"), ("CT", "Connecticut"), ("DC", "Washington DC"), ("DE", "Delaware"), ("FL", "Florida"),
+        ("GA", "Georgia"), ("GU", "Guam"), ("HI", "Hawaii"), ("ID", "Idaho"), ("IL", "Illinois"), ("IN", "Indiana"),
+        ("IA", "Iowa"), ("KS", "Kansas"), ("KY", "Kentucky"), ("LA", "Louisiana"), ("ME", "Maine"), ("MD", "Maryland"),
+        ("MA", "Massachusetts"), ("MI", "Michigan"), ("MN", "Minnesota"), ("MS", "Mississippi"), ("MO", "Missouri"),
+        ("MT", "Montana"), ("NE", "Nebraska"), ("NV", "Nevada"), ("NH", "New Hampshire"), ("NJ", "New Jersey"),
+        ("NM", "New Mexico"), ("NY", "New York"), ("NC", "North Carolina"), ("ND", "North Dakota"), ("OH", "Ohio"),
+        ("OK", "Oklahoma"), ("OR", "Oregon"), ("PA", "Pennsylvania"), ("PR", "Puerto Rico"), ("RI", "Rhode Island"),
+        ("SC", "South Carolina"), ("SD", "South Dakota"), ("TN", "Tennessee"), ("TX", "Texas"), ("UT", "Utah"),
+        ("VT", "Vermont"), ("VA", "Virginia"), ("VI", "Virgin Islands"), ("WA", "Washington"), ("WV", "West Virginia"),
+        ("WI", "Wisconsin"), ("WY", "Wyoming")
     )
